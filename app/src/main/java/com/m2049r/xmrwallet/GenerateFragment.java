@@ -38,6 +38,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.text.TextUtils;
 
 import com.m2049r.xmrwallet.model.Wallet;
 import com.m2049r.xmrwallet.model.WalletManager;
@@ -472,6 +473,7 @@ public class GenerateFragment extends Fragment {
         } else if (type.equals(TYPE_SEED)) {
             if (!checkMnemonic()) return;
             String seed = etWalletMnemonic.getEditText().getText().toString();
+            seed = TextUtils.join(" ", seed.split("\\s"));
             bGenerate.setEnabled(false);
             if (fingerprintAuthAllowed) {
                 KeyStoreHelper.saveWalletUserPass(getActivity(), name, password);
