@@ -341,7 +341,10 @@ public class LoginFragment extends Fragment implements WalletInfoAdapter.OnInter
         super.onCreateOptionsMenu(menu, inflater);
     }
 
-    private boolean stagenetCheckMenu = BuildConfig.DEBUG;
+    // private boolean stagenetCheckMenu = BuildConfig.DEBUG;
+
+    // no stagenet for wow
+    private boolean stagenetCheckMenu = false;
 
     public boolean onStagenetMenuItem() {
         boolean lastState = stagenetCheckMenu;
