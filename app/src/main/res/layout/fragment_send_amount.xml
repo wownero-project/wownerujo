@@ -13,17 +13,17 @@
 
         <TextView
             android:id="@+id/tvFunds"
-            style="@style/MoneroText.Funds"
+            style="@style/WowneroText.Funds"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_toStartOf="@id/ibSweep"
             android:gravity="center"
-            tools:text="Balance: 70.198276354123 XMR" />
+            tools:text="Balance: 70.198276354123 WOW" />
 
         <ImageButton
             android:id="@+id/ibSweep"
-            style="@style/MoneroLabel.NumPad"
+            style="@style/WowneroLabel.NumPad"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
@@ -40,7 +40,7 @@
         android:orientation="vertical"
         android:visibility="visible">
 
-        <com.m2049r.xmrwallet.widget.ExchangeTextView
+        <com.wownero.wownerujo.widget.ExchangeTextView
             android:id="@+id/evAmount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
             android:layout_marginTop="16dp"
             android:orientation="vertical" />
 
-        <com.m2049r.xmrwallet.widget.NumberPadView
+        <com.wownero.wownerujo.widget.NumberPadView
             android:id="@+id/numberPad"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -74,7 +74,7 @@
 
         <TextView
             android:id="@+id/tvSweep"
-            style="@style/MoneroLabel.Heading.Donation"
+            style="@style/WowneroLabel.Heading.Donation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"

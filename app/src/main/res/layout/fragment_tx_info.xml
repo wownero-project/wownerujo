@@ -27,7 +27,7 @@
 
                 <TextView
                     android:id="@+id/tvTxAmount"
-                    style="@style/MoneroText.PosAmount"
+                    style="@style/WowneroText.PosAmount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:selectAllOnFocus="true"
@@ -36,7 +36,7 @@
 
                 <TextView
                     android:id="@+id/tvTxFee"
-                    style="@style/MoneroText.PosFee"
+                    style="@style/WowneroText.PosFee"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:selectAllOnFocus="true"
@@ -46,7 +46,7 @@
 
             <TextView
                 android:id="@+id/tvTxTimestamp"
-                style="@style/MoneroText.PosDate"
+                style="@style/WowneroText.PosDate"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -75,7 +75,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    style="@style/MoneroText.Medium"
+                    style="@style/WowneroText.Medium"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -92,7 +92,7 @@
                     <TableRow>
 
                         <TextView
-                            style="@style/MoneroLabel.Small"
+                            style="@style/WowneroLabel.Small"
                             android:layout_gravity="center_vertical"
                             android:gravity="end"
                             android:padding="8dp"
@@ -100,7 +100,7 @@
 
                         <TextView
                             android:id="@+id/tvTxAmountBtc"
-                            style="@style/MoneroText"
+                            style="@style/WowneroText"
                             android:gravity="start"
                             android:padding="8dp"
                             android:selectAllOnFocus="true"
@@ -112,7 +112,7 @@
                     <TableRow>
 
                         <TextView
-                            style="@style/MoneroLabel.Small"
+                            style="@style/WowneroLabel.Small"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="end"
@@ -121,7 +121,7 @@
 
                         <TextView
                             android:id="@+id/tvDestinationBtc"
-                            style="@style/MoneroText"
+                            style="@style/WowneroText"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="start"
@@ -134,7 +134,7 @@
                     <TableRow>
 
                         <TextView
-                            style="@style/MoneroLabel.Small"
+                            style="@style/WowneroLabel.Small"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
@@ -146,7 +146,7 @@
 
                             <TextView
                                 android:id="@+id/tvTxXmrToKey"
-                                style="@style/MoneroText"
+                                style="@style/WowneroText"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@color/dotGray"
@@ -157,7 +157,7 @@
                                 android:paddingStart="24dp"
                                 android:paddingTop="8dp"
                                 android:textColor="@color/white"
-                                tools:text="XMR.TO-d2KQ" />
+                                tools:text="WOW.TO-d2KQ" />
                         </LinearLayout>
                     </TableRow>
 
@@ -174,7 +174,7 @@
             <TableRow>
 
                 <TextView
-                    style="@style/MoneroLabel.Small"
+                    style="@style/WowneroLabel.Small"
                     android:layout_gravity="center_vertical"
                     android:gravity="end"
                     android:padding="8dp"
@@ -182,7 +182,7 @@
 
                 <TextView
                     android:id="@+id/tvAccount"
-                    style="@style/MoneroText"
+                    style="@style/WowneroText"
                     android:gravity="start"
                     android:padding="8dp"
                     android:selectAllOnFocus="true"
@@ -192,7 +192,7 @@
             <TableRow>
 
                 <TextView
-                    style="@style/MoneroLabel.Small"
+                    style="@style/WowneroLabel.Small"
                     android:layout_gravity="center_vertical"
                     android:gravity="end"
                     android:padding="8sp"
@@ -204,7 +204,7 @@
 
                     <EditText
                         android:id="@+id/etTxNotes"
-                        style="@style/MoneroEdit"
+                        style="@style/WowneroEdit"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
@@ -215,7 +215,7 @@
 
                     <Button
                         android:id="@+id/bTxNotes"
-                        style="@style/MoneroButton.Small"
+                        style="@style/WowneroButton.Small"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
@@ -231,7 +231,7 @@
             <TableRow>
 
                 <TextView
-                    style="@style/MoneroLabel.Small"
+                    style="@style/WowneroLabel.Small"
                     android:layout_gravity="center_vertical"
                     android:gravity="end"
                     android:padding="8dp"
@@ -239,7 +239,7 @@
 
                 <TextView
                     android:id="@+id/tvDestination"
-                    style="@style/MoneroText"
+                    style="@style/WowneroText"
                     android:gravity="start"
                     android:padding="8dp"
                     android:selectAllOnFocus="true"
@@ -249,7 +249,7 @@
             <TableRow>
 
                 <TextView
-                    style="@style/MoneroLabel.Small"
+                    style="@style/WowneroLabel.Small"
                     android:layout_gravity="center_vertical"
                     android:gravity="end"
                     android:padding="8dp"
@@ -257,7 +257,7 @@
 
                 <TextView
                     android:id="@+id/tvTxPaymentId"
-                    style="@style/MoneroText"
+                    style="@style/WowneroText"
                     android:gravity="start"
                     android:padding="8dp"
                     android:selectAllOnFocus="true"
@@ -267,7 +267,7 @@
             <TableRow>
 
                 <TextView
-                    style="@style/MoneroLabel.Small"
+                    style="@style/WowneroLabel.Small"
                     android:layout_gravity="center_vertical"
                     android:gravity="end"
                     android:padding="8dp"
@@ -275,7 +275,7 @@
 
                 <TextView
                     android:id="@+id/tvTxId"
-                    style="@style/MoneroText"
+                    style="@style/WowneroText"
                     android:gravity="start"
                     android:padding="8dp"
                     android:selectAllOnFocus="true"
@@ -285,7 +285,7 @@
             <TableRow>
 
                 <TextView
-                    style="@style/MoneroLabel.Small"
+                    style="@style/WowneroLabel.Small"
                     android:layout_gravity="center_vertical"
                     android:gravity="end"
                     android:padding="8dp"
@@ -293,7 +293,7 @@
 
                 <TextView
                     android:id="@+id/tvTxKey"
-                    style="@style/MoneroText"
+                    style="@style/WowneroText"
                     android:gravity="start"
                     android:padding="8dp"
                     android:selectAllOnFocus="true"
@@ -303,7 +303,7 @@
             <TableRow>
 
                 <TextView
-                    style="@style/MoneroLabel.Small"
+                    style="@style/WowneroLabel.Small"
                     android:layout_gravity="center_vertical"
                     android:gravity="end"
                     android:padding="8dp"
@@ -311,7 +311,7 @@
 
                 <TextView
                     android:id="@+id/tvTxBlockheight"
-                    style="@style/MoneroText"
+                    style="@style/WowneroText"
                     android:gravity="start"
                     android:padding="8dp"
                     android:selectAllOnFocus="true"
@@ -321,7 +321,7 @@
             <TableRow>
 
                 <TextView
-                    style="@style/MoneroLabel.Small"
+                    style="@style/WowneroLabel.Small"
                     android:layout_gravity="center_vertical"
                     android:gravity="end"
                     android:padding="8dp"
@@ -329,7 +329,7 @@
 
                 <TextView
                     android:id="@+id/tvTxTransfers"
-                    style="@style/MoneroText"
+                    style="@style/WowneroText"
                     android:gravity="start"
                     android:padding="8dp"
                     android:selectAllOnFocus="true"

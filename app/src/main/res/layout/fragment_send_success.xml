@@ -31,7 +31,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    style="@style/MoneroText.Success"
+                    style="@style/WowneroText.Success"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
@@ -39,16 +39,16 @@
 
                 <TextView
                     android:id="@+id/tvTxAmount"
-                    style="@style/MoneroText.Balance.Orange"
+                    style="@style/WowneroText.Balance.Orange"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
                     android:textAlignment="textEnd"
-                    tools:text="143.008000 XMR" />
+                    tools:text="143.008000 WOW" />
 
                 <TextView
                     android:id="@+id/tvTxFee"
-                    style="@style/MoneroText.Gray.SuccessFee"
+                    style="@style/WowneroText.Gray.SuccessFee"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
@@ -65,7 +65,7 @@
             android:orientation="horizontal">
 
             <TextView
-                style="@style/MoneroText.Confirm.Label"
+                style="@style/WowneroText.Confirm.Label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/label_send_txid"
@@ -83,7 +83,7 @@
 
         <TextView
             android:id="@+id/tvTxId"
-            style="@style/MoneroText"
+            style="@style/WowneroText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
@@ -92,7 +92,7 @@
             tools:text="fcb12cbe9f43d4e8b9ee54f48d450a89a6937946db856506820df0539571801d" />
 
         <TextView
-            style="@style/MoneroText.Confirm.Label"
+            style="@style/WowneroText.Confirm.Label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/label_send_address"
@@ -100,7 +100,7 @@
 
         <TextView
             android:id="@+id/tvTxAddress"
-            style="@style/MoneroText"
+            style="@style/WowneroText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
@@ -116,14 +116,14 @@
             android:orientation="horizontal">
 
             <TextView
-                style="@style/MoneroText.Confirm.Label"
+                style="@style/WowneroText.Confirm.Label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/label_send_payment_id" />
 
             <TextView
                 android:id="@+id/tvTxPaymentId"
-                style="@style/MoneroText.Confirm"
+                style="@style/WowneroText.Confirm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"

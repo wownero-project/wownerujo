@@ -5,13 +5,16 @@
     <color name="tx_pending">@color/moneroFab</color>
     <color name="tx_failed">@color/moneroBlack</color>
 
-    <color name="gradientOrange">#FFFF6105</color>
-    <color name="gradientPink">#FFF0006B</color>
+    <!--<color name="gradientOrange">#FFFF6105</color>-->
+    <!--<color name="gradientPink">#FFF0006B</color>-->
+
+    <color name="gradientOrange">@color/wowneroGradientOrange</color>
+    <color name="gradientPink">@color/wowneroGradientPink</color>
 
     <color name="trafficGray">#9B9B9B</color>
 
-    <color name="take">#FF417505</color>
-    <color name="give">#FFFF6105</color>
+    <color name="take">@color/wowneroGradientAlphaPink</color>
+    <color name="give">@color/wowneroGradientAlphaOrange</color>
 
     <color name="moneroWhite">#ffffff</color>
     <color name="moneroBlack">#000000</color>
@@ -24,9 +27,24 @@
     <color name="moneroText">#FF616161</color>
 
 
-    <color name="colorPrimaryDark">#61221A</color>
-    <!--color name="colorAccent">#009ADA</color-->
-    <color name="colorAccent">@color/gradientPink</color>
+
+    <color name="colorPrimary">@color/wowneroPrimary</color>
+    <color name="colorPrimaryDark">@color/wowneroLogoPink</color>
+    <color name="colorAccent">@color/wowneroGradientAlphaPink</color>
 
     <color name="white">#ffffff</color>
+
+    <color name="wowneroLogoPink">#ff25d5</color>
+    <color name="wowneroLogoOrange">#ffcd00</color>
+    <color name="wowneroPrimary">#006400</color>
+    <color name="wowneroAccent">#008926</color>
+    <color name="wowneroGradientPink">#d253c8</color>
+    <color name="wowneroGradientOrange">#ffa93e</color>
+
+    <color name="wowneroGradientAlphaPink">#ffa93e69</color>
+    <color name="wowneroGradientAlphaOrange">#d253c829</color>
+
+
+
+
 </resources>

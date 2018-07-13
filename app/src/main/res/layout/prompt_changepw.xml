@@ -13,7 +13,7 @@
         app:errorEnabled="true">
 
         <android.support.design.widget.TextInputEditText
-            style="@style/MoneroEdit"
+            style="@style/WowneroEdit"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="@string/generate_password_hint"
@@ -30,7 +30,7 @@
         app:errorEnabled="true">
 
         <android.support.design.widget.TextInputEditText
-            style="@style/MoneroEdit"
+            style="@style/WowneroEdit"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="@string/generate_password_hint"

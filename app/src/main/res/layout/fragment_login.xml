@@ -27,9 +27,9 @@
             android:layout_margin="16dp"
             android:hint="@string/label_daemon">
 
-            <com.m2049r.xmrwallet.widget.DropDownEditText
+            <com.wownero.wownerujo.widget.DropDownEditText
                 android:id="@+id/etDaemonAddress"
-                style="@style/MoneroEdit.Small"
+                style="@style/WowneroEdit.Small"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="start"
@@ -41,7 +41,7 @@
         </android.support.design.widget.TextInputLayout>
 
         <TextView
-            style="@style/MoneroLabel.Heading"
+            style="@style/WowneroLabel.Heading"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"

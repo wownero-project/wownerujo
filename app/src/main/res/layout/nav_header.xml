@@ -9,7 +9,7 @@
 
     <TextView
         android:id="@+id/tvName"
-        style="@style/MoneroText.Large"
+        style="@style/WowneroText.Large"
         android:textColor="@color/moneroWhite"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,11 +18,11 @@
 
     <TextView
         android:id="@+id/tvBalance"
-        style="@style/MoneroLabel.Caps.White"
+        style="@style/WowneroLabel.Caps.White"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:gravity="end"
-        tools:text="12.34 XMR" />
+        tools:text="12.34 WOW" />
 
 </RelativeLayout>

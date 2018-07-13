@@ -32,7 +32,7 @@
 
             <TextView
                 android:id="@+id/tvAddressLabel"
-                style="@style/MoneroLabel.Heading"
+                style="@style/WowneroLabel.Heading"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -57,7 +57,7 @@
 
             <TextView
                 android:id="@+id/tvAddress"
-                style="@style/MoneroText.Medium"
+                style="@style/WowneroText.Medium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -67,7 +67,7 @@
 
             <Button
                 android:id="@+id/bSubaddress"
-                style="@style/MoneroText.Button.Small"
+                style="@style/WowneroText.Button.Small"
                 android:layout_width="56dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -81,7 +81,7 @@
 
         </LinearLayout>
 
-        <com.m2049r.xmrwallet.widget.ExchangeView
+        <com.wownero.wownerujo.widget.ExchangeView
             android:id="@+id/evAmount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -105,7 +105,7 @@
                 app:errorEnabled="true">
 
                 <android.support.design.widget.TextInputEditText
-                    style="@style/MoneroEdit"
+                    style="@style/WowneroEdit"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/moneroGray"
@@ -118,7 +118,7 @@
 
             <Button
                 android:id="@+id/bPaymentId"
-                style="@style/MoneroText.Button.Small"
+                style="@style/WowneroText.Button.Small"
                 android:layout_width="56dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -137,7 +137,7 @@
 
             <TextView
                 android:id="@+id/tvQrCode"
-                style="@style/MoneroFab"
+                style="@style/WowneroFab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

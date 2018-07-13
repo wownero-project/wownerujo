@@ -19,7 +19,7 @@
 
         <TextView
             android:id="@+id/tvAmountA"
-            style="@style/MoneroText.Balance.Orange"
+            style="@style/WowneroText.Balance.Orange"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center|start"
@@ -49,7 +49,7 @@
 
         <TextView
             android:id="@+id/tvAmountB"
-            style="@style/MoneroText"
+            style="@style/WowneroText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center|start"

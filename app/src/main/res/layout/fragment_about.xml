@@ -18,7 +18,7 @@
             android:src="@mipmap/ic_launcher" />
 
         <TextView
-            style="@style/MoneroLabel.Caps"
+            style="@style/WowneroLabel.Caps"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -33,7 +33,7 @@
 
         <TextView
             android:id="@+id/tvHelp"
-            style="@style/MoneroText"
+            style="@style/WowneroText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/header_top"

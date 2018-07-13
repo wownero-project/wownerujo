@@ -21,15 +21,15 @@
 
         <TextView
             android:id="@+id/tvCode"
-            style="@style/MoneroText.Confirm.Label"
+            style="@style/WowneroText.Confirm.Label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
-            tools:text="XMRTO-ERROR-001" />
+            tools:text="WOWTO-ERROR-001" />
 
         <TextView
             android:id="@+id/tvMessage"
-            style="@style/MoneroText.Confirm"
+            style="@style/WowneroText.Confirm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
@@ -37,7 +37,7 @@
 
         <TextView
             android:id="@+id/tvSolution"
-            style="@style/MoneroText.Confirm.Label"
+            style="@style/WowneroText.Confirm.Label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="start"

@@ -25,7 +25,7 @@
             android:layout_marginTop="@dimen/header_top">
 
             <TextView
-                style="@style/MoneroLabel.Heading"
+                style="@style/WowneroLabel.Heading"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -44,7 +44,7 @@
 
         <TextView
             android:id="@+id/tvWalletAddress"
-            style="@style/MoneroText.Monospace"
+            style="@style/WowneroText.Monospace"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/data_top"
@@ -57,7 +57,7 @@
             android:layout_marginTop="@dimen/header_top">
 
             <TextView
-                style="@style/MoneroLabel.Heading"
+                style="@style/WowneroLabel.Heading"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -66,7 +66,7 @@
 
         <TextView
             android:id="@+id/tvWalletMnemonic"
-            style="@style/MoneroText.Monospace.Mnemonic"
+            style="@style/WowneroText.Monospace.Mnemonic"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/data_top"
@@ -83,7 +83,7 @@
             android:visibility="gone">
 
             <TextView
-                style="@style/MoneroLabel.Heading"
+                style="@style/WowneroLabel.Heading"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -91,7 +91,7 @@
 
             <TextView
                 android:id="@+id/tvWalletPassword"
-                style="@style/MoneroText.Monospace"
+                style="@style/WowneroText.Monospace"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/data_top"
@@ -101,7 +101,7 @@
 
         <Button
             android:id="@+id/bAccept"
-            style="@style/MoneroButton"
+            style="@style/WowneroButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/section_top"
@@ -110,7 +110,7 @@
 
         <Button
             android:id="@+id/bAdvancedInfo"
-            style="@style/MoneroFab"
+            style="@style/WowneroFab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -135,7 +135,7 @@
                 android:layout_height="wrap_content">
 
                 <TextView
-                    style="@style/MoneroLabel.Heading"
+                    style="@style/WowneroLabel.Heading"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
@@ -153,7 +153,7 @@
 
             <TextView
                 android:id="@+id/tvWalletViewKey"
-                style="@style/MoneroText.Monospace"
+                style="@style/WowneroText.Monospace"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/data_top"
@@ -161,7 +161,7 @@
                 tools:text="e4aba454d78799dbd8d576bf70e7f15a06e91f1ecfd404053f91519a48df2a0e" />
 
             <TextView
-                style="@style/MoneroLabel.Heading"
+                style="@style/WowneroLabel.Heading"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -170,7 +170,7 @@
 
             <TextView
                 android:id="@+id/tvWalletSpendKey"
-                style="@style/MoneroText.Monospace"
+                style="@style/WowneroText.Monospace"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/data_top"

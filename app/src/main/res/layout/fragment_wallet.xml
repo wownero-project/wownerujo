@@ -43,7 +43,7 @@
 
             <TextView
                 android:id="@+id/tvBalance"
-                style="@style/MoneroText.Balance"
+                style="@style/WowneroText.Balance"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -67,7 +67,7 @@
 
         <TextView
             android:id="@+id/tvUnconfirmedAmount"
-            style="@style/MoneroText.Unconfirmed"
+            style="@style/WowneroText.Unconfirmed"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -91,7 +91,7 @@
 
             <TextView
                 android:id="@+id/tvProgress"
-                style="@style/MoneroText.Medium"
+                style="@style/WowneroText.Medium"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
@@ -136,7 +136,7 @@
 
             <Button
                 android:id="@+id/bReceive"
-                style="@style/MoneroButton.Take"
+                style="@style/WowneroButton.Take"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
@@ -150,7 +150,7 @@
 
             <Button
                 android:id="@+id/bSend"
-                style="@style/MoneroButton.Give"
+                style="@style/WowneroButton.Give"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"

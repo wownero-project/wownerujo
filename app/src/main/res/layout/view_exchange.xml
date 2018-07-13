@@ -19,7 +19,7 @@
             android:gravity="center"
             android:minWidth="56dp" />
 
-        <com.m2049r.xmrwallet.widget.CTextInputLayout
+        <com.wownero.wownerujo.widget.CTextInputLayout
             android:id="@+id/etAmount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
             app:errorEnabled="true">
 
             <android.support.design.widget.TextInputEditText
-                style="@style/MoneroEdit"
+                style="@style/WowneroEdit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="start"
@@ -37,18 +37,20 @@
                 android:inputType="numberDecimal"
                 tools:text="87.00000" />
 
-        </com.m2049r.xmrwallet.widget.CTextInputLayout>
+        </com.wownero.wownerujo.widget.CTextInputLayout>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
 
         <Spinner
             android:id="@+id/sCurrencyB"
-            style="@style/MoneroSpinnerGray"
+            style="@style/WowneroSpinnerGray"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -59,7 +61,7 @@
 
         <TextView
             android:id="@+id/tvAmountB"
-            style="@style/MoneroText"
+            style="@style/WowneroText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center|start"

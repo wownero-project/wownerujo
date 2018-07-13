@@ -11,7 +11,7 @@
 
     <TextView
         android:id="@+id/tvNotice"
-        style="@style/MoneroLabel.Heading"
+        style="@style/WowneroLabel.Heading"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"

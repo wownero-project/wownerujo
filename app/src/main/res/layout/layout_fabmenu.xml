@@ -21,7 +21,7 @@
 
             <TextView
                 android:id="@+id/fabNewT"
-                style="@style/MoneroFab"
+                style="@style/WowneroFab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
@@ -53,7 +53,7 @@
 
             <TextView
                 android:id="@+id/fabViewT"
-                style="@style/MoneroFab"
+                style="@style/WowneroFab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
@@ -85,7 +85,7 @@
 
             <TextView
                 android:id="@+id/fabKeyT"
-                style="@style/MoneroFab"
+                style="@style/WowneroFab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
@@ -117,7 +117,7 @@
 
             <TextView
                 android:id="@+id/fabSeedT"
-                style="@style/MoneroFab"
+                style="@style/WowneroFab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
