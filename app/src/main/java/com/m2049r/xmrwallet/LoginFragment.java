@@ -266,11 +266,11 @@ public class LoginFragment extends Fragment implements WalletInfoAdapter.OnInter
     private String addressPrefix() {
         switch (WalletManager.getInstance().getNetworkType()) {
             case NetworkType_Testnet:
-                return "9A-";
+                return "-";
             case NetworkType_Mainnet:
-                return "4-";
+                return "Wo-";
             case NetworkType_Stagenet:
-                return "5-";
+                return "-";
             default:
                 throw new IllegalStateException("Unsupported Network: " + WalletManager.getInstance().getNetworkType());
         }
@@ -369,10 +369,10 @@ public class LoginFragment extends Fragment implements WalletInfoAdapter.OnInter
     private static final String PREF_DAEMON_MAINNET = "daemon_mainnet";
 
     private static final String PREF_DAEMONLIST_MAINNET =
-            "node.moneroworld.com:18089;node.xmrbackb.one;node.xmr.be";
+            "192.168.10.100:34568";
 
     private static final String PREF_DAEMONLIST_STAGENET =
-            "stagenet.monerujo.io;stagenet.xmr-tw.org";
+            "192.168.10.200";
 
     private NodeList daemonStageNet;
     private NodeList daemonMainNet;

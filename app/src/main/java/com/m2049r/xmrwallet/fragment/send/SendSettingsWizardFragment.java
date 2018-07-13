@@ -36,7 +36,8 @@ import com.m2049r.xmrwallet.util.UserNotes;
 import timber.log.Timber;
 
 public class SendSettingsWizardFragment extends SendWizardFragment {
-    final static public int MIXIN = 6;
+    // see: https://github.com/wownero/wownero/blob/master/src/cryptonote_config.h#L138
+    final static public int MIXIN = 9;
 
     public static SendSettingsWizardFragment newInstance(Listener listener) {
         SendSettingsWizardFragment instance = new SendSettingsWizardFragment();

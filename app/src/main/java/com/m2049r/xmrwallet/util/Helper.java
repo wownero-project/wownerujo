@@ -76,7 +76,7 @@ import okhttp3.HttpUrl;
 import timber.log.Timber;
 
 public class Helper {
-    static public final String CRYPTO = "XMR";
+    static public final String CRYPTO = "WOW";
 
     static private final String WALLET_DIR = "monerujo" + (BuildConfig.DEBUG ? "-debug" : "");
     static private final String HOME_DIR = "monero" + (BuildConfig.DEBUG ? "-debug" : "");
@@ -365,18 +365,6 @@ public class Helper {
         String crazyPass = KeyStoreHelper.getCrazyPass(context, password);
         if (WalletManager.getInstance().verifyWalletPassword(walletPath, crazyPass, true)) {
             return crazyPass;
-        }
-
-        // or maybe it is a broken CrAzYpass? (of which we have two variants)
-        String brokenCrazyPass2 = KeyStoreHelper.getBrokenCrazyPass(context, password, 2);
-        if ((brokenCrazyPass2 != null)
-                && WalletManager.getInstance().verifyWalletPassword(walletPath, brokenCrazyPass2, true)) {
-            return brokenCrazyPass2;
-        }
-        String brokenCrazyPass1 = KeyStoreHelper.getBrokenCrazyPass(context, password, 1);
-        if ((brokenCrazyPass1 != null)
-                && WalletManager.getInstance().verifyWalletPassword(walletPath, brokenCrazyPass1, true)) {
-            return brokenCrazyPass1;
         }
 
         return null;

@@ -309,10 +309,6 @@ public class Wallet {
         this.listenerHandle = setListenerJ(listener);
     }
 
-    public native int getDefaultMixin();
-
-    public native void setDefaultMixin(int mixin);
-
     public native boolean setUserNote(String txid, String note);
 
     public native String getUserNote(String txid);
