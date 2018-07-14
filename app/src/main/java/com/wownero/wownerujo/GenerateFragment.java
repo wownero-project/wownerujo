@@ -408,7 +408,7 @@ public class GenerateFragment extends Fragment {
 
     private boolean checkMnemonic() {
         String seed = etWalletMnemonic.getEditText().getText().toString();
-        boolean ok = (seed.split("\\s").length == 25); // 25 words
+        boolean ok = (seed.split("\\s+").length == 25); // 25 words
         if (!ok) {
             etWalletMnemonic.setError(getString(R.string.generate_check_mnemonic));
         } else {
@@ -473,7 +473,7 @@ public class GenerateFragment extends Fragment {
         } else if (type.equals(TYPE_SEED)) {
             if (!checkMnemonic()) return;
             String seed = etWalletMnemonic.getEditText().getText().toString();
-            seed = TextUtils.join(" ", seed.split("\\s"));
+            seed = TextUtils.join(" ", seed.split("\\s+"));
             bGenerate.setEnabled(false);
             if (fingerprintAuthAllowed) {
                 KeyStoreHelper.saveWalletUserPass(getActivity(), name, password);
