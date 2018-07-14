@@ -372,10 +372,10 @@ public class LoginFragment extends Fragment implements WalletInfoAdapter.OnInter
     private static final String PREF_DAEMON_MAINNET = "daemon_mainnet";
 
     private static final String PREF_DAEMONLIST_MAINNET =
-            "192.168.10.100:34568";
+            "192.168.10.100";
 
     private static final String PREF_DAEMONLIST_STAGENET =
-            "192.168.10.200";
+            "";
 
     private NodeList daemonStageNet;
     private NodeList daemonMainNet;
