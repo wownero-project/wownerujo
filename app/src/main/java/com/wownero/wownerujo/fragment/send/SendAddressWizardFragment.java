@@ -129,7 +129,7 @@ public class SendAddressWizardFragment extends SendWizardFragment {
                     tvPaymentIdIntegrated.setVisibility(View.VISIBLE);
                     llXmrTo.setVisibility(View.INVISIBLE);
                     sendListener.setMode(SendFragment.Mode.XMR);
-                } else if (isBitcoinAddress()) {
+                } else if (isBitcoinAddress() && false) {
                     Timber.d("isBitcoinAddress");
                     etPaymentId.getEditText().getText().clear();
                     llPaymentId.setVisibility(View.INVISIBLE);
@@ -212,7 +212,8 @@ public class SendAddressWizardFragment extends SendWizardFragment {
     private boolean checkAddressNoError() {
         String address = etAddress.getEditText().getText().toString();
         return Wallet.isAddressValid(address)
-                || BitcoinAddressValidator.validate(address);
+                // || BitcoinAddressValidator.validate(address);
+        ;
     }
 
     private boolean checkAddress() {
