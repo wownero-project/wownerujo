@@ -962,7 +962,7 @@ public class WalletActivity extends SecureActivity implements WalletFragment.Lis
         tvName.setText(wallet.getName());
         final TextView tvBalance = (TextView) accountsView.getHeaderView(0).findViewById(R.id.tvBalance);
         tvBalance.setText(getString(R.string.accounts_balance,
-                Helper.getDisplayAmount(wallet.getBalanceAll(), 5)));
+                Helper.getDisplayAmount(wallet.getBalanceAll(), Helper.DISPLAY_DIGITS_INFO)));
         Menu menu = accountsView.getMenu();
         menu.removeGroup(R.id.accounts_list);
         final int n = wallet.getNumAccounts();

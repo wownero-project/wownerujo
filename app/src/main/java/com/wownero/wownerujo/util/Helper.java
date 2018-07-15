@@ -209,7 +209,8 @@ public class Helper {
         if (isXmr) { // XMR
             long xmr = Wallet.getAmountFromDouble(amount);
             if ((xmr > 0) || (amount == 0)) {
-                displayB = String.format(Locale.US, "%,.4f", amount);
+                String displayFormat = String.format(Locale.US, "%%,.%1df", DISPLAY_DIGITS_INFO);
+                displayB = String.format(Locale.US, displayFormat, amount);
             } else {
                 displayB = null;
             }

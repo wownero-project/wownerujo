@@ -145,7 +145,7 @@ public class TransactionInfoAdapter extends RecyclerView.Adapter<TransactionInfo
             }
 
             if ((infoItem.fee > 0)) {
-                String fee = Helper.getDisplayAmount(infoItem.fee, 5);
+                String fee = Helper.getDisplayAmount(infoItem.fee, Helper.DISPLAY_DIGITS_INFO);
                 tvFee.setText(context.getString(R.string.tx_list_fee, fee));
                 tvFee.setVisibility(View.VISIBLE);
             } else {
