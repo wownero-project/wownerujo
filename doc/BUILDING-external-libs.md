@@ -1,3 +1,9 @@
+# Notes for the wownerujo port
+
+* all the steps in this guide are packaged in `script/all.sh`
+* update android sdk to the latest version
+* manually run through all the scripts, expect to install any missing tools on your system
+
 # BUILDING external libs
 
 Based on https://forum.getmonero.org/5/support/87643/building-monero-v0-10-3-1-for-android and the internet.
