@@ -375,7 +375,7 @@ public class LoginFragment extends Fragment implements WalletInfoAdapter.OnInter
             "node.wowne.ro";
 
     private static final String PREF_DAEMONLIST_STAGENET =
-            "";
+            "node.wowne.ro:38081";
 
     private NodeList daemonStageNet;
     private NodeList daemonMainNet;
