@@ -18,6 +18,7 @@ let
     gnome3.gvfs
     glib
     gnome3.gconf
+    gnome3.libsecret
     gzip
     fontconfig
     freetype
