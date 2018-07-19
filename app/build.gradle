@@ -7,8 +7,8 @@ android {
         applicationId 'com.wownero.wownerujo'
         minSdkVersion 21
         targetSdkVersion 25
-        versionCode 102
-        versionName '1.5.10.2 \'Maximum Nacho\''
+        versionCode 103
+        versionName '1.5.10.3 \'Maximum Nacho\''
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         externalNativeBuild {
             cmake {

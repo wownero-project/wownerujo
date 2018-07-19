@@ -55,12 +55,12 @@
             android:orientation="horizontal"
             android:visibility="invisible">
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="top"
-                android:paddingTop="8dp"
-                android:src="@drawable/gunther_24dp" />
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="top"-->
+                <!--android:paddingTop="8dp"-->
+                <!--android:src="" />-->
 
             <TextView
                 android:id="@+id/tvXmrTo"

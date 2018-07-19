@@ -6,11 +6,18 @@
 
     <string name="credits_text"><![CDATA[
         <b>Crediti</b>
-        <br/>
+
+        <br/><br/>
         m2049r, baltsar777, anhdres, keejef,
         rehrar, EarlOfEgo et al.
         <br/><br/>
         <a href="https://monerujo.io/">monerujo.io</a>
+
+        <br/><br/>
+        fuwa et al.
+        <br/><br/>
+        <a href="https://wownero.org/">wownero.org</a>
+
         ]]></string>
 
     <string name="privacy_policy"><![CDATA[
