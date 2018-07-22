@@ -10,13 +10,13 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="211mm"
-   height="332mm"
-   viewBox="0 0 211 332"
+   height="320mm"
+   viewBox="0 0 211 320"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="wownero-background.svg"
-   inkscape:export-filename="/home/jinjing/scm/wownerujo-res/wow_background.png"
+   sodipodi:docname="wownerujo-background.svg"
+   inkscape:export-filename="/home/jinjing/scm/wownerujo/app/src/main/res/drawable/wow_background.png"
    inkscape:export-xdpi="100"
    inkscape:export-ydpi="100">
   <defs
@@ -37,9 +37,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.656733"
-     inkscape:cx="272.45189"
-     inkscape:cy="500.18071"
+     inkscape:zoom="0.36670772"
+     inkscape:cx="60.286543"
+     inkscape:cy="497.92364"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -64,10 +64,10 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,35)">
+     transform="translate(0,23)">
     <g
        style="opacity:0.02000002"
-       transform="matrix(-0.01039094,0.00253253,0.00253253,0.01039094,61.39344,32.589784)"
+       transform="matrix(-0.00735243,0.00776705,0.00776705,0.00735243,42.779019,27.649394)"
        id="g1416">
       <g
          clip-path="url(#clipPath1311)"
@@ -139,7 +139,7 @@
     </g>
     <g
        style="opacity:0.02000002"
-       transform="matrix(-0.01149549,2.5705021e-5,2.5705021e-5,0.01149549,176.23356,136.57546)"
+       transform="matrix(-0.00697111,-0.0091406,-0.0091406,0.00697111,186.67787,167.37956)"
        id="g1448">
       <g
          clip-path="url(#clipPath1311)"
@@ -211,7 +211,7 @@
     </g>
     <g
        id="g1496"
-       transform="matrix(-0.00501547,-0.00501547,-0.00501547,0.00501547,105.91304,119.05435)"
+       transform="matrix(-0.00709178,-1.2852067e-4,-1.2852067e-4,0.00709178,99.587606,103.386)"
        style="opacity:0.02000002">
       <g
          id="g1494"
@@ -247,7 +247,7 @@
     </g>
     <g
        id="g1512"
-       transform="matrix(-0.02439797,0.01408618,0.01408618,0.02439797,89.911186,120.2106)"
+       transform="matrix(-0.02792521,0.00372353,0.00372353,0.02792521,121.88637,136.31078)"
        style="opacity:0.02000002">
       <g
          id="g1510"
