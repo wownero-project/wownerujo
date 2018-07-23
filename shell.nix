@@ -65,6 +65,8 @@ with nixpkgs;
     doxygen
     graphviz
     pkgconfig
+
+    vim
   ]
   ++ android-studio-deps
   )
@@ -74,7 +76,8 @@ with nixpkgs;
   ])
 
 ; profile = ''
-    export ANDROID_NDK_ROOT=~/Android/Sdk/ndk-bundle
+    export ANDROID_HOME=~/Android/Sdk
+    export ANDROID_NDK_ROOT=$ANDROID_HOME/ndk-bundle
 
     PATH=~/sdk/android/android-studio/bin/:$PATH
     PATH=$ANDROID_NDK_ROOT/build/tools/:$PATH
