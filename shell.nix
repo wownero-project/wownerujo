@@ -37,18 +37,6 @@ let
     ncurses5
   ]
 
-; fdroid-python-packages = python-packages: with python-packages; [
-    requests
-    paramiko
-    pyasn1-modules
-    clint
-    pyyaml
-
-    virtualenvwrapper
-  ]
-
-; python-with-fdroid-packages = nixpkgs.python3.withPackages fdroid-python-packages
-
 ; in
 
 with nixpkgs;
@@ -79,10 +67,6 @@ with nixpkgs;
     vim
   ]
   ++ android-studio-deps
-  ++ [
-       python-with-fdroid-packages
-       vagrant
-     ]
   )
 
 ; multiPkgs = pkgs: (with pkgs;
