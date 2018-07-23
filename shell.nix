@@ -1,6 +1,4 @@
 let
-#   moz_overlay = import (builtins.fetchTarball https://github.com/mozilla/nixpkgs-mozilla/archive/master.tar.gz)
-# # ; nixpkgs = import <nixpkgs> { overlays = [ moz_overlay ]; }
 
   nixpkgs = import <nixpkgs> {}
 
@@ -39,6 +37,18 @@ let
     ncurses5
   ]
 
+; fdroid-python-packages = python-packages: with python-packages; [
+    requests
+    paramiko
+    pyasn1-modules
+    clint
+    pyyaml
+
+    virtualenvwrapper
+  ]
+
+; python-with-fdroid-packages = nixpkgs.python3.withPackages fdroid-python-packages
+
 ; in
 
 with nixpkgs;
@@ -69,6 +79,10 @@ with nixpkgs;
     vim
   ]
   ++ android-studio-deps
+  ++ [
+       python-with-fdroid-packages
+       vagrant
+     ]
   )
 
 ; multiPkgs = pkgs: (with pkgs;
