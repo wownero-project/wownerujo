@@ -1,8 +1,8 @@
 #!/bin/sh
 
-cd /opt/android
-git clone --recursive -b wownerojo https://github.com/fuwa0529/wownero
+cd $EXTERNAL_LIBS_BUILD_ROOT
 
+git clone --recursive -b mobile https://github.com/fuwa0529/wownero
 
 cd wownero
 
