@@ -16,7 +16,7 @@ let
     gnome3.gvfs
     glib
     gnome3.gconf
-    gnome3.libsecret
+    # gnome3.libsecret
     gzip
     fontconfig
     freetype
@@ -59,10 +59,13 @@ with nixpkgs;
     wget
     perl
     gnumake
+    binutils
     gcc
     doxygen
     graphviz
     pkgconfig
+
+    androidsdk
 
     vim
   ]
@@ -78,13 +81,13 @@ with nixpkgs;
     export ANDROID_NDK_ROOT=$ANDROID_HOME/ndk-bundle
 
     PATH=~/sdk/android/android-studio/bin/:$PATH
-    # PATH=$ANDROID_NDK_ROOT/build/tools/:$PATH
+    PATH=$ANDROID_NDK_ROOT/build/tools/:$PATH
     export PATH
 
     export _JAVA_AWT_WM_NONREPARENTING=1
 
-    mkdir -p opt/android
-    ln -s `pwd`/opt /opt
+    export app_version=1040
+    export release_key=~/.android/fuwa-release-key.jks
 
     exec zsh
   ''

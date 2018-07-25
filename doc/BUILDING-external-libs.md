@@ -26,5 +26,5 @@ export $ANDROID_NDK_ROOT=~/Android/Sdk/ndk-bundle
 ## Build
 
 ```Shell
-./script/build-external-libs/all.sh
+make
 ```

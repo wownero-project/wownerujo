@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/usr/bin/env bash
+
+set -e
 
 build_root=$EXTERNAL_LIBS_BUILD_ROOT
 

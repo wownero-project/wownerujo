@@ -11,3 +11,5 @@ opt
 
 vendor
 external-libs/monero
+tmp
+builder

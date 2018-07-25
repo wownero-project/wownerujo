@@ -1,11 +1,10 @@
-#!/bin/sh
+#!/usr/bin/env bash
+
+set -e
 
 echo "preparing $EXTERNAL_LIBS_BUILD_ROOT"
 
 build_root=$EXTERNAL_LIBS_BUILD_ROOT
-
-rm -rf $build_root
-mkdir -p $build_root
 
 PATH=$ANDROID_NDK_ROOT/build/tools/:$PATH
 
