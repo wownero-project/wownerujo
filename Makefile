@@ -1,7 +1,8 @@
 apk_path := vendor/fdroiddata/unsigned
 app_id := com.wownero.wownerujo
 
-.PHONY: f-droid-sign f-droid-clean build-external-libs
+.PHONY: f-droid-sign f-droid-clean \
+build-external-libs use-prebuilt-external-libs
 
 all: build-external-libs
 
@@ -20,3 +21,7 @@ f-droid-clean:
 
 build-external-libs:
 	script/build-external-libs/all.sh
+
+# faster build for testing f-droid release
+use-prebuilt-external-libs:
+	script/build-external-libs/use-archive.sh
