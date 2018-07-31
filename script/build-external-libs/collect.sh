@@ -2,6 +2,7 @@
 
 set -e
 
+source script/build-external-libs/env.sh
 
 cd external-libs
 

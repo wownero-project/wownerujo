@@ -2,6 +2,8 @@
 
 set -e
 
+source script/build-external-libs/env.sh
+
 build_root=$EXTERNAL_LIBS_BUILD_ROOT
 
 mkdir -p $build_root/build/openssl/{arm,arm64,x86,x86_64}

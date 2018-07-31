@@ -2,6 +2,8 @@
 
 set -e
 
+source script/build-external-libs/env.sh
+
 cd $EXTERNAL_LIBS_BUILD_ROOT
 
 # version="618dea"

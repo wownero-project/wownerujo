@@ -2,8 +2,6 @@
 
 set -e
 
-source script/build-external-libs/env.sh
-
 script/build-external-libs/prep-toolchain.sh
 
 script/build-external-libs/build-openssl.sh
