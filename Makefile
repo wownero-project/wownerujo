@@ -2,7 +2,7 @@ fdroid_apk_path := vendor/fdroiddata/unsigned
 app_id := com.wownero.wownerujo
 
 gradle_apk_path := app/build/outputs/apk/release
-gradle_app_name := wownerujo-1x5x10x5_universal
+gradle_app_name := wownerujo-${gradle_app_version}_universal
 
 .PHONY: f-droid-sign f-droid-clean \
 build-external-libs use-prebuilt-external-libs \
