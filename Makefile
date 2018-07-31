@@ -11,7 +11,7 @@ clean-external-libs
 
 all: build-external-libs
 
-build-external-libs: collect
+build-external-libs: clean-external-libs collect
 
 # faster build for testing f-droid release
 use-prebuilt-external-libs:
