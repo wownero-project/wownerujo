@@ -1,5 +1,8 @@
-apk_path := vendor/fdroiddata/unsigned
+fdroid_apk_path := vendor/fdroiddata/unsigned
 app_id := com.wownero.wownerujo
+
+gradle_apk_path := app/build/outputs/apk/release
+gradle_app_name := wownerujo-1x5x10x5_universal
 
 .PHONY: f-droid-sign f-droid-clean \
 build-external-libs use-prebuilt-external-libs \
@@ -7,19 +10,6 @@ toolchain openssl boost wownero collect \
 clean-external-libs
 
 all: build-external-libs
-
-f-droid-sign:
-	zipalign -v -p 4 \
-$(apk_path)/$(app_id)_${app_version}.apk \
-$(apk_path)/$(app_id)_${app_version}-aligned.apk
-
-	apksigner sign --ks ${release_key} \
---out $(apk_path)/$(app_id)_${app_version}-release.apk \
-$(apk_path)/$(app_id)_${app_version}-aligned.apk
-
-f-droid-clean:
-	@rm -f $(apk_path)/$(app_id)_${app_version}-aligned.apk
-	@rm -f $(apk_path)/$(app_id)_${app_version}-release.apk
 
 build-external-libs: collect
 
@@ -48,3 +38,31 @@ wownero: toolchain openssl boost
 
 collect: wownero
 	script/build-external-libs/collect.sh
+
+
+
+f-droid-sign:
+	zipalign -v -p 4 \
+$(fdroid_apk_path)/$(app_id)_${app_version}.apk \
+$(fdroid_apk_path)/$(app_id)_${app_version}-aligned.apk
+
+	apksigner sign --ks ${release_key} \
+--out $(fdroid_apk_path)/$(app_id)_${app_version}-release.apk \
+$(fdroid_apk_path)/$(app_id)_${app_version}-aligned.apk
+
+f-droid-clean:
+	@rm -f $(fdroid_apk_path)/$(app_id)_${app_version}-aligned.apk
+	@rm -f $(fdroid_apk_path)/$(app_id)_${app_version}-release.apk
+
+gradle-sign:
+	zipalign -v -p 4 \
+$(gradle_apk_path)/$(gradle_app_name).apk \
+$(gradle_apk_path)/$(gradle_app_name)-aligned.apk
+
+	apksigner sign --ks ${release_key} \
+--out $(gradle_apk_path)/$(gradle_app_name)-release.apk \
+$(gradle_apk_path)/$(gradle_app_name)-aligned.apk
+
+gradle-clean:
+	@rm -f $(gradle_apk_path)/$(gradle_app_name)-aligned.apk
+	@rm -f $(gradle_apk_path)/$(gradle_app_name)-release.apk
