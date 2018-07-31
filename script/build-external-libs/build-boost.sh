@@ -5,7 +5,10 @@ set -e
 source script/build-external-libs/env.sh
 
 build_root=$EXTERNAL_LIBS_BUILD_ROOT
-cd $build_root/boost_1_58_0
+
+version=1_67_0
+
+cd $build_root/boost_${version}
 
 # ./bootstrap.sh --with-toolset=clang
 ./bootstrap.sh
