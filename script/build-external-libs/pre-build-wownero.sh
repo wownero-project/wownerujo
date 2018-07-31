@@ -4,8 +4,10 @@ set -e
 
 cd $EXTERNAL_LIBS_BUILD_ROOT
 
-version="80f7f1"
+# version="618dea"
+version="326cde"
 
+rm -rf wownero
 git clone -b mobile https://github.com/fuwa0529/wownero
 cd wownero
 
