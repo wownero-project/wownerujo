@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="tx_green">@color/take</color>
-    <color name="tx_red">@color/give</color>
+    <color name="tx_red">@color/take</color>
+    <color name="tx_green">@color/give</color>
     <color name="tx_pending">@color/moneroFab</color>
     <color name="tx_failed">@color/moneroBlack</color>
 

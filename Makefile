@@ -60,7 +60,12 @@ f-droid-clean:
 	@rm -f $(fdroid_apk_path)/$(app_id)_${app_version}-aligned.apk
 	@rm -f $(fdroid_apk_path)/$(app_id)_${app_version}-release.apk
 
-gradle-sign:
+gradle-release: gradle-build gradle-sign
+
+gradle-build:
+	./gradlew assembleRelease
+
+gradle-sign: gradle-clean
 	zipalign -v -p 4 \
 $(gradle_apk_path)/$(gradle_app_name).apk \
 $(gradle_apk_path)/$(gradle_app_name)-aligned.apk
