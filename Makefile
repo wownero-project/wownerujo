@@ -24,16 +24,18 @@ toolchain:
 	script/build-external-libs/prep-toolchain.sh
 
 openssl: toolchain
-	script/build-external-libs/pre-build-openssl.sh
+	script/build-external-libs/fetch-openssl.sh
+	script/build-external-libs/patch-openssl.sh
 	script/build-external-libs/build-openssl.sh
 	script/build-external-libs/post-build-openssl.sh
 
 boost: toolchain
-	script/build-external-libs/pre-build-boost.sh
+	script/build-external-libs/fetch-boost.sh
 	script/build-external-libs/build-boost.sh
 
 wownero: toolchain openssl boost
-	script/build-external-libs/pre-build-wownero.sh
+	script/build-external-libs/fetch-wownero.sh
+	script/build-external-libs/patch-wownero.sh
 	script/build-external-libs/build-wownero.sh
 
 collect: wownero
