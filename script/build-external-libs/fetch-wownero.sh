@@ -6,11 +6,10 @@ source script/build-external-libs/env.sh
 
 cd $EXTERNAL_LIBS_BUILD_ROOT
 
-# version="618dea"
-version="326cde"
+version="d4ee3c3"
 
 rm -rf wownero
-git clone -b mobile https://github.com/fuwa0529/wownero
+git clone https://github.com/wownero/wownero
 cd wownero
 
 git checkout $version
