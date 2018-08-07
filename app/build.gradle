@@ -5,7 +5,7 @@ android {
     buildToolsVersion '27.0.3'
     defaultConfig {
         applicationId 'com.wownero.wownerujo'
-        minSdkVersion 21
+        minSdkVersion 25
         targetSdkVersion 25
         versionCode 105
         versionName '1.5.10.5 \'Maximum Nacho\''
