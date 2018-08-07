@@ -1,7 +1,9 @@
 .PHONY: f-droid-sign f-droid-clean \
 build-external-libs use-prebuilt-external-libs \
 toolchain openssl boost wownero collect \
-clean-external-libs
+clean-external-libs \
+f-droid-sign f-droid-clean \
+gradle-release gradle-build gradle-sign gradle-clean
 
 all: build-external-libs
 
