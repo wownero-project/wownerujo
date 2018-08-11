@@ -19,7 +19,7 @@ package com.wownero.wownerujo.fragment.send;
 import com.wownero.wownerujo.model.PendingTransaction;
 
 interface SendConfirm {
-    void sendFailed();
+    void sendFailed(String errorText);
 
     void createTransactionFailed(String errorText);
 
