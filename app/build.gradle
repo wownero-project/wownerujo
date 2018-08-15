@@ -5,8 +5,8 @@ android {
     buildToolsVersion '27.0.3'
     defaultConfig {
         applicationId 'com.wownero.wownerujo'
-        minSdkVersion 25
-        targetSdkVersion 25
+        minSdkVersion 23
+        targetSdkVersion 27
         versionCode 105
         versionName '1.5.10.5 \'Maximum Nacho\''
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
