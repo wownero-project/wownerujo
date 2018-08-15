@@ -79,3 +79,7 @@ $(gradle_apk_path)/$(gradle_app_name)-aligned.apk
 gradle-clean:
 	@rm -f $(gradle_apk_path)/$(gradle_app_name)-aligned.apk
 	@rm -f $(gradle_apk_path)/$(gradle_app_name)-release.apk
+
+
+remove-exif:
+	exiftool -all= `find app/ -name '*.jp*g' -o -name '*.png'`

@@ -68,6 +68,7 @@ with nixpkgs;
     androidsdk
 
     vim
+    exiftool
   ]
   ++ android-studio-deps
   )
