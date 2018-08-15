@@ -7,8 +7,8 @@ android {
         applicationId 'com.wownero.wownerujo'
         minSdkVersion 23
         targetSdkVersion 28
-        versionCode 105
-        versionName '1.5.10.5 \'Maximum Nacho\''
+        versionCode 1050
+        versionName '1.5.10.5'
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         externalNativeBuild {
             cmake {
@@ -47,7 +47,7 @@ android {
         variant.outputs.all {
             output ->
                 def abiName = output.getFilter(com.android.build.OutputFile.ABI)
-                output.versionCodeOverride = abiCodes.get(abiName, 0) + 10 * variant.versionCode
+                // output.versionCodeOverride = abiCodes.get(abiName, 0) + 10 * variant.versionCode
 
                 if (abiName == null) abiName = "universal"
                 def v = "${variant.versionName}".replaceFirst(" .*\$", "").replace(".", "x")
