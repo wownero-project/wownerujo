@@ -18,8 +18,10 @@ package com.wownero.wownerujo;
 
 
 import android.app.Application;
+import android.content.Context;
+import android.content.res.Configuration;
 
-import com.wownero.wownerujo.util.Helper;
+import com.wownero.wownerujo.util.LocaleHelper;
 
 import timber.log.Timber;
 
@@ -27,9 +29,21 @@ public class XmrWalletApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        
+
         if (BuildConfig.DEBUG) {
             Timber.plant(new Timber.DebugTree());
         }
+    }
+
+    @Override
+    protected void attachBaseContext(Context context) {
+        super.attachBaseContext(LocaleHelper.setLocale(context, LocaleHelper.getLocale(context)));
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration configuration) {
+        super.onConfigurationChanged(configuration);
+        LocaleHelper.updateSystemDefaultLocale(configuration.locale);
+        LocaleHelper.setLocale(XmrWalletApplication.this, LocaleHelper.getLocale(XmrWalletApplication.this));
     }
 }

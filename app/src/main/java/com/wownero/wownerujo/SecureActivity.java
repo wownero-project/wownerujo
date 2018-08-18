@@ -16,13 +16,12 @@
 
 package com.wownero.wownerujo;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
-import com.wownero.wownerujo.util.Helper;
-
-import java.io.File;
+import com.wownero.wownerujo.util.LocaleHelper;
 
 import static android.view.WindowManager.LayoutParams;
 
@@ -35,5 +34,10 @@ public abstract class SecureActivity extends AppCompatActivity {
         if (!BuildConfig.DEBUG) {
             getWindow().setFlags(LayoutParams.FLAG_SECURE, LayoutParams.FLAG_SECURE);
         }
+    }
+
+    @Override
+    protected void attachBaseContext(Context context) {
+        super.attachBaseContext(LocaleHelper.setLocale(context, LocaleHelper.getLocale(context)));
     }
 }
