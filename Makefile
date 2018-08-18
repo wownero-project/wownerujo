@@ -3,7 +3,8 @@ build-external-libs use-prebuilt-external-libs \
 toolchain openssl boost wownero collect \
 clean-external-libs \
 f-droid-sign f-droid-clean \
-gradle-release gradle-build gradle-sign gradle-clean
+gradle-release gradle-build gradle-sign gradle-clean \
+apk-install remove-exif
 
 all: build-external-libs
 
@@ -79,6 +80,9 @@ $(gradle_apk_path)/$(gradle_app_name)-aligned.apk
 gradle-clean:
 	@rm -f $(gradle_apk_path)/$(gradle_app_name)-aligned.apk
 	@rm -f $(gradle_apk_path)/$(gradle_app_name)-release.apk
+
+apk-install:
+	adb install -r ./app/build/outputs/apk/release/wownerujo-$(gradle_app_version)_universal-release.apk
 
 
 remove-exif:
