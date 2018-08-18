@@ -69,6 +69,7 @@ with nixpkgs;
 
     vim
     exiftool
+    gitAndTools.git-imerge
   ]
   ++ android-studio-deps
   )
