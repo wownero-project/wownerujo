@@ -60,8 +60,8 @@ public class TransactionInfoAdapter extends RecyclerView.Adapter<TransactionInfo
 
     public TransactionInfoAdapter(Context context, OnInteractionListener listener) {
         this.context = context;
-        inboundColour = ContextCompat.getColor(context, R.color.tx_green);
-        outboundColour = ContextCompat.getColor(context, R.color.tx_red);
+        inboundColour = ContextCompat.getColor(context, R.color.tx_red);
+        outboundColour = ContextCompat.getColor(context, R.color.tx_green);
         pendingColour = ContextCompat.getColor(context, R.color.tx_pending);
         failedColour = ContextCompat.getColor(context, R.color.tx_failed);
         infoItems = new ArrayList<>();
