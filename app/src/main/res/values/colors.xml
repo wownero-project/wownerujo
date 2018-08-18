@@ -14,7 +14,7 @@
     <color name="trafficGray">#9B9B9B</color>
 
     <color name="take">@color/wowneroGradientAlphaPink</color>
-    <color name="give">@color/wowneroGradientAlphaOrange</color>
+    <color name="give">@color/wowneroGradientAlphaGreen</color>
 
     <color name="moneroWhite">#ffffff</color>
     <color name="moneroBlack">#000000</color>
@@ -42,7 +42,7 @@
     <color name="wowneroGradientOrange">#ffa93e</color>
 
     <color name="wowneroGradientAlphaPink">#ffa93e69</color>
-    <color name="wowneroGradientAlphaOrange">#d253c829</color>
+    <color name="wowneroGradientAlphaGreen">#d253c829</color>
 
 
 
