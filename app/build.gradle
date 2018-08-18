@@ -7,9 +7,9 @@ android {
         applicationId 'com.wownero.wownerujo'
         minSdkVersion 23
         targetSdkVersion 28
-        versionCode 1060
-        versionName '1.5.10.6'
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        versionCode 1070
+        versionName '1.6.3.0'
+        // testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         externalNativeBuild {
             cmake {
                 cppFlags "-std=c++11"
@@ -80,6 +80,8 @@ android {
     dexOptions {
     }
 }
+
+tasks.withType(Test) {enabled = false}
 
 dependencies {
     implementation 'com.android.support:appcompat-v7:27.1.1'
