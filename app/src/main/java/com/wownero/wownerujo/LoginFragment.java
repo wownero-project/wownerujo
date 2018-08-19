@@ -268,7 +268,7 @@ public class LoginFragment extends Fragment implements WalletInfoAdapter.OnInter
             case NetworkType_Testnet:
                 return "-";
             case NetworkType_Mainnet:
-                return "Wo-";
+                return "W-"; // Wo or WW
             case NetworkType_Stagenet:
                 return "-";
             default:
