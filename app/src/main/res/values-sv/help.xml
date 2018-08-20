@@ -2,7 +2,7 @@
 <resources>
     <string name="help_create_new"><![CDATA[
         <h1>Skapa Plånbok - Ny</h1>
-        <p>Om du behöver en ny Monero-adress!</p>
+        <p>Om du behöver en ny Wownero-adress!</p>
         <p>Ange ett unikt plånboksnamn och lösenord. Lösenordet används för att hålla din plånboksdata säker på enheten.
         Använd ett starkt lösenord - eller ännu bättre, använd en lösenfras.<p>
         <h2>Anteckna ditt Mnemoniska Frö!</h2>
@@ -21,7 +21,7 @@
 
     <string name="help_create_seed"><![CDATA[
         <h1>Skapa Plånbok - Frö</h1>
-        <p>Om du redan har en Monero-adress och vill återställa dess transaktioner från blockkedjan!</p>
+        <p>Om du redan har en Wownero-adress och vill återställa dess transaktioner från blockkedjan!</p>
         <p>Ange ett unikt plånboksnamn och lösenord. Lösenordet används för att hålla din plånboksdata säker på enheten.
         Använd ett starkt lösenord - eller ännu bättre, använd en lösenfras.</p>
         <p>Ange ditt frö i fältet \"Mnemoniskt Frö\".<p>
@@ -35,7 +35,7 @@
         <p>Om du återställer en plånbok med dina nycklar!</p>
         <p>Ange ett unikt plånboksnamn och lösenord. Lösenordet används för att hålla din plånboksdata säker på enheten.
         Använd ett starkt lösenord - eller ännu bättre, använd en lösenfras.</p>
-        <p>Ange din Monero-adress i fältet \"Offentlig Adress\" och fyll i \"Visningsnyckel\" och \"Spenderingsnyckel\".</p>
+        <p>Ange din Wownero-adress i fältet \"Offentlig Adress\" och fyll i \"Visningsnyckel\" och \"Spenderingsnyckel\".</p>
         <p>Om du känner till blocknumret av den första transaktionen använd för denna adress, ange det i
         \"Återställningshöjd\" fältet - om du lämnar fältet tomt kommer <em>hela</em> blockkedjan för
         transaktioner som tillhör din adress skannas. Det tar en väldigt lång tid.</p>
@@ -46,7 +46,7 @@
         <p>Om du bara vill hålla ett öga på inkommande transaktioner till en plånbok!</p>
         <p>Ange ett unikt plånboksnamn och lösenord. Lösenordet används för att hålla din plånboksdata säker på enheten.
         Använd ett starkt lösenord - eller ännu bättre, använd en lösenfras.</p>
-        <p>Ange din Monero-adress i fältet \"Offentlig Adress\" och fyll i \"Visningsnyckel\" och \"Spenderingsnyckel\".</p>
+        <p>Ange din Wownero-adress i fältet \"Offentlig Adress\" och fyll i \"Visningsnyckel\" och \"Spenderingsnyckel\".</p>
         <p>Om du känner till blocknumret av den första transaktionen använd för denna adress, ange det i
         \"Återställningshöjd\" fältet - om du lämnar fältet tomt kommer <em>hela</em> blockkedjan för
         transaktioner som tillhör din adress skannas. Det tar en väldigt lång tid.</p>
@@ -56,29 +56,29 @@
         <h1>Plånboksinformation</h1>
         <h2>Offentlig adress</h2>
         Din offentliga adress är som ditt bankkontonummer, du kan dela det med vem som helst utan att
-        behöva oroa dig om att förlora dina Moneroj. Folk kommer skicka Monero till din plånbok med
+        behöva oroa dig om att förlora dina Wowneroj. Folk kommer skicka Wownero till din plånbok med
         den här adressen.
         <h2>Mnemoniskt Frö</h2>
         Det här är den enda datan som behövs för att återställa din plånbok i framtiden och få full behörighet
         till dina pengar. Att bevara fröet säkert och privat är extremt viktigt, eftersom att det ger
-        <em>vem som helst</em> tillgång till dina Moneroj! Om du inte har skrivit ner det någonstans säkert,
+        <em>vem som helst</em> tillgång till dina Wowneroj! Om du inte har skrivit ner det någonstans säkert,
         vänligen gör det nu!
         <h2>Visningsnyckel</h2>
         Din visningsnyckel kan användas för att hålla ett öga på inkommande transaktioner till din
         plånbok utan att ge behörigheten att spendera pengarna i din plånbok.
         <h2>Spenderingsnyckel</h2>
-        Din spenderingsnyckel ger vem som helst tillgång att spendera all Monero i din plånbok, så
+        Din spenderingsnyckel ger vem som helst tillgång att spendera all Wownero i din plånbok, så
         ge inte denna nyckeln till någon, förvara den säkert som ditt Mnemoniska Frö.
     ]]></string>
 
     <string name="help_list"><![CDATA[
         <h1>Plånbokslista</h1>
         <h2>Nod</h2>
-        Monerujo använder en Avlägsen Nod för att kommunicera med Monero-nätverket utan att
+        Wownerujo använder en Avlägsen Nod för att kommunicera med Wownero-nätverket utan att
         behöva ladda ner och lagra en kopia av hela blockkedjan. Du kan hitta en lista av populära
         avlägsna noder eller lära dig hur man kör sin egen avlägsen nod här https://moneroworld.com/
         <p>
-        <p>Monerujo kommer med några avlägsna noder inställda. Den kommer ihåg de 5 senast använda noderna.</p>
+        <p>Wownerujo kommer med några avlägsna noder inställda. Den kommer ihåg de 5 senast använda noderna.</p>
         <h2>Plånböcker</h2>
         <p>Här kan du se dina plånböcker. De finns i <tt>monerujo</tt> mappen på din enhets
         interna minne. Du kan använda en filutforskar app för att se dem. Du borde
@@ -94,7 +94,7 @@
         <h3>Detaljer</h3>
         <p>Visa plånbokens detaljer, frö &amp; nycklar.</p>
         <h3>Mottaga</h3>
-        <p>Gör en QR kod för att ta emot Moneroj.</p>
+        <p>Gör en QR kod för att ta emot Wowneroj.</p>
         <h3>Ändra namn</h3>
         <p>Ändra namn på plånboken. Säkerhetskopior ändrar inte namn.</p>
         <h3>Säkerhetskopiera</h3>
@@ -110,14 +110,14 @@
     <string name="help_wallet"><![CDATA[
         <h1>Plånboken</h1>
         <h2>Inläsning</h2>
-        Eftersom Monero gillar att ha saker privat, läser Monerujo in blockkedjan för att se om du fått
-        nya Moneroj varje gång du öppnar plånboken, det lagras alltså bara information på din mobil som
+        Eftersom Wownero gillar att ha saker privat, läser Wownerujo in blockkedjan för att se om du fått
+        nya Wowneroj varje gång du öppnar plånboken, det lagras alltså bara information på din mobil som
         har med din plånbok att göra. Ibland kan det ta lång tid om du inte har synkroniserat på länge.
         <h2>Saldot</h2>
         <p><b>Hjälp! Min plånboks saldo har försvunnit eller är inte bekräftat!</b><br/>
         Få inte panik! När du skickar pengar från din plånbok, visas en del av ditt saldo temporärt
         som obekräftat.
-        Det här händer på grund av hur Monero är skickat på blockkedjan och hur växel fungerar.
+        Det här händer på grund av hur Wownero är skickat på blockkedjan och hur växel fungerar.
         Läs mer om växel på https://getmonero.org/resources/moneropedia/change.html
         <h2>Transaktionlista</h2>
         <p>En lista av plånbokens transaktioner. I vis-plånböcker, visas bara inkommande transaktioner.</p>
@@ -126,9 +126,9 @@
     <string name="help_tx_details"><![CDATA[
         <h1>Transaktionsdetaljer</h1>
         <h2>Destination</h2>
-        Det här är offentliga adressen av plånboken du skickat Monero till.
+        Det här är offentliga adressen av plånboken du skickat Wownero till.
         <h2>Betalnings-ID</h2>
-        Du kan använda ett Betalnings-ID för att identifiera anledningen du skickat Monero till någon,
+        Du kan använda ett Betalnings-ID för att identifiera anledningen du skickat Wownero till någon,
         det är valfritt och privat. Till exempel tillåter det en affär att förknippa din transaktion
         med något du köpt.
         <h2>TX ID</h2>
@@ -144,17 +144,17 @@
     <string name="help_send"><![CDATA[
         <h1>Skicka</h1>
         <h2>Mottagarens adress</h2>
-        <p>Det här är offentliga adressen av plånboken du skickar Moneroj till, du kan kopiera den från
+        <p>Det här är offentliga adressen av plånboken du skickar Wowneroj till, du kan kopiera den från
         urklipp, skanna en QR-kod eller ange den manuellt. Se till att du trippel-kollar den för att
         vara säker på att du inte skickar pengar till fel adress.</p>
-        <p>Dessutom kan du skicka BTC genom XMR.TO tjänsten (se https://xmr.to för detaljer). Se delen
+        <p>Dessutom kan du skicka BTC genom WOW.TO tjänsten (se https://xmr.to för detaljer). Se delen
         om att skicka BTC nedan.</p>
         <h2>Betalnings-ID</h2>
-        <p>Du kan använda ett Betalnings-ID för att identifiera anledningen du skickat Monero till någon,
+        <p>Du kan använda ett Betalnings-ID för att identifiera anledningen du skickat Wownero till någon,
         det är valfritt och privat. Till exempel tillåter det en affär att förknippa din transaktion
         med något du köpt.<p>
         <h2>Ringstorlek</h2>
-        <p>Det finns ett antal av ringstorlekar att välja mellan i Monerujo. Om du är en nybörjare
+        <p>Det finns ett antal av ringstorlekar att välja mellan i Wownerujo. Om du är en nybörjare
         rekommenderar vi att du använder en ringstorlek av 7. Att öka ringstorleken över 7 höjer
         mängden av signerare i en ringsignaturm, vilket teoretiskt ger högre möjlig förnekning.
         Men, att välja högre ringstorlekar kan även få din transaktion att stå ut på blockkedjan.</p>
@@ -164,53 +164,53 @@
         för låg prioritet. Vänligen notera att om du sätter din transaktion på låg prioritet kan
         det ta timmar innan den är inkluderad på blockkedjan. Standard prioriteten är \"Medium\".</p>
         <h1>Skicka BTC</h1>
-        <h2>XMR.TO</h2>
-        <p>XMR.TO är en tredjeparts tjänst som byter ut Monero mot Bitcoin. Vi använder XMR.TO API:n
-        för att integrera Bitcoin betalningar i Monerujo. Vänligen besök https://xmr.to och bestäm
-        för dig själv om det är någonting du vill använda. Monerujo laget är inte associerad med
-        XMR.TO och kan inte hjälpa dig med deras tjänst.</p>
-        <h2>XMR.TO Växelkurs<h2>
-        <p>På \"Mängd\"skärmen ser du de nuvarande parametrarna av XMR.TO tjänsten. Dessa innehåller den
+        <h2>WOW.TO</h2>
+        <p>WOW.TO är en tredjeparts tjänst som byter ut Wownero mot Bitcoin. Vi använder WOW.TO API:n
+        för att integrera Bitcoin betalningar i Wownerujo. Vänligen besök https://xmr.to och bestäm
+        för dig själv om det är någonting du vill använda. Wownerujo laget är inte associerad med
+        WOW.TO och kan inte hjälpa dig med deras tjänst.</p>
+        <h2>WOW.TO Växelkurs<h2>
+        <p>På \"Mängd\"skärmen ser du de nuvarande parametrarna av WOW.TO tjänsten. Dessa innehåller den
         nuvarande växelkursen samt de övre och lägre BTC gränserna. Vänligen notera att denna kursen
         inte är garanterad just nu. Du kommer även att se gränsen över då BTC transaktioner utförs
-        omedelbart utan att vänta på XMR bekräftningar (se XMR.TO FAQ:n för mer detaljer). Vänligen
-        notera att XMR.TO inte tar en extra avgift - hur coolt är inte det?</p>
-        <h2>XMR.TO Beställning<h2>
-        <p>På \"Bekräfta\" skärmen, kommer du att se den faktiska XMR.TO beställningen. Den här beställningen
+        omedelbart utan att vänta på WOW bekräftningar (se WOW.TO FAQ:n för mer detaljer). Vänligen
+        notera att WOW.TO inte tar en extra avgift - hur coolt är inte det?</p>
+        <h2>WOW.TO Beställning<h2>
+        <p>På \"Bekräfta\" skärmen, kommer du att se den faktiska WOW.TO beställningen. Den här beställningen
         är giltig under en begränsad tid - du kan se en nedräkning på \"Spendera\" knappen. Växelkursen
         kan vara annorlunda från den indikativa, visad på tidigare skärmar..</p>
-        <h2>XMR.TO Privatnyckel<h2>
-        <p>Eftersom att Monerujo bara tar hand om Monero delen av din transaktion, kan din XMR.TO
-        privatnyckel användas för att spåra Bitcoin delen av din beställning på XMR.TO sidan.</p>
+        <h2>WOW.TO Privatnyckel<h2>
+        <p>Eftersom att Wownerujo bara tar hand om Wownero delen av din transaktion, kan din WOW.TO
+        privatnyckel användas för att spåra Bitcoin delen av din beställning på WOW.TO sidan.</p>
         <p>Vänligen notera att denna privatnyckeln bara är giltig i 24 timmar efter att transaktionen
         är påbörjad!</p>
-        <h2>XMR.TO Nedräkning!</h2>
-        <p>När nedräkningen når noll, behöver du skaffa ett nytt kostnadsförslag från XMR.TO genom att gå
+        <h2>WOW.TO Nedräkning!</h2>
+        <p>När nedräkningen når noll, behöver du skaffa ett nytt kostnadsförslag från WOW.TO genom att gå
         tillbaka till den tidigare skärmen och sedan gå till \"Bekräfta\"skärmen.</p>
     ]]></string>
 
     <string name="help_xmrto"><![CDATA[
-      <p>XMR.TO är en tredjeparts tjänst som byter ut Monero mot Bitcoin. Vi använder XMR.TO API:n
-      för att integrera Bitcoin betalningar i Monerujo. Vänligen besök https://xmr.to och bestäm
-      för dig själv om det är någonting du vill använda. Monerujo laget är inte associerad med
-      XMR.TO och kan inte hjälpa dig med deras tjänst.</p>
-      <h2>XMR.TO Växelkurs<h2>
-      <p>På \"Mängd\"skärmen ser du de nuvarande parametrarna av XMR.TO tjänsten. Dessa innehåller den
+      <p>WOW.TO är en tredjeparts tjänst som byter ut Wownero mot Bitcoin. Vi använder WOW.TO API:n
+      för att integrera Bitcoin betalningar i Wownerujo. Vänligen besök https://xmr.to och bestäm
+      för dig själv om det är någonting du vill använda. Wownerujo laget är inte associerad med
+      WOW.TO och kan inte hjälpa dig med deras tjänst.</p>
+      <h2>WOW.TO Växelkurs<h2>
+      <p>På \"Mängd\"skärmen ser du de nuvarande parametrarna av WOW.TO tjänsten. Dessa innehåller den
       nuvarande växelkursen samt de övre och lägre BTC gränserna. Vänligen notera att denna kursen
       inte är garanterad just nu. Du kommer även att se gränsen över då BTC transaktioner utförs
-      omedelbart utan att vänta på XMR bekräftningar (se XMR.TO FAQ:n för mer detaljer). Vänligen
-      notera att XMR.TO inte tar en extra avgift - hur coolt är inte det?</p>
-      <h2>XMR.TO Beställning<h2>
-      <p>På \"Bekräfta\" skärmen, kommer du att se den faktiska XMR.TO beställningen. Den här beställningen
+      omedelbart utan att vänta på WOW bekräftningar (se WOW.TO FAQ:n för mer detaljer). Vänligen
+      notera att WOW.TO inte tar en extra avgift - hur coolt är inte det?</p>
+      <h2>WOW.TO Beställning<h2>
+      <p>På \"Bekräfta\" skärmen, kommer du att se den faktiska WOW.TO beställningen. Den här beställningen
       är giltig under en begränsad tid - du kan se en nedräkning på \"Spendera\" knappen. Växelkursen
       kan vara annorlunda från den indikativa, visad på tidigare skärmar..</p>
-      <h2>XMR.TO Privatnyckel<h2>
-      <p>Eftersom att Monerujo bara tar hand om Monero delen av din transaktion, kan din XMR.TO
-      privatnyckel användas för att spåra Bitcoin delen av din beställning på XMR.TO sidan.</p>
+      <h2>WOW.TO Privatnyckel<h2>
+      <p>Eftersom att Wownerujo bara tar hand om Wownero delen av din transaktion, kan din WOW.TO
+      privatnyckel användas för att spåra Bitcoin delen av din beställning på WOW.TO sidan.</p>
       <p>Vänligen notera att denna privatnyckeln bara är giltig i 24 timmar efter att transaktionen
       är påbörjad!</p>
-      <h2>XMR.TO Nedräkning!</h2>
-      <p>När nedräkningen når noll, behöver du skaffa ett nytt kostnadsförslag från XMR.TO genom att gå
+      <h2>WOW.TO Nedräkning!</h2>
+      <p>När nedräkningen når noll, behöver du skaffa ett nytt kostnadsförslag från WOW.TO genom att gå
       tillbaka till den tidigare skärmen och sedan gå till \"Bekräfta\"skärmen.</p>
     ]]></string>
 
