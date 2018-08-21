@@ -43,8 +43,7 @@ Then, fire up Android Studio and build the APK.
 
 #### monerujo
 
-- Address: 4AdkPJoxn7JCvAby9szgnt93MSEwdnxdhaASxbTBm6x5dCwmsDep2UYN4FhStDn5i11nsJbpU7oj59ahg8gXb1Mg3viqCuk
-- Viewkey: b1aff2a12191723da0afbe75516f94dd8b068215f6e847d8da57aca5f1f98e0c
+- <https://www.monerujo.io/index.html#support>
 
 #### wownero / wownerujo
 
