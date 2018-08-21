@@ -1,6 +1,13 @@
 # Wownerujo
 The Android Wallet for Wownero
 
+<a href='https://play.google.com/store/apps/details?id=com.wownero.wownerujo&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
+
+[<img src="https://f-droid.org/badge/get-it-on.png"
+      alt="Get it on F-Droid"
+      height="80">](https://f-droid.org/packages/com.wownero.wownerujo/)
+
+
 ## QUICKSTART
 - Download the APK for the most current release [here](https://github.com/fuwa0529/wownerujo/releases) and install it
 <!-- - Alternatively add our F-Droid repo https://f-droid.monerujo.io/fdroid/repo with fingerpint ```A8 2C 68 E1 4A F0 AA 6A 2E C2 0E 6B 27 2E FF 25 E5 A0 38 F3 F6 58 84 31 6E 0F 5E 0D 91 E7 B7 13``` to your F-Droid client -->
