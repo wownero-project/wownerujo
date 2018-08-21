@@ -49,3 +49,7 @@ Then, fire up Android Studio and build the APK.
 #### wownero / wownerujo
 
 - <https://funding.wownero.com>
+
+#### F-Droid
+
+- <https://f-droid.org/en/contribute/>
