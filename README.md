@@ -9,7 +9,7 @@ The Android Wallet for Wownero
 
 
 ## QUICKSTART
-- Download the APK for the most current release [here](https://github.com/fuwa0529/wownerujo/releases) and install it
+- Download the APK for the most current release [here](https://f-droid.org/packages/com.wownero.wownerujo/) and install it
 - Run the App and select "Generate Wallet" to create a new wallet or recover a wallet
 - Advanced users can copy over synced wallet files (all files) onto sdcard in directory Wownerujo (created first time App is started)
 - See the [FAQ](doc/FAQ.md)
@@ -41,7 +41,7 @@ The official monero client shows the same behaviour.
 
 ## HOW TO BUILD
 
-If you want to build the external lib yourself (recommended) check out [the instructions](doc/BUILDING-external-libs.md)
+If you want to build the external libs yourself (recommended) check out [the instructions](doc/BUILDING-external-libs.md)
 
 Then, fire up Android Studio and build the APK.
 
