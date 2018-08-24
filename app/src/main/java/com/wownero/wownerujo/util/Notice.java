@@ -45,12 +45,13 @@ public class Notice {
         synchronized (Notice.class) {
             if (notices != null) return;
             notices = new ArrayList<>();
-            notices.add(
+            /* notices.add(
                     new Notice(NOTICE_SHOW_CRAZYPASS,
                             R.string.info_crazypass_enabled,
                             R.string.help_details,
                             2)
             );
+            */
         }
     }
 
