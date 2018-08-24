@@ -89,7 +89,7 @@ with nixpkgs;
     export _JAVA_AWT_WM_NONREPARENTING=1
 
     export app_version=1070
-    export gradle_app_version=1x6x3x0
+    export gradle_app_version=1x6x4x0
     export release_key=~/.android/fuwa-release-key.jks
 
     exec zsh
