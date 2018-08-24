@@ -36,8 +36,8 @@ import com.wownero.wownerujo.util.UserNotes;
 import timber.log.Timber;
 
 public class SendSettingsWizardFragment extends SendWizardFragment {
-    // see: https://github.com/wownero/wownero/blob/master/src/cryptonote_config.h#L138
-    final static public int MIXIN = 9;
+    // see: https://github.com/wownero/wownero/blob/release-v0.3.0.0/src/cryptonote_config.h
+    final static public int MIXIN = 21;
 
     public static SendSettingsWizardFragment newInstance(Listener listener) {
         SendSettingsWizardFragment instance = new SendSettingsWizardFragment();
