@@ -15,38 +15,38 @@ for arch in ${archs[@]}; do
     extra_cmake_flags=""
     case ${arch} in
         "arm")
-		        target_host=arm-linux-androideabi
-			      ldflags="-march=armv7-a -Wl,--fix-cortex-a8"
-			      xarch=armv7-a
-			      sixtyfour=OFF
+            target_host=arm-linux-androideabi
+            ldflags="-march=armv7-a -Wl,--fix-cortex-a8"
+            xarch=armv7-a
+            sixtyfour=OFF
             extra_cmake_flags="-D NO_AES=true"
-			      ;;
+            ;;
         "arm64")
-			      target_host=aarch64-linux-android
-			      xarch="armv8-a"
-			      sixtyfour=ON
+            target_host=aarch64-linux-android
+            xarch="armv8-a"
+            sixtyfour=ON
             ;;
         "x86")
-			      target_host=i686-linux-android
-			      xarch="i686"
-			      sixtyfour=OFF
+            target_host=i686-linux-android
+            xarch="i686"
+            sixtyfour=OFF
             ;;
         "x86_64")
-			      target_host=x86_64-linux-android
-			      xarch="x86-64"
-			      sixtyfour=ON
+            target_host=x86_64-linux-android
+            xarch="x86-64"
+            sixtyfour=ON
             ;;
         *)
-			      exit 16
+            exit 16
             ;;
     esac
 
-	  OUTPUT_DIR=$base_dir/build/$build_type.$arch
+    OUTPUT_DIR=$base_dir/build/$build_type.$arch
 
-	  mkdir -p $OUTPUT_DIR
-	  cd $OUTPUT_DIR
+    mkdir -p $OUTPUT_DIR
+    cd $OUTPUT_DIR
 
-	  PATH=$build_root/tool/$arch/$target_host/bin:$build_root/tool/$arch/bin:$PATH \
+    PATH=$build_root/tool/$arch/$target_host/bin:$build_root/tool/$arch/bin:$PATH \
         CC=clang CXX=clang++ \
         cmake \
         -D ANDROID=true \
@@ -68,8 +68,8 @@ for arch in ${archs[@]}; do
         $extra_cmake_flags \
         ../..
 
-	  make -j wallet_api
-	  find . -path ./lib -prune -o -name '*.a' -exec cp '{}' lib \;
+    make -j wallet_api
+    find . -path ./lib -prune -o -name '*.a' -exec cp '{}' lib \;
 
     TARGET_LIB_DIR=$build_root/build/monero/$arch/lib
     rm -rf $TARGET_LIB_DIR
@@ -79,9 +79,9 @@ for arch in ${archs[@]}; do
     TARGET_INC_DIR=$build_root/build/monero/include
     rm -rf $TARGET_INC_DIR
     mkdir -p $TARGET_INC_DIR
-	  cp -a ../../src/wallet/api/wallet2_api.h $TARGET_INC_DIR
+    cp -a ../../src/wallet/api/wallet2_api.h $TARGET_INC_DIR
 
-	  cd $base_dir
+    cd $base_dir
 done
 
 exit 0
