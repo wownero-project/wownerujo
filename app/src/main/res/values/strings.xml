@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">wownerujo</string>
+    <string name="app_name" translatable="false">Wownerujo</string>
     <string name="wallet_activity_name">Wallet</string>
 
     <string name="menu_stagenet" translatable="false">Stagenet</string>
