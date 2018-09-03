@@ -17,6 +17,7 @@
 package com.wownero.wownerujo.model;
 
 import com.wownero.wownerujo.data.WalletNode;
+import com.wownero.wownerujo.util.RestoreHeight;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -24,6 +25,7 @@ import java.io.FileReader;
 import java.io.FilenameFilter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import timber.log.Timber;
@@ -75,6 +77,13 @@ public class WalletManager {
         long walletHandle = createWalletJ(aFile.getAbsolutePath(), password, language, getNetworkType().getValue());
         Wallet wallet = new Wallet(walletHandle);
         manageWallet(wallet);
+        if (wallet.getStatus() == Wallet.Status.Status_Ok) {
+            // (Re-)Estimate restore height based on what we know
+            long oldHeight = wallet.getRestoreHeight();
+            wallet.setRestoreHeight(RestoreHeight.getInstance().getHeight(new Date()));
+            Timber.d("Changed Restore Height from %d to %d", oldHeight, wallet.getRestoreHeight());
+            wallet.setPassword(password); // this rewrites the keys file (which contains the restore height)
+        }
         return wallet;
     }
 
