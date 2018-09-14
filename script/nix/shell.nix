@@ -15,7 +15,7 @@ let
     gtk3
     gnome3.gvfs
     glib
-    gnome3.gconf
+    # gnome3.gconf
     # gnome3.libsecret
     gzip
     fontconfig
@@ -69,7 +69,7 @@ with nixpkgs;
 
     vim
     exiftool
-    gitAndTools.git-imerge
+    ccache
   ]
   ++ android-studio-deps
   )
@@ -88,9 +88,11 @@ with nixpkgs;
 
     export _JAVA_AWT_WM_NONREPARENTING=1
 
-    export app_version=1070
-    export gradle_app_version=1x6x4x0
+    export app_version=1090
+    export gradle_app_version=2x3x0x0
     export release_key=~/.android/fuwa-release-key.jks
+
+    export USE_CCACHE=1
 
     exec zsh
   ''
