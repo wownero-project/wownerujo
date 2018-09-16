@@ -1019,7 +1019,8 @@ public class WalletActivity extends SecureActivity implements WalletFragment.Lis
         // accept keyboard "ok"
         etRename.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                if ((event != null && (event.getKeyCode() == KeyEvent.KEYCODE_ENTER)) || (actionId == EditorInfo.IME_ACTION_DONE)) {
+                if ((event != null && (event.getKeyCode() == KeyEvent.KEYCODE_ENTER) && (event.getAction() == KeyEvent.ACTION_DOWN))
+                        || (actionId == EditorInfo.IME_ACTION_DONE)) {
                     Helper.hideKeyboardAlways(WalletActivity.this);
                     String newName = etRename.getText().toString();
                     dialog.cancel();

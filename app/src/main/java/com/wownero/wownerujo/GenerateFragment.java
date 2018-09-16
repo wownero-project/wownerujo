@@ -145,7 +145,8 @@ public class GenerateFragment extends Fragment {
 
         etWalletName.getEditText().setOnEditorActionListener(new TextView.OnEditorActionListener() {
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                if ((event != null && (event.getKeyCode() == KeyEvent.KEYCODE_ENTER)) || (actionId == EditorInfo.IME_ACTION_NEXT)) {
+                if ((event != null && (event.getKeyCode() == KeyEvent.KEYCODE_ENTER) && (event.getAction() == KeyEvent.ACTION_DOWN))
+                        || (actionId == EditorInfo.IME_ACTION_NEXT)) {
                     if (checkName()) {
                         etWalletPassword.requestFocus();
                     } // otherwise ignore
@@ -183,7 +184,8 @@ public class GenerateFragment extends Fragment {
             etWalletPassword.getEditText().setImeOptions(EditorInfo.IME_ACTION_DONE);
             etWalletPassword.getEditText().setOnEditorActionListener(new TextView.OnEditorActionListener() {
                 public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                    if ((event != null && (event.getKeyCode() == KeyEvent.KEYCODE_ENTER)) || (actionId == EditorInfo.IME_ACTION_DONE)) {
+                    if ((event != null && (event.getKeyCode() == KeyEvent.KEYCODE_ENTER) && (event.getAction() == KeyEvent.ACTION_DOWN))
+                            || (actionId == EditorInfo.IME_ACTION_DONE)) {
                         Helper.hideKeyboard(getActivity());
                         generateWallet();
                         return true;
@@ -194,7 +196,8 @@ public class GenerateFragment extends Fragment {
         } else if (type.equals(TYPE_SEED)) {
             etWalletPassword.getEditText().setOnEditorActionListener(new TextView.OnEditorActionListener() {
                 public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                    if ((event != null && (event.getKeyCode() == KeyEvent.KEYCODE_ENTER)) || (actionId == EditorInfo.IME_ACTION_NEXT)) {
+                    if ((event != null && (event.getKeyCode() == KeyEvent.KEYCODE_ENTER) && (event.getAction() == KeyEvent.ACTION_DOWN))
+                            || (actionId == EditorInfo.IME_ACTION_NEXT)) {
                         etWalletMnemonic.requestFocus();
                         return true;
                     }
@@ -204,7 +207,8 @@ public class GenerateFragment extends Fragment {
             etWalletMnemonic.setVisibility(View.VISIBLE);
             etWalletMnemonic.getEditText().setOnEditorActionListener(new TextView.OnEditorActionListener() {
                 public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                    if ((event != null && (event.getKeyCode() == KeyEvent.KEYCODE_ENTER)) || (actionId == EditorInfo.IME_ACTION_NEXT)) {
+                    if ((event != null && (event.getKeyCode() == KeyEvent.KEYCODE_ENTER) && (event.getAction() == KeyEvent.ACTION_DOWN))
+                            || (actionId == EditorInfo.IME_ACTION_NEXT)) {
                         if (checkMnemonic()) {
                             etWalletRestoreHeight.requestFocus();
                         }
@@ -216,7 +220,8 @@ public class GenerateFragment extends Fragment {
         } else if (type.equals(TYPE_KEY) || type.equals(TYPE_VIEWONLY)) {
             etWalletPassword.getEditText().setOnEditorActionListener(new TextView.OnEditorActionListener() {
                 public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                    if ((event != null && (event.getKeyCode() == KeyEvent.KEYCODE_ENTER)) || (actionId == EditorInfo.IME_ACTION_NEXT)) {
+                    if ((event != null && (event.getKeyCode() == KeyEvent.KEYCODE_ENTER) && (event.getAction() == KeyEvent.ACTION_DOWN))
+                            || (actionId == EditorInfo.IME_ACTION_NEXT)) {
                         etWalletAddress.requestFocus();
                         return true;
                     }
@@ -228,7 +233,8 @@ public class GenerateFragment extends Fragment {
 
             {
                 public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                    if ((event != null && (event.getKeyCode() == KeyEvent.KEYCODE_ENTER)) || (actionId == EditorInfo.IME_ACTION_NEXT)) {
+                    if ((event != null && (event.getKeyCode() == KeyEvent.KEYCODE_ENTER) && (event.getAction() == KeyEvent.ACTION_DOWN))
+                            || (actionId == EditorInfo.IME_ACTION_NEXT)) {
                         if (checkAddress()) {
                             etWalletViewKey.requestFocus();
                         }
@@ -240,7 +246,8 @@ public class GenerateFragment extends Fragment {
             etWalletViewKey.setVisibility(View.VISIBLE);
             etWalletViewKey.getEditText().setOnEditorActionListener(new TextView.OnEditorActionListener() {
                 public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                    if ((event != null && (event.getKeyCode() == KeyEvent.KEYCODE_ENTER)) || (actionId == EditorInfo.IME_ACTION_NEXT)) {
+                    if ((event != null && (event.getKeyCode() == KeyEvent.KEYCODE_ENTER) && (event.getAction() == KeyEvent.ACTION_DOWN))
+                            || (actionId == EditorInfo.IME_ACTION_NEXT)) {
                         if (checkViewKey()) {
                             if (type.equals(TYPE_KEY)) {
                                 etWalletSpendKey.requestFocus();
@@ -260,7 +267,8 @@ public class GenerateFragment extends Fragment {
 
             {
                 public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                    if ((event != null && (event.getKeyCode() == KeyEvent.KEYCODE_ENTER)) || (actionId == EditorInfo.IME_ACTION_NEXT)) {
+                    if ((event != null && (event.getKeyCode() == KeyEvent.KEYCODE_ENTER) && (event.getAction() == KeyEvent.ACTION_DOWN))
+                            || (actionId == EditorInfo.IME_ACTION_NEXT)) {
                         if (checkSpendKey()) {
                             etWalletRestoreHeight.requestFocus();
                         }
@@ -274,7 +282,8 @@ public class GenerateFragment extends Fragment {
             etWalletRestoreHeight.setVisibility(View.VISIBLE);
             etWalletRestoreHeight.getEditText().setOnEditorActionListener(new TextView.OnEditorActionListener() {
                 public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                    if ((event != null && (event.getKeyCode() == KeyEvent.KEYCODE_ENTER)) || (actionId == EditorInfo.IME_ACTION_DONE)) {
+                    if ((event != null && (event.getKeyCode() == KeyEvent.KEYCODE_ENTER) && (event.getAction() == KeyEvent.ACTION_DOWN))
+                            || (actionId == EditorInfo.IME_ACTION_DONE)) {
                         Helper.hideKeyboard(getActivity());
                         generateWallet();
                         return true;
