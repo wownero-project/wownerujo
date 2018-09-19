@@ -12,8 +12,8 @@ cd $EXTERNAL_LIBS_BUILD_ROOT
 # branch-release-v0.3.0.0 (ring size 22)
 # version="48bcb9"
 
-url="https://github.com/wowario/wownero3"
-version="61753be"
+url="https://github.com/wowario/wownero"
+version="0c5fedc"
 
 rm -rf wownero
 git clone $url wownero

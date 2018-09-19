@@ -35,6 +35,12 @@ wownero: toolchain openssl boost
 	script/build-external-libs/patch-wownero.sh
 	script/build-external-libs/build-wownero.sh
 
+wownero-unsafe:
+	rm -rf build/external-libs/wownero
+	script/build-external-libs/fetch-wownero.sh
+	script/build-external-libs/patch-wownero.sh
+	script/build-external-libs/build-wownero.sh
+
 collect: wownero
 	script/build-external-libs/collect.sh
 
