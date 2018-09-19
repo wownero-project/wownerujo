@@ -30,13 +30,16 @@ boost: toolchain
 	script/build-external-libs/fetch-boost.sh
 	script/build-external-libs/build-boost.sh
 
+libsodium: toolchain
+	script/build-external-libs/fetch-libsodium.sh
+	script/build-external-libs/build-libsodium.sh
+
 wownero: toolchain openssl boost
 	script/build-external-libs/fetch-wownero.sh
 	script/build-external-libs/patch-wownero.sh
 	script/build-external-libs/build-wownero.sh
 
 wownero-unsafe:
-	rm -rf build/external-libs/wownero
 	script/build-external-libs/fetch-wownero.sh
 	script/build-external-libs/patch-wownero.sh
 	script/build-external-libs/build-wownero.sh

@@ -70,6 +70,10 @@ with nixpkgs;
     vim
     exiftool
     ccache
+    libtool
+    autoconf
+    automake
+    gnum4
   ]
   ++ android-studio-deps
   )

@@ -48,6 +48,8 @@ for arch in ${archs[@]}; do
 
     PATH=$build_root/tool/$arch/$target_host/bin:$build_root/tool/$arch/bin:$PATH \
         CC=clang CXX=clang++ \
+        # CMAKE_INCLUDE_PATH=$build_root/build/libsodium/$arch/include \
+        # CMAKE_LIBRARY_PATH=$build_root/build/libsodium/$arch/lib \
         cmake \
         -D ANDROID=true \
         -D ARCH="$xarch" \
@@ -68,7 +70,14 @@ for arch in ${archs[@]}; do
         $extra_cmake_flags \
         ../..
 
+
+    echo "CMAKE_INCLUDE_PATH: $build_root/build/libsodium/$arch/include"
+
+    # CMAKE_INCLUDE_PATH=$build_root/build/libsodium/$arch/include \
+    #     CMAKE_LIBRARY_PATH=$build_root/build/libsodium/$arch/lib \
+
     make -j wallet_api
+
     find . -path ./lib -prune -o -name '*.a' -exec cp '{}' lib \;
 
     TARGET_LIB_DIR=$build_root/build/monero/$arch/lib
