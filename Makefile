@@ -10,10 +10,6 @@ all: build-external-libs
 
 build-external-libs: clean-external-libs collect
 
-# faster build for testing f-droid release
-use-prebuilt-external-libs:
-	script/build-external-libs/use-archive.sh
-
 clean-external-libs:
 	script/build-external-libs/clean.sh
 
@@ -34,12 +30,7 @@ libsodium: toolchain
 	script/build-external-libs/fetch-libsodium.sh
 	script/build-external-libs/build-libsodium.sh
 
-wownero: toolchain openssl boost
-	script/build-external-libs/fetch-wownero.sh
-	script/build-external-libs/patch-wownero.sh
-	script/build-external-libs/build-wownero.sh
-
-wownero-unsafe:
+wownero: toolchain openssl boost libsodium
 	script/build-external-libs/fetch-wownero.sh
 	script/build-external-libs/patch-wownero.sh
 	script/build-external-libs/build-wownero.sh
@@ -47,6 +38,18 @@ wownero-unsafe:
 collect: wownero
 	script/build-external-libs/collect.sh
 
+
+
+# dev shortcut
+
+# faster build for testing f-droid release
+use-prebuilt-external-libs:
+	script/build-external-libs/use-archive.sh
+
+wownero-unsafe:
+	script/build-external-libs/fetch-wownero.sh
+	script/build-external-libs/patch-wownero.sh
+	script/build-external-libs/build-wownero.sh
 
 
 
