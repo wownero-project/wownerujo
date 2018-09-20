@@ -34,23 +34,17 @@ for arch in ${archs[@]}; do
     mkdir -p $OUTPUT_DIR
     echo "building for ${arch}"
 
-    PATH=$build_root/tool/$arch/$target_host/bin:$build_root/tool/$arch/bin:$PATH \
-        CC=clang CXX=clang++ \
+    (PATH=$build_root/tool/$arch/$target_host/bin:$build_root/tool/$arch/bin:$PATH \
+        CC=clang CXX=clang++; \
         ./configure \
         --prefix=${OUTPUT_DIR} \
         --host=${target_host} \
         --enable-static \
-        --disable-shared
+        --disable-shared \
+            && make && make install)
 
-    PATH=$build_root/tool/$arch/$target_host/bin:$build_root/tool/$arch/bin:$PATH \
-        CC=clang CXX=clang++ \
-        make
 
-    PATH=$build_root/tool/$arch/$target_host/bin:$build_root/tool/$arch/bin:$PATH \
-        CC=clang CXX=clang++ \
-        make install
 
-    # ln -sf ./src/libsodium/include $build_root/build/libsodium/$arch
 done
 
 exit 0

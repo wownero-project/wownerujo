@@ -46,8 +46,6 @@ for arch in ${archs[@]}; do
     mkdir -p $OUTPUT_DIR
     cd $OUTPUT_DIR
 
-    # CMAKE_INCLUDE_PATH=$build_root/build/libsodium/$arch/include \
-
     PATH=$build_root/tool/$arch/$target_host/bin:$build_root/tool/$arch/bin:$PATH \
         CC=clang CXX=clang++ \
         CMAKE_LIBRARY_PATH=$build_root/build/libsodium/$arch/lib \
@@ -71,12 +69,6 @@ for arch in ${archs[@]}; do
         -D STATIC=ON \
         $extra_cmake_flags \
         ../..
-
-
-    echo "CMAKE_INCLUDE_PATH: $build_root/build/libsodium/$arch/include"
-
-    # CMAKE_INCLUDE_PATH=$build_root/build/libsodium/$arch/include \
-    #     CMAKE_LIBRARY_PATH=$build_root/build/libsodium/$arch/lib \
 
     make -j wallet_api
 
