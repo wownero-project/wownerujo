@@ -21,7 +21,7 @@ Help us translate Monerujo! You can find instructions [On Taiga](https://taiga.g
 You may lose all your Wowneroj if you use this App. Be cautious when spending on the mainnet.
 
 ## Random Notes
-- Based off wownero v0.2.2.0
+- Based off wownero v0.3.0.0
 - works on the testnet & mainnet
 - use your own daemon - it's easy
 - screen stays on until first sync is complete
