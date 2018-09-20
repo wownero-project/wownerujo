@@ -11,5 +11,6 @@ opt
 
 vendor
 external-libs/monero
+external-libs/libsodium
 tmp
 builder

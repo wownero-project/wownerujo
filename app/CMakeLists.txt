@@ -8,6 +8,14 @@ add_library( monerujo
 set(EXTERNAL_LIBS_DIR ${CMAKE_SOURCE_DIR}/../external-libs)
 
 ############
+# libsodium
+############
+
+add_library(sodium STATIC IMPORTED)
+set_target_properties(sodium PROPERTIES IMPORTED_LOCATION
+    ${EXTERNAL_LIBS_DIR}/libsodium/lib/${ANDROID_ABI}/libsodium.a)
+
+############
 # OpenSSL
 ############
 
@@ -183,6 +191,7 @@ target_link_libraries(  monerujo
 
                         ssl
                         crypto
+                        sodium
 
                        ${log-lib}
                        )
