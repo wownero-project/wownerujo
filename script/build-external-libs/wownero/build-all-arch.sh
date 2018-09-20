@@ -46,10 +46,11 @@ for arch in ${archs[@]}; do
     mkdir -p $OUTPUT_DIR
     cd $OUTPUT_DIR
 
+    # CMAKE_INCLUDE_PATH=$build_root/build/libsodium/$arch/include \
+
     PATH=$build_root/tool/$arch/$target_host/bin:$build_root/tool/$arch/bin:$PATH \
         CC=clang CXX=clang++ \
-        # CMAKE_INCLUDE_PATH=$build_root/build/libsodium/$arch/include \
-        # CMAKE_LIBRARY_PATH=$build_root/build/libsodium/$arch/lib \
+        CMAKE_LIBRARY_PATH=$build_root/build/libsodium/$arch/lib \
         cmake \
         -D ANDROID=true \
         -D ARCH="$xarch" \
@@ -66,6 +67,7 @@ for arch in ${archs[@]}; do
         -D OPENSSL_INCLUDE_DIR=$build_root/build/openssl/$arch/include \
         -D OPENSSL_ROOT_DIR=$build_root/build/openssl/$arch \
         -D OPENSSL_SSL_LIBRARY=$build_root/build/openssl/$arch/lib/libssl.so \
+        -D LIBSODIUM_INCLUDE_DIR=$build_root/build/libsodium/$arch/include \
         -D STATIC=ON \
         $extra_cmake_flags \
         ../..
