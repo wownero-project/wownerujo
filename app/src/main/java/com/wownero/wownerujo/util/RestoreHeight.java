@@ -24,6 +24,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
+import timber.log.Timber;
 
 public class RestoreHeight {
     static private RestoreHeight Singleton = null;
@@ -42,79 +43,44 @@ public class RestoreHeight {
     private Map<String, Long> blockheight = new HashMap<>();
 
     RestoreHeight() {
-        blockheight.put("2018-05-01", 8000L);
-        blockheight.put("2018-06-01", 17000L);
-        blockheight.put("2018-07-01", 25000L);
-        blockheight.put("2018-08-01", 34000L);
-        blockheight.put("2018-09-01", 43000L);
-        blockheight.put("2018-10-01", 52000L);
+        blockheight.put("2018-05", 8000L);
+        blockheight.put("2018-06", 17000L);
+        blockheight.put("2018-07", 25000L);
+        blockheight.put("2018-08", 34000L);
+        blockheight.put("2018-09", 43000L);
+        blockheight.put("2018-10", 52000L);
     }
 
-    public long getHeight(String date) {
-        SimpleDateFormat parser = new SimpleDateFormat("yyyy-MM-dd");
-        parser.setTimeZone(TimeZone.getTimeZone("UTC"));
-        parser.setLenient(false);
-        try {
-            return getHeight(parser.parse(date));
-        } catch (ParseException ex) {
-            throw new IllegalArgumentException(ex);
-        }
-    }
+    long latestHeight = 52000L;
 
     public long getHeight(final Date date) {
-        Calendar cal = Calendar.getInstance(TimeZone.getTimeZone("UTC"));
-        cal.set(Calendar.DST_OFFSET, 0);
+        Timber.d("Restore Height date %s", date);
+
+        Calendar cal = Calendar.getInstance();
         cal.setTime(date);
-        cal.add(Calendar.DAY_OF_MONTH, -4); // give it some leeway
+        Timber.d("Restore Height cal %s", cal);
+
         if (cal.get(Calendar.YEAR) < 2018)
             return 0;
-        if ((cal.get(Calendar.YEAR) == 2018) && (cal.get(Calendar.MONTH) <= 4))
+        // Month is 0 based
+        // https://stackoverflow.com/a/7183009
+        if ((cal.get(Calendar.YEAR) == 2018) && ((cal.get(Calendar.MONTH) + 1) <= 4))
             // before Apr 2018
             return 0;
 
-        Calendar query = (Calendar) cal.clone();
-
-        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM");
         formatter.setTimeZone(TimeZone.getTimeZone("UTC"));
 
         String queryDate = formatter.format(date);
+        Timber.d("String query date %s", queryDate);
 
-        cal.set(Calendar.DAY_OF_MONTH, 1);
-        long prevTime = cal.getTimeInMillis();
-        String prevDate = formatter.format(prevTime);
-        // lookup blockheight at first of the month
-        Long prevBc = blockheight.get(prevDate);
-        if (prevBc == null) {
-            // if too recent, go back in time and find latest one we have
-            while (prevBc == null) {
-                cal.add(Calendar.MONTH, -1);
-                if (cal.get(Calendar.YEAR) < 2018) {
-                    throw new IllegalStateException("endless loop looking for blockheight");
-                }
-                prevTime = cal.getTimeInMillis();
-                prevDate = formatter.format(prevTime);
-                prevBc = blockheight.get(prevDate);
-            }
-        }
-        long height = prevBc;
-        // now we have a blockheight & a date ON or BEFORE the restore date requested
-        if (queryDate.equals(prevDate)) return height;
-        // see if we have a blockheight after this date
-        cal.add(Calendar.MONTH, 1);
-        long nextTime = cal.getTimeInMillis();
-        String nextDate = formatter.format(nextTime);
-        Long nextBc = blockheight.get(nextDate);
-        if (nextBc != null) { // we have a range - interpolate the blockheight we are looking for
-            long diff = nextBc - prevBc;
-            long diffDays = TimeUnit.DAYS.convert(nextTime - prevTime, TimeUnit.MILLISECONDS);
-            long days = TimeUnit.DAYS.convert(query.getTimeInMillis() - prevTime,
-                    TimeUnit.MILLISECONDS);
-            height = Math.round(prevBc + diff * (1.0 * days / diffDays));
+        long height = 0;
+        if (blockheight.get(queryDate) == null) {
+            height = latestHeight;
         } else {
-            long days = TimeUnit.DAYS.convert(query.getTimeInMillis() - prevTime,
-                    TimeUnit.MILLISECONDS);
-            height = Math.round(prevBc + 1.0 * days * (24 * 60 / 2));
+            height = blockheight.get(queryDate);
         }
+
         return height;
     }
 }

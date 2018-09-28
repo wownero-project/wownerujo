@@ -200,7 +200,7 @@
     <string name="generate_wallet_created">Portefeuille créé</string>
     <string name="generate_wallet_create_failed">Création du Portefeuille échouée</string>
 
-    <string name="generate_restoreheight_error">Entrer un nombre ou une date (YYYY-MM-DD)</string>
+    <string name="generate_restoreheight_error">Entrer un nombre ou une date (YYYY-MM)</string>
 
     <string name="generate_wallet_type_key">Clefs</string>
     <string name="generate_wallet_type_new">Nouveau</string>
@@ -211,7 +211,7 @@
     <string name="generate_viewkey_hint">Clef d\'audit</string>
     <string name="generate_spendkey_hint">Clef de dépense</string>
     <string name="generate_mnemonic_hint">Phrase Mnémonique</string>
-    <string name="generate_restoreheight_hint">Hauteur ou date de restauration (YYYY-MM-DD)</string>
+    <string name="generate_restoreheight_hint">Hauteur ou date de restauration (YYYY-MM)</string>
 
     <string name="generate_address_label">Adresse publique</string>
     <string name="generate_viewkey_label">Clef d\'audit</string>

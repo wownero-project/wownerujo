@@ -396,22 +396,16 @@ public class GenerateFragment extends Fragment {
         long height = 0;
 
         String restoreHeight = etWalletRestoreHeight.getEditText().getText().toString().trim();
+        Timber.d("Restore Height string %s", restoreHeight);
         if (restoreHeight.isEmpty()) return -1;
         try {
             // is it a date?
-            SimpleDateFormat parser = new SimpleDateFormat("yyyy-MM-dd");
+            SimpleDateFormat parser = new SimpleDateFormat("yyyy-MM");
             parser.setLenient(false);
             height = RestoreHeight.getInstance().getHeight(parser.parse(restoreHeight));
         } catch (ParseException ex) {
+            Timber.d("Failed to parse %s, %s", restoreHeight, ex);
         }
-        if (height <= 0)
-            try {
-                // is it a date without dashes?
-                SimpleDateFormat parser = new SimpleDateFormat("yyyyMMdd");
-                parser.setLenient(false);
-                height = RestoreHeight.getInstance().getHeight(parser.parse(restoreHeight));
-            } catch (ParseException ex) {
-            }
         if (height <= 0)
             try {
                 // or is it a height?
