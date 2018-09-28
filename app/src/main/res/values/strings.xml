@@ -373,7 +373,7 @@
     <string name="send_sweepall">Send all confirmed funds in this account!</string>
     <string name="tx_subaddress">Subaddress #%1$d</string>
     <string name="generate_address_label_sub">Public Subaddress #%1$d</string>
-    <string name="defautl_restore_height">2018-09-01</string>
+    <string name="default_restore_height">2018-10-01</string>
     <string name="menu_language">Language</string>
     <string name="language_system_default">Use System Language</string>
 </resources>
