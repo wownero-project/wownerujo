@@ -69,7 +69,6 @@ public class RestoreHeight {
             return 0;
 
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM");
-        formatter.setTimeZone(TimeZone.getTimeZone("UTC"));
 
         String queryDate = formatter.format(date);
         Timber.d("String query date %s", queryDate);
