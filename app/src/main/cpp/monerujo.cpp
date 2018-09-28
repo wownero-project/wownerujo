@@ -639,7 +639,7 @@ Java_com_wownero_wownerujo_model_Wallet_initJ(JNIEnv *env, jobject instance,
 //    virtual bool createWatchOnly(const std::string &path, const std::string &password, const std::string &language) const = 0;
 
 JNIEXPORT void JNICALL
-Java_com_m2049r_xmrwallet_model_Wallet_setRestoreHeight(JNIEnv *env, jobject instance,
+Java__com_wownero_wownerujo_model_Wallet_setRestoreHeight(JNIEnv *env, jobject instance,
                                                         jlong height) {
     Bitmonero::Wallet *wallet = getHandle<Bitmonero::Wallet>(env, instance);
     wallet->setRefreshFromBlockHeight((uint64_t) height);

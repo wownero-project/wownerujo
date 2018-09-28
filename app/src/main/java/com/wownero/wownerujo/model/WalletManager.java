@@ -80,6 +80,7 @@ public class WalletManager {
         if (wallet.getStatus() == Wallet.Status.Status_Ok) {
             // (Re-)Estimate restore height based on what we know
             long oldHeight = wallet.getRestoreHeight();
+            Timber.d("Changing Restore Height from %d to %d", oldHeight, wallet.getRestoreHeight());
             wallet.setRestoreHeight(RestoreHeight.getInstance().getHeight(new Date()));
             Timber.d("Changed Restore Height from %d to %d", oldHeight, wallet.getRestoreHeight());
             wallet.setPassword(password); // this rewrites the keys file (which contains the restore height)
