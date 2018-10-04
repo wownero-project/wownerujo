@@ -7,6 +7,8 @@ The Android Wallet for Wownero
 <a href='https://play.google.com/store/apps/details?id=com.wownero.wownerujo&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' height='80'/></a>
 
 
+Warning: Current f-droid apk is not updated for hard fork v9, maintainers are aware of the issue.
+
 
 ## QUICKSTART
 - Download the APK for the most current release [here](https://f-droid.org/packages/com.wownero.wownerujo/) and install it
