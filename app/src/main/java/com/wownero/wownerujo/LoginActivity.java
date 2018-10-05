@@ -1059,11 +1059,11 @@ public class LoginActivity extends SecureActivity
             case R.id.action_language:
                 onChangeLocale();
                 return true;
-            case R.id.action_stagenet:
+            case R.id.action_testnet:
                 try {
                     LoginFragment loginFragment = (LoginFragment)
                             getSupportFragmentManager().findFragmentById(R.id.fragment_container);
-                    item.setChecked(loginFragment.onStagenetMenuItem());
+                    item.setChecked(loginFragment.onTestnetMenuItem());
                 } catch (ClassCastException ex) {
                     // never mind then
                 }

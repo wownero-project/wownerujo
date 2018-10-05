@@ -338,55 +338,61 @@ public class LoginFragment extends Fragment implements WalletInfoAdapter.OnInter
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         inflater.inflate(R.menu.list_menu, menu);
-        menu.findItem(R.id.action_stagenet).setChecked(stagenetCheckMenu);
+        menu.findItem(R.id.action_testnet).setVisible(BuildConfig.DEBUG);
+        menu.findItem(R.id.action_testnet).setChecked(testnetChecked);
         super.onCreateOptionsMenu(menu, inflater);
     }
 
-    // private boolean stagenetCheckMenu = BuildConfig.DEBUG;
+    private boolean testnetChecked = BuildConfig.DEBUG;
 
     // no stagenet for wow
-    private boolean stagenetCheckMenu = false;
 
-    public boolean onStagenetMenuItem() {
-        boolean lastState = stagenetCheckMenu;
-        setNet(!lastState, true); // set and save
-        return !lastState;
+    public boolean onTestnetMenuItem() {
+        testnetChecked = !testnetChecked;
+        setNet(true);
+        return testnetChecked;
     }
 
-    public void setNet(boolean stagenetChecked, boolean save) {
-        this.stagenetCheckMenu = stagenetChecked;
-        NetworkType net = stagenetChecked ? NetworkType.NetworkType_Stagenet : NetworkType.NetworkType_Mainnet;
+    public void setNet(boolean save) {
+        NetworkType net = testnetChecked ? NetworkType.NetworkType_Testnet : NetworkType.NetworkType_Mainnet;
         activityCallback.setNetworkType(net);
         activityCallback.showNet();
         if (save) {
             savePrefs(true); // use previous state as we just clicked it
         }
-        if (stagenetChecked) {
-            setDaemon(daemonStageNet);
+        if (testnetChecked) {
+            setDaemon(daemonTestNet);
         } else {
             setDaemon(daemonMainNet);
         }
         loadList();
     }
 
-    private static final String PREF_DAEMON_STAGENET = "daemon_stagenet";
     private static final String PREF_DAEMON_MAINNET = "daemon_mainnet";
+    private static final String PREF_DAEMON_STAGENET = "daemon_stagenet";
+    private static final String PREF_DAEMON_TESTNET = "daemon_testnet";
+
 
     private static final String PREF_DAEMONLIST_MAINNET =
             "node.wowne.ro;node.wowkira.com";
 
     private static final String PREF_DAEMONLIST_STAGENET =
-            "node.wowne.ro:38081";
+            "node.wowne.ro";
 
-    private NodeList daemonStageNet;
+    private static final String PREF_DAEMONLIST_TESTNET =
+            "node.wowne.ro";
+
     private NodeList daemonMainNet;
+    private NodeList daemonStageNet;
+    private NodeList daemonTestNet;
 
     void loadPrefs() {
         SharedPreferences sharedPref = activityCallback.getPrefs();
 
         daemonMainNet = new NodeList(sharedPref.getString(PREF_DAEMON_MAINNET, PREF_DAEMONLIST_MAINNET));
         daemonStageNet = new NodeList(sharedPref.getString(PREF_DAEMON_STAGENET, PREF_DAEMONLIST_STAGENET));
-        setNet(stagenetCheckMenu, false);
+        daemonTestNet = new NodeList(sharedPref.getString(PREF_DAEMON_TESTNET, PREF_DAEMONLIST_TESTNET));
+        setNet(false);
     }
 
     void savePrefs() {
@@ -396,10 +402,10 @@ public class LoginFragment extends Fragment implements WalletInfoAdapter.OnInter
     void savePrefs(boolean usePreviousNetState) {
         Timber.d("SAVE / %s", usePreviousNetState);
         // save the daemon address for the net
-        boolean stagenet = stagenetCheckMenu ^ usePreviousNetState;
+        boolean testnet = testnetChecked ^ usePreviousNetState;
         String daemon = getDaemon();
-        if (stagenet) {
-            daemonStageNet.setRecent(daemon);
+        if (testnet) {
+            daemonTestNet.setRecent(daemon);
         } else {
             daemonMainNet.setRecent(daemon);
         }
@@ -408,6 +414,7 @@ public class LoginFragment extends Fragment implements WalletInfoAdapter.OnInter
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putString(PREF_DAEMON_MAINNET, daemonMainNet.toString());
         editor.putString(PREF_DAEMON_STAGENET, daemonStageNet.toString());
+        editor.putString(PREF_DAEMON_TESTNET, daemonTestNet.toString());
         editor.apply();
     }
 
