@@ -18,9 +18,6 @@ for arch in ${archs[@]}; do
         "arm64")
             target_host=aarch64-linux-android
             ;;
-        "x86")
-            target_host=i686-linux-android
-            ;;
         "x86_64")
             target_host=x86_64-linux-android
             ;;

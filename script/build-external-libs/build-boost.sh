@@ -18,23 +18,40 @@ args="--build-type=minimal link=static runtime-link=static --with-chrono \
 --with-serialization --with-system --with-thread \
 --includedir=$build_root/build/boost/include \
 --toolset=clang-android threading=multi threadapi=pthread target-os=android \
--j $NPROC \
 "
 
-echo $args
+archs=(arm arm64 x86_64)
+for arch in ${archs[@]}; do
+    extra_build_flags=""
+    case ${arch} in
+        "arm")
+            target_host=arm-linux-androideabi
+            extra_build_flags="--arch=armeabi-v7a"
+            ;;
+        "arm64")
+            target_host=aarch64-linux-android
+            ;;
+        "x86_64")
+            target_host=x86_64-linux-android
+            ;;
+        *)
+            exit 16
+            ;;
+    esac
 
-PATH=$build_root/tool/arm/arm-linux-androideabi/bin:$build_root/tool/arm/bin:$PATH \
-    ./b2 --build-dir=android-arm --prefix=$build_root/build/boost/arm $args \
-    --arch=armeabi-v7a \
-    install
-ln -sf ../include $build_root/build/boost/arm
+    echo "building for ${arch}"
 
-PATH=$build_root/tool/arm64/aarch64-linux-androideabi/bin:$build_root/tool/arm64/bin:$PATH \
-    ./b2 --build-dir=android-arm64 --prefix=$build_root/build/boost/arm64 $args \
-    install
-ln -sf ../include $build_root/build/boost/arm64
+    (PATH=$build_root/tool/$arch/$target_host/bin:$build_root/tool/$arch/bin:$PATH; \
+         ./b2 \
+         --build-dir=android-${arch} \
+         --prefix=$build_root/build/boost/$arch \
+         $args \
+         $extr_build_flags \
+         -j $NPROC \
+         install)
 
-PATH=$build_root/tool/x86_64/x86_64-linux-android/bin:$build_root/tool/x86_64/bin:$PATH \
-    ./b2 --build-dir=android-x86_64 --prefix=$build_root/build/boost/x86_64 $args \
-    install
-ln -sf ../include $build_root/build/boost/x86_64
+    ln -sf ../include $build_root/build/boost/${arch}
+
+done
+
+exit 0
