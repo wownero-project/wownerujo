@@ -8,7 +8,7 @@ build_root=$EXTERNAL_LIBS_BUILD_ROOT
 
 build_type=release # or debug
 
-archs=(arm arm64 x86 x86_64)
+archs=(arm arm64 x86_64)
 
 for arch in ${archs[@]}; do
     ldflags=""

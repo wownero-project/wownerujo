@@ -34,11 +34,6 @@ PATH=$build_root/tool/arm64/aarch64-linux-androideabi/bin:$build_root/tool/arm64
     install
 ln -sf ../include $build_root/build/boost/arm64
 
-PATH=$build_root/tool/x86/i686-linux-android/bin:$build_root/tool/x86/bin:$PATH \
-    ./b2 --build-dir=android-x86--prefix=$build_root/build/boost/x86 $args \
-    install
-ln -sf ../include $build_root/build/boost/x86
-
 PATH=$build_root/tool/x86_64/x86_64-linux-android/bin:$build_root/tool/x86_64/bin:$PATH \
     ./b2 --build-dir=android-x86_64 --prefix=$build_root/build/boost/x86_64 $args \
     install

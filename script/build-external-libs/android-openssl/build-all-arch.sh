@@ -9,7 +9,7 @@ rm -rf prebuilt
 mkdir prebuilt
 
 #archs=(armeabi arm64-v8a mips mips64 x86 x86_64)
-archs=(armeabi arm64-v8a x86 x86_64)
+archs=(armeabi arm64-v8a x86_64)
 
 for arch in ${archs[@]}; do
     xLIB="/lib"
