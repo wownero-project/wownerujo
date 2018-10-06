@@ -100,7 +100,7 @@ with nixpkgs;
     export release_key=~/.android/fuwa-release-key.jks
 
     export USE_CCACHE=1
-    export NPROC=3
+    export NPROC=$(nproc --ignore=1)
 
     exec zsh
   ''
