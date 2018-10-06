@@ -17,7 +17,9 @@ args="--build-type=minimal link=static runtime-link=static --with-chrono \
 --with-date_time --with-filesystem --with-program_options --with-regex \
 --with-serialization --with-system --with-thread \
 --includedir=$build_root/build/boost/include \
---toolset=clang-android threading=multi threadapi=pthread target-os=android"
+--toolset=clang-android threading=multi threadapi=pthread target-os=android \
+-j $NPROC \
+"
 
 echo $args
 

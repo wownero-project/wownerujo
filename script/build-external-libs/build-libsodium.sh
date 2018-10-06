@@ -41,8 +41,7 @@ for arch in ${archs[@]}; do
         --host=${target_host} \
         --enable-static \
         --disable-shared \
-            && make -j && make install && make clean)
-
+            && make -j $NPROC && make install && make clean)
 
 
 done

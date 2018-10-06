@@ -70,7 +70,7 @@ for arch in ${archs[@]}; do
         $extra_cmake_flags \
         ../..
 
-    make -j wallet_api
+    make -j $NPROC wallet_api
 
     find . -path ./lib -prune -o -name '*.a' -exec cp '{}' lib \;
 
