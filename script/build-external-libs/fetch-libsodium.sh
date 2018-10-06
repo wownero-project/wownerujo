@@ -7,8 +7,11 @@ source script/build-external-libs/env.sh
 cd $EXTERNAL_LIBS_BUILD_ROOT
 
 version=1.0.16
-hash=675149b9b8b66ff44152553fb3ebf9858128363d
+# version=c4f03e
 
 rm -rf libsodium
-git clone https://github.com/jedisct1/libsodium.git -b ${version}
+git clone https://github.com/jedisct1/libsodium.git
+
+cd libsodium
+git checkout ${version}
 
