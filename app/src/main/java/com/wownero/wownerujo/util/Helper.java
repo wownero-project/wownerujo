@@ -81,7 +81,7 @@ public class Helper {
     static private final String WALLET_DIR = "wownerujo" + (BuildConfig.DEBUG ? "-debug" : "");
     static private final String HOME_DIR = "wownero" + (BuildConfig.DEBUG ? "-debug" : "");
 
-    static public int DISPLAY_DIGITS_INFO = 4;
+    static public int DISPLAY_DIGITS_INFO = 2;
 
     static public File getWalletRoot(Context context) {
         return getStorage(context, WALLET_DIR);
