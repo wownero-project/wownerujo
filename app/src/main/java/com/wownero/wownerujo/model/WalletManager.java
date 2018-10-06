@@ -213,9 +213,11 @@ public class WalletManager {
         });
         for (int i = 0; i < found.length; i++) {
             String filename = found[i].getName();
+            Timber.d("Adding wallet: %s", filename);
             File f = new File(found[i].getParent(), filename.substring(0, filename.length() - 5)); // 5 is length of ".keys"+1
             wallets.add(getWalletInfo(f));
         }
+        Timber.d("Added wallets: %s", wallets);
         return wallets;
     }
 

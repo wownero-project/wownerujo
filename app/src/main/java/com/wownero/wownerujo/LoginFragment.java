@@ -267,7 +267,7 @@ public class LoginFragment extends Fragment implements WalletInfoAdapter.OnInter
     private String addressPrefix() {
         switch (WalletManager.getInstance().getNetworkType()) {
             case NetworkType_Testnet:
-                return "-";
+                return "9-";
             case NetworkType_Mainnet:
                 return "W-"; // Wo or WW
             case NetworkType_Stagenet:
