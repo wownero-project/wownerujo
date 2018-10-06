@@ -338,6 +338,7 @@ public class LoginFragment extends Fragment implements WalletInfoAdapter.OnInter
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         inflater.inflate(R.menu.list_menu, menu);
+        // Should we enable testnet on release build?
         menu.findItem(R.id.action_testnet).setVisible(BuildConfig.DEBUG);
         menu.findItem(R.id.action_testnet).setChecked(testnetChecked);
         super.onCreateOptionsMenu(menu, inflater);
