@@ -4,7 +4,10 @@ set -e
 
 source script/build-external-libs/env.sh
 
-cd $EXTERNAL_LIBS_BUILD_ROOT
-cd android-openssl
+project_root=`pwd`
 
-./build-all-arch.sh
+cd $EXTERNAL_LIBS_BUILD_ROOT
+mkdir -p build-openssl-android
+cd build-openssl-android
+
+$project_root/script/build-external-libs/build-openssl-android.sh 23 23
