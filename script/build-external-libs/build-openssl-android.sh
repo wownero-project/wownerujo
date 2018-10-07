@@ -32,13 +32,9 @@ tar -xvzf $OPENSSL_FULL_VERSION.tar.gz
 
  ANDROID_LIB_ROOT=../../build/openssl
  ANDROID_TOOLCHAIN_DIR=/tmp/android-toolchain
- OPENSSL_CONFIGURE_OPTIONS="no-pic no-krb5 no-idea no-camellia \
-        no-seed no-bf no-cast no-rc2 no-rc4 no-rc5 no-md2 \
-        no-md4 no-ripemd no-rsa no-ecdh no-sock no-ssl2 no-ssl3 \
-        no-dsa no-dh no-ec no-ecdsa no-tls1 no-pbe no-pkcs \
-        no-tlsext no-pem no-rfc3779 no-whirlpool no-ui no-srp \
-        no-ssltrace no-tlsext no-mdc2 no-ecdh no-engine \
-        no-tls2 no-srtp -fPIC -O"
+ OPENSSL_CONFIGURE_OPTIONS="no-asm \
+        no-shared --static \
+        -fPIC -O"
 
  HOST_INFO=`uname -a`
  case ${HOST_INFO} in
@@ -67,21 +63,16 @@ tar -xvzf $OPENSSL_FULL_VERSION.tar.gz
 
  ./Configure dist
 
- for ANDROID_TARGET_PLATFORM in armeabi x86_64 arm64-v8a
- do
+ archs=(arm64)
+ # archs=(arm arm64 x86_64)
+
+ for ANDROID_TARGET_PLATFORM in ${archs[@]}; do
      echo "Building for libcrypto.a and libssl.a for ${ANDROID_TARGET_PLATFORM}"
      case "${ANDROID_TARGET_PLATFORM}" in
-         armeabi)
+         arm)
              TOOLCHAIN_ARCH=arm
              TOOLCHAIN_PREFIX=arm-linux-androideabi
              CONFIGURE_ARCH=android
-             PLATFORM_OUTPUT_DIR=arm
-             ANDROID_API_VERSION=${MINIMUM_ANDROID_SDK_VERSION}
-             ;;
-         armeabi-v7a)
-             TOOLCHAIN_ARCH=arm
-             TOOLCHAIN_PREFIX=arm-linux-androideabi
-             CONFIGURE_ARCH=android -march=armv7-a
              PLATFORM_OUTPUT_DIR=armeabi-v7a
              ANDROID_API_VERSION=${MINIMUM_ANDROID_SDK_VERSION}
              ;;
@@ -99,7 +90,7 @@ tar -xvzf $OPENSSL_FULL_VERSION.tar.gz
              PLATFORM_OUTPUT_DIR=x86_64
              ANDROID_API_VERSION=${MINIMUM_ANDROID_64_BIT_SDK_VERSION}
              ;;
-         arm64-v8a)
+         arm64)
              TOOLCHAIN_ARCH=arm64
              TOOLCHAIN_PREFIX=aarch64-linux-android
              CONFIGURE_ARCH=android64-aarch64
@@ -112,7 +103,7 @@ tar -xvzf $OPENSSL_FULL_VERSION.tar.gz
      esac
 
      rm -rf ${ANDROID_TOOLCHAIN_DIR}
-     mkdir -p "${ANDROID_LIB_ROOT}/${PLATFORM_OUTPUT_DIR}"
+     mkdir -p "${ANDROID_LIB_ROOT}/${PLATFORM_OUTPUT_DIR}/lib"
      python ${ANDROID_NDK_ROOT}/build/tools/make_standalone_toolchain.py \
             --arch ${TOOLCHAIN_ARCH} \
             --api ${ANDROID_API_VERSION} \
@@ -146,7 +137,7 @@ tar -xvzf $OPENSSL_FULL_VERSION.tar.gz
          exit 1
      fi
 
-     mv libcrypto.a ${ANDROID_LIB_ROOT}/${PLATFORM_OUTPUT_DIR}/
-     mv libssl.a ${ANDROID_LIB_ROOT}/${PLATFORM_OUTPUT_DIR}/
+     mv libcrypto.a ${ANDROID_LIB_ROOT}/${PLATFORM_OUTPUT_DIR}/lib
+     mv libssl.a ${ANDROID_LIB_ROOT}/${PLATFORM_OUTPUT_DIR}/lib
  done
 )

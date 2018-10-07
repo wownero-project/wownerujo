@@ -13,7 +13,8 @@ build_root=$EXTERNAL_LIBS_BUILD_ROOT
 
 build_type=release # or debug
 
-archs=(arm arm64 x86_64)
+archs=(arm64)
+# archs=(arm arm64 x86_64)
 
 for arch in ${archs[@]}; do
     ldflags=""
@@ -61,11 +62,11 @@ for arch in ${archs[@]}; do
         -D CMAKE_BUILD_TYPE=$build_type \
         -D CMAKE_POSITION_INDEPENDENT_CODE:BOOL=true \
         -D FORCE_USE_HEAP=1 \
-        -D OPENSSL_CRYPTO_LIBRARY=$build_root/build/openssl/$arch/lib/libcrypto.so \
-        -D OPENSSL_INCLUDE_DIR=$build_root/build/openssl/$arch/include \
-        -D OPENSSL_ROOT_DIR=$build_root/build/openssl/$arch \
-        -D OPENSSL_SSL_LIBRARY=$build_root/build/openssl/$arch/lib/libssl.so \
         -D LIBSODIUM_INCLUDE_DIR=$build_root/build/libsodium/$arch/include \
+        -D OPENSSL_CRYPTO_LIBRARY=$build_root/build/openssl/$arch/lib/libcrypto.so \
+        -D OPENSSL_INCLUDE_DIR=$build_root/build/openssl/include \
+        -D OPENSSL_ROOT_DIR=$build_root/build/openssl/ \
+        -D OPENSSL_SSL_LIBRARY=$build_root/build/openssl/$arch/lib/libssl.so \
         -D STATIC=ON \
         $extra_cmake_flags \
         ../..

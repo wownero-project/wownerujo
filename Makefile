@@ -17,10 +17,10 @@ toolchain:
 	script/build-external-libs/prep-toolchain.sh
 
 openssl: toolchain
-	script/build-external-libs/fetch-openssl.sh
-	script/build-external-libs/patch-openssl.sh
+	# script/build-external-libs/fetch-openssl.sh
+	# script/build-external-libs/patch-openssl.sh
 	script/build-external-libs/build-openssl.sh
-	script/build-external-libs/post-build-openssl.sh
+	# script/build-external-libs/post-build-openssl.sh
 
 boost: toolchain
 	script/build-external-libs/fetch-boost.sh
