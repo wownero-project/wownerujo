@@ -65,7 +65,7 @@ for arch in ${archs[@]}; do
         -D LIBSODIUM_INCLUDE_DIR=$build_root/build/libsodium/$arch/include \
         -D OPENSSL_CRYPTO_LIBRARY=$build_root/build/openssl/$arch/lib/libcrypto.so \
         -D OPENSSL_INCLUDE_DIR=$build_root/build/openssl/include \
-        -D OPENSSL_ROOT_DIR=$build_root/build/openssl/ \
+        -D OPENSSL_ROOT_DIR=$build_root/build/openssl \
         -D OPENSSL_SSL_LIBRARY=$build_root/build/openssl/$arch/lib/libssl.so \
         -D STATIC=ON \
         $extra_cmake_flags \

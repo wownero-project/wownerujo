@@ -33,8 +33,9 @@ tar -xvzf $OPENSSL_FULL_VERSION.tar.gz
  ANDROID_LIB_ROOT=../../build/openssl
  ANDROID_TOOLCHAIN_DIR=/tmp/android-toolchain
  OPENSSL_CONFIGURE_OPTIONS="no-asm \
-        no-shared --static \
-        -fPIC -O"
+        shared no-threads no-asm no-zlib no-ssl2 no-ssl3 no-comp no-hw no-engine \
+        -fPIC -DOPENSSL_PIC -DDSO_DLFCN -DHAVE_DLFCN_H -mandroid \
+        -O"
 
  HOST_INFO=`uname -a`
  case ${HOST_INFO} in
@@ -76,25 +77,18 @@ tar -xvzf $OPENSSL_FULL_VERSION.tar.gz
              PLATFORM_OUTPUT_DIR=armeabi-v7a
              ANDROID_API_VERSION=${MINIMUM_ANDROID_SDK_VERSION}
              ;;
-         x86)
-             TOOLCHAIN_ARCH=x86
-             TOOLCHAIN_PREFIX=i686-linux-android
-             CONFIGURE_ARCH=android-x86
-             PLATFORM_OUTPUT_DIR=x86
-             ANDROID_API_VERSION=${MINIMUM_ANDROID_SDK_VERSION}
+         arm64)
+             TOOLCHAIN_ARCH=arm64
+             TOOLCHAIN_PREFIX=aarch64-linux-android
+             CONFIGURE_ARCH=android64-aarch64
+             PLATFORM_OUTPUT_DIR=arm64
+             ANDROID_API_VERSION=${MINIMUM_ANDROID_64_BIT_SDK_VERSION}
              ;;
          x86_64)
              TOOLCHAIN_ARCH=x86_64
              TOOLCHAIN_PREFIX=x86_64-linux-android
              CONFIGURE_ARCH=android64
              PLATFORM_OUTPUT_DIR=x86_64
-             ANDROID_API_VERSION=${MINIMUM_ANDROID_64_BIT_SDK_VERSION}
-             ;;
-         arm64)
-             TOOLCHAIN_ARCH=arm64
-             TOOLCHAIN_PREFIX=aarch64-linux-android
-             CONFIGURE_ARCH=android64-aarch64
-             PLATFORM_OUTPUT_DIR=arm64-v8a
              ANDROID_API_VERSION=${MINIMUM_ANDROID_64_BIT_SDK_VERSION}
              ;;
          *)
@@ -130,6 +124,7 @@ tar -xvzf $OPENSSL_FULL_VERSION.tar.gz
      fi
 
      make clean
+     # make depend
      make -j $NPROC
 
      if [ $? -ne 0 ]; then
