@@ -67,7 +67,7 @@
 
     <string name="label_send_progress_xmrto_create">Vytváram objednávku na XMR.TO</string>
     <string name="label_send_progress_xmrto_query">Pýtam sa na objednávku XMR.TO</string>
-    <string name="label_send_progress_create_tx">Pripravujem Monero transakciu</string>
+    <string name="label_send_progress_create_tx">Pripravujem Wownero transakciu</string>
 
     <string name="label_send_progress_queryparms">Posielam XMR.TO parametre</string>
 
@@ -179,7 +179,7 @@
         <p>Pomocou overenia odtlačkom prsta, môžeš vidieť zostatok a prijímať prostriedky, bez zadávania hesla.</p>
         <p>Avšak kvôli zvýšeniu bezpečnosti, monerujo bude stále vyžadovať heslo na zobrazenie detailov peňaženky a posielanie.</p>
         <strong>Bezpečnostné Varovanie</strong>
-        <p>Monerujo Ti chce pripomenúť, že ktokoľvek kto získa prístup k Tvojim odtlačkom, bude schopný nazrieť do tvojej peňaženky.</p>
+        <p>Wownerujo Ti chce pripomenúť, že ktokoľvek kto získa prístup k Tvojim odtlačkom, bude schopný nazrieť do tvojej peňaženky.</p>
         <p>Napríklad záškodník niekde v blízkosti môže otvoriť Tvoju peňaženku keď spíš.</p>
         <strong>Si si istý, že chceš povoliť túto funkciu?</strong>
     ]]></string>
@@ -226,8 +226,8 @@
     <string name="send_amount_hint">0.00</string>
     <string name="send_notes_hint">Súkromné Poznámky (voliteľné)</string>
     <string name="send_generate_paymentid_hint">Generuj</string>
-    <string name="send_send_label">Odošli Monero</string>
-    <string name="send_send_timed_label">Odošli Monero (%1$s)</string>
+    <string name="send_send_label">Odošli Wownero</string>
+    <string name="send_send_timed_label">Odošli Wownero (%1$s)</string>
     <string name="send_qr_invalid">Neplatný QR Kód</string>
     <string name="send_qr_address_invalid">Neplatný QR Kód Platby</string>
     <string name="send_address_invalid">Neplatná Adresa</string>
