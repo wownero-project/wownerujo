@@ -66,7 +66,7 @@
 
     <string name="label_send_progress_xmrto_create">XMR.TO-opdracht maken</string>
     <string name="label_send_progress_xmrto_query">XMR.TO-opdracht aanvragen</string>
-    <string name="label_send_progress_create_tx">Monero-transactie voorbereiden</string>
+    <string name="label_send_progress_create_tx">Wownero-transactie voorbereiden</string>
 
     <string name="label_send_progress_queryparms">XMR.TO-parameters aanvragen</string>
 
