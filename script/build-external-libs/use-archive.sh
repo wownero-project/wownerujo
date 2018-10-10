@@ -2,7 +2,7 @@
 
 set -e
 
-version=v1.5.10.5
+version=v2.3.0.0
 
 curl -O -L https://github.com/fuwa0529/wownerujo/releases/download/${version}/external-libs.tgz
 
