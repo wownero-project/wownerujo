@@ -168,34 +168,9 @@
         <p>ID Platby môžeš použiť na identifikáciu platby medzi dvoma stranami.
 		Nie je to síce povinný, ale je to súkromný údaj.
         Môžeš tak napríklad prepojiť kupovaný tovar so svojim biznisom.<p>
-        <h2>Veľkosť Kruhu</h2>
-        <p>Existuje niekoľko veľkostí kruhov z ktorých si v Wownerujo môžeš vyberať.
-		Ak si začiatočník, doporučujeme veľkosť 7. Zvyšovaním veľkosti kruhu nad hodnotu 7, zvyšujeme počet podpisujúcich v kruhovom podpise.
-		Teoreticky to môže zvýšiť súkromie, avšak príliš vysoké číslo môže spôsobiť spomalenie transakcie.</p>
         <h2>Priorita</h2>
         <p>Toto nastavenie určuje rýchlosť, ktorou transakcia bude zaradená do blockchain. Vysoká priorita vyžaduje obvykle vyššie transakčné poplatky a naopak.
 		Majte na pamäti, že pokiaľ nastavíte transakcii nízku prioritu, môže trvať aj hodiny, kým bude zaradená do blockchain. Prednastavená priorita je \"Medium\".</p>
-        <h1>Posielanie BTC</h1>
-        <h2>XMR.TO</h2>
-        <p>XMR.TO je služba tretej strany, ktorá umožňuje zámenu z Wownero na Bitcoin.
-        Používame XMR.TO API na integráciu Bitcoin platieb do Wownerujo. Prosím mrkni na 
-		https://xmr.to a rozhodni sa sám, či je to naozaj služba, ktorú chceš používať.
-		Tím Wownerujo nie je nijako spojený so službou XMR.TO a teda nemôže pomôcť s prípadnými problémami s touto službou.</p>
-        <h2>XMR.TO Výmenný Kurz<h2>
-        <p>Na obrazovke \"Množstvo\" uvidíš aktuálne parametre služby XMR.TO, vrátane aktuálneho kurzu BTC, hornej a dolnej hranice.
-		Podotýkame, že tento kurz nie je garantovaný.
-		Tiež tam možno vidieť množstvo BTC, ktoré budú zamieňané instantne bez čakania na potvrdenia v Wownero sieti. 
-	    (pozri XMR.TO FAQ ). XMR.TO si neúčtuje ďalšie extra poplatky za transakciu. - No nie je to cool?</p>
-        <h2>XMR.TO Objednávka<h2>
-        <p>Na obrazovke \"Potvrdiť\", uvidíš aktuálnu objednávku v XMR.TO. Táto objednávka je platná iba obmedzený čas - ako si môžeš všimnúť odpočítavanie na tlačítku \"Minúť\". 
-		Výmenný kurz sa môže líšiť od toho, ktorý bol na predošlých obrazovkách.</p>
-        <h2>XMR.TO Tajný Kľúč<h2>
-        <p>Keďže Wownerujo dbá len na tú časť transakcie, ktorá pracuje s Wownero, 
-		tento XMR.TO Tajný Kľúč sa môže využívať na sledovanie Bitcoinovej časti transakcie a objednávky
-		na domovskej stránke XMR.TO</p>
-        <p>Ber na vedomie, že tento Tajný Kľúč je platný iba 24 hodín od začiatku transakcie!</p>
-        <h2>XMR.TO Odpočítavanie!</h2>
-        <p>Akonáhle odpočítavanie dosiahne nulu, budeš potrebovať nový kľúč z XMR.TO návratom na predchádzajúci krok a obrazovku \"Potvrdiť\" .</p>
     ]]></string>
 
     <string name="help_xmrto"><![CDATA[

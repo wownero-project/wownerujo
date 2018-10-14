@@ -165,40 +165,12 @@
         <h2>Zahlungs-ID</h2>
         <p>Du kannst eine Zahlungs-ID benutzen um den Grund einer Transaktion zwischen zwei Parteien zu identifizieren. Dies ist optional 
 	und nicht öffentlich einsehbar. Zum Beispiel kann ein Unternehmen damit Zahlungen und Verkäufe miteinander verbinden.<p>
-        <h2>Ringgröße</h2>
-        <p>Es gibt verschiedene Ringgrößen in Wownerujo aus denen du wählen kannst. Falls du ein neuer Nutzer bist
-        empfehlen wir bei der Standard Ringgröße zu bleiben (aktuell 7). Die Ringgröße zu erhöhen erhöht die Anzahl der Signaturen in einer Ring-Signatur, 
-	was theoretisch das Erraten der richtigen Signatur erschwert. Eine höhere Ringgröße lässt eine Transaktion jedoch 
-	auf der Blockchain auch herausstechen.</p>
         <h2>Priorität</h2>
         <p>Diese Einstellung bestimmt wie zügig deine Transaktion in einem Block auf der Blockchain verarbeitet wird.
 	Eine höhere Priorität bedeutet eine höhere Transaktionsgebühr, eine niedrige Priorität bedeutet eine 
 	niedrigere Transaktionsgebühr. Bitte bedenke, dass eine Transaktion mit einer niedrigen Priorität unter Umständen
 	eine Weile benötigt bis sie auf der Blockchain verarbeitet wird. Die Standard-Priorität
         ist \"Mittel\".</p>
-        <h1>BTC Senden</h1>
-        <h2>WOW.TO</h2>
-        <p>WOW.TO ist ein Drittanbieter-Service welcher als Wechselservice von Wownero zu Bitcoin fungiert.
-        Wir nutzen die WOW.TO Schnittstelle um Bitcoin Zahlungen in Wownerujo zu integrieren. Bitte schaue dir
-        https://xmr.to an und entscheide selbst, ob du diesen Service nutzen willst. Das Wownerujo
-        Team gehört nicht zu WOW.TO und kann keinen Support für ihren Service bieten</p>
-        <h2>WOW.TO Wechselkurs<h2>
-        <p>Auf dem \"Menge\" Bildschirm siehst du die aktuellen Werte des WOW.TO Service. Diese beinhalten den aktuellen Tauschkurs
-	sowie die oberen und unteren BTC-Limits. Bitte bedenke, dass dieser Kurs zu diesem Zeitpunkt nicht garantiert ist.
-	Außerdem siehst du den Wert bis zu dem eine BTC-Zahlung sofort ausgeführt wird 
-	ohne auf WOW-Bestätigungen warten zu müssen (siehe die WOW.TO FAQ für mehr Details).
-        WOW.TO erhebt keine zusätzlichen Gebühren - wie cool ist das denn?</p>
-        <h2>WOW.TO Auftrag<h2>
-        <p>Auf dem \"Bestätigen\" Bildschirm siehst du das genaue WOW.TO-Angebot. Dieses Angebot gilt
-        für eine bestimmte Zeit - du siehst einen Countdown auf dem \"Ausgeben\" Button. Der Wechselkurs kann 
-        sich von den vorherigen Angaben unterscheiden.</p>
-        <h2>Geheimer WOW.TO Schlüssel<h2>
-        <p>Da Wownerujo nur den Wownero-Teil deiner Transaktion verarbeitet kann dein geheimer WOW.TO Schlüssel
-        dazu benutzt werden den Bitcoin-Teil deines Auftrags auf der WOW.TO-Homepage zu verfolgen.</p>
-        <p>Dieser geheime Schlüssel ist für 24h nach Start der Transaktion gültig!</p>
-        <h2>WOW.TO Countdown!</h2>
-        <p>Wenn der Countdown 0 erreicht musst du ein neues Angebot von WOW.TO anfordern indem du zum vorherigen Schritt
-        zurückkehrst und wieder zum \"Bestätigen\"-Bildschirm zurückkommst.</p>
     ]]></string>
 
     <string name="help_xmrto"><![CDATA[

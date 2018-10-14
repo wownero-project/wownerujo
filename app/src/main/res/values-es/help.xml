@@ -182,45 +182,12 @@
         Al ser Wownero ofuscado por naturaleza, puedes usar un ID de Pago para identificar un envío de Wownero entre
         dos partes. Esto es completamente opcional y privado. Por ejemplo, esto permitiría que un
         negocio pueda asociar inequívocamente tu transacción con un producto que has comprado.</p>
-        <h2>Tamaño del anillo</h2>
-        <p>Hay varios tamaños de anillo (ring size) para elegir en Wownerujo. Si eres un
-        usuario principiante te recomendamos que simplemente utilices un tamaño de anillo de 7.
-        Aumentar el tamaño de anillo por encima de 7 incrementa el número de firmantes en una firma
-        de anillo, lo cual teóricamente proporciona una mayor negación plausible. Pero configurar
-        tamaños de anillo altos también puede provocar que tu transacción quede fuera de la
-        cadena de bloques.</p>
         <h2>Prioridad</h2>
         <p>Este ajuste determina la velocidad a la que tu transacción será incluída en la cadena
         de bloques. Una configuración de alta prioridad tendrá una mayor
         comisión de transacción, y lo opuesto en el caso de una prioridad baja. Por favor,
         ten en cuenta que si configuras tu transacción con una baja prioridad puede llevar horas
         hasta que sea incluída en la cadena de bloques. La prioridad por defecto es \"Media\".</p>
-        <h1>Enviar BTC</h1>
-        <h2>WOW.TO</h2>
-        <p>WOW.TO es un servicio de terceros que actúa como casa de cambio de Wownero a Bitcoin.
-        Usamos la API de WOW.TO para integrar pagos de Bitcoin dentro de Wownerujo. Por favor revisa
-        https://xmr.to y decide por ti mismo si es un servicio que quieres usar. El equipo de Wownerujo
-        no está asociado con WOW.TO y no puede ayudarte con su servicio.</p>
-        <h2>Tipo de cambio WOW.TO<h2>
-        <p>En la pantalla de \"Monto\" se te mostrará las condiciones actuales del servicio WOW.TO.
-        Estas incluyen el tipo de cambio del momento así como también los límites mínimo y máximo de BTC.
-        Toma nota de que el tipo de cambio aún no está garantizado en esa instancia. También verás el
-        monto tope hasta el cual la transacción será ejecutada instantáneamente sin esperar a
-        confirmaciones de WOW (revisa el FAQ de WOW.TO para más detalles). Por favor observa que
-        WOW.TO no cobra comisiones extra - increíble, verdad?</p>
-        <h2>Orden WOW.TO<h2>
-        <p> En la pantalla \"Confirmar\" verás la orden WOW.TO final. Esta orden es válida por un
-        tiempo limitado - notarás una cuenta atrás en el botón de \"Gastar\". El tipo de cambio a
-        esta altura puede ser distinto al aproximado que era mostrado en pantallas anteriores.</p>
-        <h2>Clave secreta WOW.TO<h2>
-        <p>Dado que Wownerujo sólo administra la parte en Wownero de tu transacción, puedes usar tu
-        clave secreta WOW.TO para rastrear la parte en Bitcoin de tu orden en la página de WOW.TO.</p>
-        <p>Por favor ten en cuenta que esta clave secreta sólo es válida por 24 horas a partir de
-        iniciada la transacción!</p>
-        <h2>Cuenta atrás WOW.TO!</h2>
-        <p>Una vez que la cuenta atrás alcanza el cero, necesitarás pedir una nueva cotización de
-        parte de WOW.TO, esto se logra dando un paso atrás y luego volviendo a la pantalla de
-        \"Confirmar\".</p>
     ]]></string>
 
     <string name="help_xmrto"><![CDATA[

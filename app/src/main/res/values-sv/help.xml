@@ -153,40 +153,11 @@
         <p>Du kan använda ett Betalnings-ID för att identifiera anledningen du skickat Wownero till någon,
         det är valfritt och privat. Till exempel tillåter det en affär att förknippa din transaktion
         med något du köpt.<p>
-        <h2>Ringstorlek</h2>
-        <p>Det finns ett antal av ringstorlekar att välja mellan i Wownerujo. Om du är en nybörjare
-        rekommenderar vi att du använder en ringstorlek av 7. Att öka ringstorleken över 7 höjer
-        mängden av signerare i en ringsignaturm, vilket teoretiskt ger högre möjlig förnekning.
-        Men, att välja högre ringstorlekar kan även få din transaktion att stå ut på blockkedjan.</p>
         <h2>Prioritet</h2>
         <p>Den här inställningen avgör hur snabbt din transaktion kommer att inkluderas i blockkedjan.
         En hög prioritetsinställning tar också en högre transaktionsavgift och det motsatta stämmer
         för låg prioritet. Vänligen notera att om du sätter din transaktion på låg prioritet kan
         det ta timmar innan den är inkluderad på blockkedjan. Standard prioriteten är \"Medium\".</p>
-        <h1>Skicka BTC</h1>
-        <h2>WOW.TO</h2>
-        <p>WOW.TO är en tredjeparts tjänst som byter ut Wownero mot Bitcoin. Vi använder WOW.TO API:n
-        för att integrera Bitcoin betalningar i Wownerujo. Vänligen besök https://xmr.to och bestäm
-        för dig själv om det är någonting du vill använda. Wownerujo laget är inte associerad med
-        WOW.TO och kan inte hjälpa dig med deras tjänst.</p>
-        <h2>WOW.TO Växelkurs<h2>
-        <p>På \"Mängd\"skärmen ser du de nuvarande parametrarna av WOW.TO tjänsten. Dessa innehåller den
-        nuvarande växelkursen samt de övre och lägre BTC gränserna. Vänligen notera att denna kursen
-        inte är garanterad just nu. Du kommer även att se gränsen över då BTC transaktioner utförs
-        omedelbart utan att vänta på WOW bekräftningar (se WOW.TO FAQ:n för mer detaljer). Vänligen
-        notera att WOW.TO inte tar en extra avgift - hur coolt är inte det?</p>
-        <h2>WOW.TO Beställning<h2>
-        <p>På \"Bekräfta\" skärmen, kommer du att se den faktiska WOW.TO beställningen. Den här beställningen
-        är giltig under en begränsad tid - du kan se en nedräkning på \"Spendera\" knappen. Växelkursen
-        kan vara annorlunda från den indikativa, visad på tidigare skärmar..</p>
-        <h2>WOW.TO Privatnyckel<h2>
-        <p>Eftersom att Wownerujo bara tar hand om Wownero delen av din transaktion, kan din WOW.TO
-        privatnyckel användas för att spåra Bitcoin delen av din beställning på WOW.TO sidan.</p>
-        <p>Vänligen notera att denna privatnyckeln bara är giltig i 24 timmar efter att transaktionen
-        är påbörjad!</p>
-        <h2>WOW.TO Nedräkning!</h2>
-        <p>När nedräkningen når noll, behöver du skaffa ett nytt kostnadsförslag från WOW.TO genom att gå
-        tillbaka till den tidigare skärmen och sedan gå till \"Bekräfta\"skärmen.</p>
     ]]></string>
 
     <string name="help_xmrto"><![CDATA[
