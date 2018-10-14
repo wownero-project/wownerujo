@@ -160,8 +160,6 @@
         <h2>Kedvezményezett címe</h2>
         <p>Azon tárca nyilvános címe, melyre Monerót küldesz. Begépelhető kézileg, de akár vágólapról vagy
         QR-kódból is beilleszthető. Többször is ellenőrizd, hogy biztosan jó címre utalsz-e.</p>
-        <p>Az WOW-küldés mellett BTC-küldésre is lehetőség van az WOW.TO szolgálatatásn keresztül. Részletekért
-        látogass el a https://xmr.to weboldalra és olvasd el a lentebb található BTC-küldés című pontot.</p>
         <h2>Fizetési azonosító</h2>
         <p>Fizetési azonosítót (payment ID) használhatsz arra a célra, hogy beazonosítsd, miért történt
         tranzakció két fél között. Ez teljes mértékben opcionális és privát. A fizetési azonosító például
@@ -172,35 +170,6 @@
         ellentetje pedig a kis prioritás esetén igaz. Vedd figyelembe, hogy alacsony prioritás mellett
         órahosszákba is telhet mire a tranzakciód a blokkláncba bekerül. Az alapértelmezett prioritás
         a közepes.</p>
-    ]]></string>
-
-    <string name="help_xmrto"><![CDATA[
-        <h1>BTC-küldés</h1>
-        <h2>WOW.TO</h2>
-        <p>Az WOW.TO egy harmadik féltől származó szolgáltatás, mely Moneróról Bitcoinra való átváltóként
-        viselkedik. Az WOW.TO API-ját használjuk a Bitcoinban való fizetés monerujóba való integrálásához.
-        Kérlek, látogass el a https://xmr.to weboldalra, és döntsd el magad, hogy szeretnéd-e használni.
-        A monerujo csapata nincsen kapcsolatban az WOW.TO-val és nem tudnak segítséget nyújtani a
-        szolgáltatásaikkal kapcsolatban.</p>
-        <h2>WOW.TO árfolyam<h2>
-        <p>A Mennyiség oldalon kerülnek megjelenítésre az WOW.TO szolgáltatás paraméterei. Ez magában
-        foglalja az aktuális árfolyamot, valamint a BTC alsó és felső határértékeit. Vedd figyelembe,
-        hogy ez az árfolyam ekkor még nem garantált. Megjelenítésre kerül az a mennyiség is, amely mellett
-        a BTC-tranzakció azonnal megvalósításra kerül WOW-megerősítések nélkül (részletekért olvad el az
-        WOW.TO oldalán a gyakran ismételt kérdéseket). Az WOW.TO nem számol fel extra költségeket - milyen
-        király már ez?</p>
-        <h2>WOW.TO megrendelés<h2>
-        <p>A Megerősítés oldalon láthatod a tényleges megrendelést. A megrendelés korlátozott ideig
-        érvényes - láthatod a visszaszámlálást a Küldés gombon. Az árfolyam különbözhet a korábbi képernyőkön
-        látottaktól.</p>
-        <h2>WOW.TO titkos kulcs<h2>
-        <p>ivel a monerujo csak a tranzakciód Wownero részét kezeli, így az WOW.TO titkos kulcsod
-        használható a megrendelésed Bitcoin részének nyomonkövetésére az WOW.TO kezdőlapján.</p>
-        <p>Kérjük vedd figyelembe, hogy ez a titkos kulcs csak a tranzakció kezdetétől számított
-        24 óráig érvényes!</p>
-        <h2>WOW.TO visszaszámlálás!</h2>
-        <p>Amint a visszaszámlálás eléri a nullát, új ajánlatot kell kérned az WOW.TO-tól azáltal, hogy
-        visszamész az előző lépésre, majd visszajössz a Megerősítés oldalra.</p>
     ]]></string>
 
 </resources>

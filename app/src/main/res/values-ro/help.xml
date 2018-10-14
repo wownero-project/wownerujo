@@ -152,8 +152,6 @@
         <p>Aceasta este adresa publică a destinatarului la care vrei să trimiți Wownero, poți copia
 		această adresă folosind clipboard-ul, scanând codul QR sau introducând-o manual. Verifică
 		de trei ori această adresă pentru a fi sigur că nu trimiți monedele la o adresă greșită.</p>
-        <p>Pe lângă trimiterea de WOW, poți trimite BTC prin intermediul serviciului WOW.TO
-		(vezi https://xmr.to pentru detalii). Vizualizează secțiunea despre trimiterea BTC mai jos.</p>
         <h2>Payment ID</h2>
         <p>Poți utiliza un ID de plată pentru a identifica suma trimisă între două terțe, acest lucru
 		este complet opțional și privat. Ca exemplu, poate permite identificare într-o activitate comercială
@@ -164,32 +162,6 @@
 		iar opusul este valabil pentru o prioritate scăzută. Reține că în cazul în care setezi o prioritate
 		scăzută tranzacției, poate dura ore până când ea poate fi inclusă in baza de date distribuită (blockchain).
 		Prioritatea este presetată la \"Medium\".</p>
-    ]]></string>
-
-    <string name="help_xmrto"><![CDATA[
-        <h1>Transferul de BTC</h1>
-        <h2>WOW.TO</h2>
-        <p>WOW.TO este un serviciu terță parte care care acționeaza ca un schimb valutar între Wownero și Bitcoin.
-        Noi folosim API-ul WOW.TO pentru a integra plățile Bitcoin în Wownerujo. Verifică
-        https://xmr.to and și decide singur dacă este un serviciu pe care dorești să îl folosești.
-		Echipa Wownerujo nu este asociată în niciun fel cu WOW.TO și nu te poate ajuta cu serviciile oferite de ei.</p>
-        <h2>Rata de schimb al WOW.TO<h2>
-        <p>Pe ecranul cu \"Suma\" vor fi afișați parametrii ai serviciului WOW.TO. Aceștia includ cursul de
-		schimb actual precum și limitele superioare și inferioare ale BTC. Reține că aceste rate de schimb
-		nu sunt garantate în acest moment. Vei vedea, de asemenea, suma până la care tranzacția BTC va fi
-        executată instantaneu fără a aștepta confirmarea WOW (verifică FAQ-ul WOW.TO pentru detalii). Notează că, WOW.TO
-		nu percepe comisioane extra - nu e așa că este cool?</p>
-        <h2>Dispoziție WOW.TO<h2>
-        <p>Pe ecranul cu \"Confirm\", vei vedea comanda actuală a WOW.TO. Această comandă este valabilă pentru
-		un timp limitat - este posibil să observi o numărătoare inversă pe butonul \"Consum\". Rata de schimb poate
-		fi diferită de cea indicată pe ecranele anterioare.</p>
-        <h2>Cheia secretă WOW.TO<h2>
-        <p>Din moment ce Wownerujo gestionează numai partea Wownero din tranzacția ta, cheia secretă a WOW.TO
-        poate fi folosită pentru a urmari partea Bitcoin a comenzii tale de pe site-ul WOW.TO.</p>
-        <p>Te rog notează, că această cheie secretă este validă doar pentru 24 ore din momentul începerii tranzacției!</p>
-        <h2>Numerotarea inversă WOW.TO</h2>
-        <p>În momentul în care numerotarea inversă ajunge la zero, va trebui să obți o noua cotație de la WOW.TO mergând
-		înapoi la pasul anterior apoi revenind la ecranul \"Confirm\".</p>
     ]]></string>
 
 </resources>

@@ -159,8 +159,6 @@
         <p> Este é o endereço público da carteira para a qual vais enviar Wowneroj, podes copiar esta
         informação da área de transferência, capturara um código QR, ou introduzir manualmente. Confirma
         atentamente que não estás a enviar para o endereço errado.</p>
-        <p>Em adição a enviar WOW, podes enviar BTC através do serviço WOW.TO (ver https://xmr.to
-        para mais detalhes). Vê a secção de enviar BTC mais abaixo.</p>
         <h2>ID do Pagamento</h2>
         <p>Utiliza-se o ID do Pagamento para identificar a razão porque foram transaccionados Wowneroj.
         Isto é opcional e privado. Por exemplo, isto permite que um negócio identifique que item
@@ -171,36 +169,6 @@
         é verdade para uma prioridade baixa. Nota que ao definiras a transacção como sendo de baixa
         prioridade, pode demorar horas até que seja incluída na blockchain. A prioridade vem, por
         defeito, a \"Média\".</p>
-    ]]></string>
-
-    <string name="help_xmrto"><![CDATA[
-        <h1>Enviar BTC</h1>
-        <h2>WOW.TO</h2>
-        <p>WOW.TO é um serviço de terceiros que funciona como intercâmbio de Wownero para Bitcoin.
-        Nós utilizamos a API do WOW.TO para integrar pagamentos de Bitcoin no Wownerujo. Por favor
-        vai a https://xmr.to e decide por ti próprio se queres utilizar este serviço. A equipa
-        do Wownerujo não está associada com o WOW.TO e não te pode ajudar com este serviço.</p>
-        <h2>Taxa de câmbio WOW.TO<h2>
-        <p>No ecrã de \"Quantidade\" vais ver os parâmetros actuais do serviço WOW.TO. Estes
-        incluem a taxa de câmbio assim como os limites superiores e inferiores em BTC. Nota que
-        este taxa ainda não é garantido. Também vais ver a quantidade máxima de BTC para que
-        a transação seja executada instantaneamente sem ter que esperar pelas confirmações WOW
-        (ver o FAQ do WOW.TO para mais detalhes). Nota que o WOW.TO não cobra nenhumas taxas
-        extra - isto não é brutal?</p>
-        <h2>Pedido WOW.TO<h2>
-        <p>No ecrão de \"Confirmação\", vais ver o pedido actual WOW.TO. Este pedido é válido
-        por um período limitado de tempo - podes reparar que exite uma contagem decrescente no
-        botão de \"Enviar\". A taxa de câmbio pode ser diferente da taxa indicativa mostrada
-        nos ecrãs anteriores.</p>
-        <h2>Chave Secreta WOW.TO<h2>
-        <p>Como o Wownerujo só controla a parte Wownero da transacção, a chave secreta WOW.TO
-        pode ser utilizada para monitorar a parte Bitcoin da transacção na página pricipal do
-        WOW.TO.</p>
-        <p>Nota que esta chave secreta só é válida por 24 horas depois de a transacção ter
-        iniciado!</p>
-        <h2>Contagem decrescente WOW.TO!</h2>
-        <p>Quando a contagem chega a zero, precisas de obter uma nova taxa de câmbio do WOW.TO
-        indo ao passo anterior e depois voltando ao ecrã de \"Confirmar\".</p>
     ]]></string>
 
 </resources>
