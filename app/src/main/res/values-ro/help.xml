@@ -152,10 +152,6 @@
         <p>Aceasta este adresa publică a destinatarului la care vrei să trimiți Wownero, poți copia
 		această adresă folosind clipboard-ul, scanând codul QR sau introducând-o manual. Verifică
 		de trei ori această adresă pentru a fi sigur că nu trimiți monedele la o adresă greșită.</p>
-        <h2>Payment ID</h2>
-        <p>Poți utiliza un ID de plată pentru a identifica suma trimisă între două terțe, acest lucru
-		este complet opțional și privat. Ca exemplu, poate permite identificare într-o activitate comercială
-		pentru a reconcilia pentru un produs pe care l-ați achiziționat.<p>
         <h2>Prioritatea</h2>
         <p>Această setare determină viteza la care tranzacția ta va fi inclusă în baza de date distribuită
         (blockchain). Setarea unei priorități mari se va corela direct cu un comision de tranzacție mai mare,

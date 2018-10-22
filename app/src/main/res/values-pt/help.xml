@@ -159,10 +159,6 @@
         <p> Este é o endereço público da carteira para a qual vais enviar Wowneroj, podes copiar esta
         informação da área de transferência, capturara um código QR, ou introduzir manualmente. Confirma
         atentamente que não estás a enviar para o endereço errado.</p>
-        <h2>ID do Pagamento</h2>
-        <p>Utiliza-se o ID do Pagamento para identificar a razão porque foram transaccionados Wowneroj.
-        Isto é opcional e privado. Por exemplo, isto permite que um negócio identifique que item
-        é que uma determinada transacção está a pagar.</p>
         <h2>Prioridade</h2>
         <p>Esta opção determina a velocidade com que a tua transacção será incluída na blockchain.
         Uma prioridade alta está correlacionada com uma taxa de transacção mais elevada, e o inverso

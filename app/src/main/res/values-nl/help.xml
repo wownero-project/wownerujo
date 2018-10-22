@@ -125,8 +125,6 @@
         <h1>Verzenden</h1>
         <h2>Adres ontvanger</h2>
         <p>Dit is het openbare adres van de portemonnee waar je moneroj naartoe stuurt. Je kunt dit kopiëren via het klembord, een QR-code scannen of het adres handmatig invoeren. Controleer dit nauwkeurig om er zeker van te zijn dat je geen geld naar het verkeerde adres stuurt.</p>
-        <h2>Betalings-ID</h2>
-        <p>Je kunt een Betalings-ID gebruiken om aan te geven waarom je Wownero verzendt. Dit is volledig optioneel en blijft vertrouwelijk tussen beide partijen. Een bedrijf kan bijvoorbeeld jouw transactie koppelen aan een artikel dat je hebt gekocht.<p>
         <h2>Prioriteit</h2>
         <p>Deze instelling bepaalt de snelheid waarmee je transactie wordt vastgelegd op de blockchain. Voor een hoge prioriteit betaal je hogere transactiekosten, terwijl een lagere prioriteit goedkoper is. Als je een lage prioriteit instelt, kan het uren duren voordat je transactie wordt vastgelegd op de blockchain. De standaardprioriteit is \"Normaal\".</p>
     ]]></string>

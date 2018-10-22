@@ -160,10 +160,6 @@
         <h2>Kedvezményezett címe</h2>
         <p>Azon tárca nyilvános címe, melyre Monerót küldesz. Begépelhető kézileg, de akár vágólapról vagy
         QR-kódból is beilleszthető. Többször is ellenőrizd, hogy biztosan jó címre utalsz-e.</p>
-        <h2>Fizetési azonosító</h2>
-        <p>Fizetési azonosítót (payment ID) használhatsz arra a célra, hogy beazonosítsd, miért történt
-        tranzakció két fél között. Ez teljes mértékben opcionális és privát. A fizetési azonosító például
-        lehetővé teszi egy üzlet számára a tranzakciód és a megvásárolt tételed összeegyeztetését.<p>
         <h2>Prioritás</h2>
         <p>Ez a beállítás határozza meg, hogy milyen gyorsan kerül a tranzakciód a blokkláncba.
         A magasabb prioritás közvetlen kapcsolatban áll a magasabb tranzakciós költséggel, ennek

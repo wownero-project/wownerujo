@@ -173,11 +173,6 @@
         <p>C’est l’adresse publique du portefeuille auquel vous allez envoyer des Wowneroj, vous pouvez
         la copier/coller, scanner un QR code ou la saisir manuellement. Vérifiez là bien trois fois
         afin de vous assurer que vous n’envoyez pas de pièces à la mauvaise adresse.</p>
-        <h2>ID de Paiement</h2>
-        <p>Vous pouvez utiliser un ID de paiement pour identifier la raison pour laquelle vous avez
-        envoyé des Wowneroj entre deux parties. C’est totallement privé et optionnel. Il permet par
-        exemple à une société de faire concorder votre transaction avec un article que vous avez
-        acheté.</p>
         <h2>Priorité</h2>
         <p>Ce paramètre détermine la vitesse à laquelle votre transaction sera insérée dans la chaîne
         de blocs. Une priorité plus élevée sera en lien direct avec des frais de transaction plus

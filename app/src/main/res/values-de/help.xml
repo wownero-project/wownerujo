@@ -160,9 +160,6 @@
         <p>Dies ist die öffentliche Adresse des Wallets, an die du Wowneroj sendest. Du kannst sie aus der Zwischenablage kopieren,
 	einen QR-Code scannen oder sie manuell eingeben. Vergewissere dich, dass es die richtige Adresse ist um
         sicherzustellen die Wowneroj nicht irrtümlich an eine falsche Adresse zu senden.</p>
-        <h2>Zahlungs-ID</h2>
-        <p>Du kannst eine Zahlungs-ID benutzen um den Grund einer Transaktion zwischen zwei Parteien zu identifizieren. Dies ist optional 
-	und nicht öffentlich einsehbar. Zum Beispiel kann ein Unternehmen damit Zahlungen und Verkäufe miteinander verbinden.<p>
         <h2>Priorität</h2>
         <p>Diese Einstellung bestimmt wie zügig deine Transaktion in einem Block auf der Blockchain verarbeitet wird.
 	Eine höhere Priorität bedeutet eine höhere Transaktionsgebühr, eine niedrige Priorität bedeutet eine 

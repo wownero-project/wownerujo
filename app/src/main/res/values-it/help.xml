@@ -137,8 +137,6 @@
         <h1>Invia</h1>
         <h2>Indirizzo del ricevente</h2>
         <p>Questo è l&apos;indirizzo pubblico del portafoglio cui stai inviando Wowneroj, puoi incollare qui un indirizzo che hai precededentemente copiato sul blocco appunti, scansionare un codice QR o inserire un indirizzo manualmente. Accertati più volte che sia l&apos;indirizzo corretto e che tu non stia inviando Wowneroj ad un indirizzo sbagliato.</p>
-        <h2>ID Pagamento</h2>
-        <p>Puoi usare un ID Pagamento per identificare la causale della transazione. Questa è un&apos;informazione opzionale e privata. Ad esempio può aiutare un venditore ad associare una transazione ricevuta ad un bene da te acquistato.<p>
         <h2>Priorità</h2>
         <p>Questa impostazione determina la velocità con la quale la tua transazione verrà inclusa nella blockchain. Un&apos;alta priorità si correla ad una commissione di transazione più alta, così come una priorità bassa si correla ad una commissione di transazione più bassa. Considera che se imposti una priorità bassa alla tua transazione, potrebbero trascorrere ore prima che essa sia inserita all&apos;interno della blockchain. La priorità di default è
         \"Media\".</p>

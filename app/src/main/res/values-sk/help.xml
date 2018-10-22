@@ -162,10 +162,6 @@
         <h2>Adresa Príjemcu</h2>
         <p>Toto je verejná adresa peňaženky kam posielaš Wownero. Môžeš ju kopírovať zo schránky, skenovať QR kód alebo vložiť manuálne.
 		Trikrát sa uisti, že neposielaš mince na zlú adresu.</p>
-        <h2>ID Platby</h2>
-        <p>ID Platby môžeš použiť na identifikáciu platby medzi dvoma stranami.
-		Nie je to síce povinný, ale je to súkromný údaj.
-        Môžeš tak napríklad prepojiť kupovaný tovar so svojim biznisom.<p>
         <h2>Priorita</h2>
         <p>Toto nastavenie určuje rýchlosť, ktorou transakcia bude zaradená do blockchain. Vysoká priorita vyžaduje obvykle vyššie transakčné poplatky a naopak.
 		Majte na pamäti, že pokiaľ nastavíte transakcii nízku prioritu, môže trvať aj hodiny, kým bude zaradená do blockchain. Prednastavená priorita je \"Medium\".</p>

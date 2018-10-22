@@ -160,10 +160,6 @@
         <p>This is the public address of the wallet you are sending Wowneroj to, you can copy this from
         your clipboard, scan a QR code or enter it manually. Make sure you triple check this to
         ensure you aren’t sending coins to the wrong address.</p>
-        <h2>Payment ID</h2>
-        <p>You can use a Payment ID to identify the reason you sent Wownero between two parties. This
-        is fully optional and private. For example it can allow a business to reconcile your
-        transaction with an item you bought.<p>
         <h2>Priority</h2>
         <p>This setting determines the speed at which your transaction will be included in the
         blockchain. A high priority setting will correlate directly with a higher transaction fee

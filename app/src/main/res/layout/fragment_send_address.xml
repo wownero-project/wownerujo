@@ -30,7 +30,8 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="48dp">
+        android:layout_marginBottom="48dp"
+        android:visibility="invisible">
 
         <TextView
             android:id="@+id/tvPaymentIdIntegrated"
@@ -39,8 +40,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="start|center_vertical"
             android:layout_margin="8dp"
-            android:drawablePadding="8dp"
             android:drawableStart="@drawable/ic_check_gray_24dp"
+            android:drawablePadding="8dp"
             android:gravity="center"
             android:text="@string/info_paymentid_intergrated"
             android:textSize="18sp"
@@ -56,11 +57,11 @@
             android:visibility="invisible">
 
             <!--<ImageView-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_gravity="top"-->
-                <!--android:paddingTop="8dp"-->
-                <!--android:src="" />-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="top"-->
+            <!--android:paddingTop="8dp"-->
+            <!--android:src="" />-->
 
             <TextView
                 android:id="@+id/tvXmrTo"

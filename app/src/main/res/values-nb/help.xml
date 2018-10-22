@@ -160,10 +160,6 @@
         <p>Dette er den offentlige adressen til lommeboka du skal sende moneroj til, som du kan
 		kopiere fra utklippstavla, skanne fra en QR-kode eller skrive inn manuellt. Vær sikker på at du trippelsjekker dette
         for å forsikre deg om at du ikke sender moneroj til feil adresse.</p>
-        <h2>Betalings-ID</h2>
-        <p>Du kan bruke betalings-ID til å identifisere hvorfor du sendte Wownero mellom to parter. Dette er
-        helt frivillig og privat. For eksempel lar det en bedrift tilknytte transaksjonen din med
-		en vare du har kjøpt.<p>
         <h2>Prioritet</h2>
         <p>Denne innstillingen bestemmer hvor raskt transaksjonen din skal bli inkludert i blokkjeden.
 		En høy transaksjonsprioritet er direkte tilknytta en høy transaksjonsavgift
