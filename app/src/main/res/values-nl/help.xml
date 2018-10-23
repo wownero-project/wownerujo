@@ -111,8 +111,6 @@
         <h1>Transactiedetails</h1>
         <h2>Bestemming</h2>
         Dit is het openbare adres van de portemonnee waarnaar je Wownero verstuurt.
-        <h2>Betalings-ID</h2>
-        Je kunt een Betalings-ID gebruiken om aan te geven waarom je Wownero verzendt. Dit is volledig optioneel en blijft vertrouwelijk tussen beide partijen. Een bedrijf kan bijvoorbeeld jouw transactie koppelen aan een artikel dat je hebt gekocht.
         <h2>Transactie-ID</h2>
         Met je transactie-ID kun je de versleutelde transactie vinden in een Wownero-blockexplorer, bijvoorbeeld <a href="https://xmrchain.net/">https://xmrchain.net/</a>
         <h2>Transactiesleutel</h2>

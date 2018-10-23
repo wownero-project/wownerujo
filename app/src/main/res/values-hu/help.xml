@@ -141,10 +141,6 @@
         <h1>Tranzakciórészletek</h1>
         <h2>Kedvezményezett címe</h2>
         A tárca nyilvános címe, melyre Monerót küldtél.
-        <h2>Fizetési azonosító</h2>
-        Fizetési azonosítót (Payment ID) használhatsz arra a célra, hogy beazonosítsd, miért történt
-        tranzakció két fél között. Ez teljes mértékben opcionális és privát. A fizetési azonosító például
-        lehetővé teszi egy üzlet számára a tranzakciód és a megvásárolt tételed összeegyeztetését.
         <h2>Tranzakcióazonosító</h2>
         A tranzakcióazonosítód (TX ID) szolgál arra, hogy a titkosított tranzakciódat azonosítani tudd
         egy blokkkeresőben, mint például a <a href="https://xmrchain.net/">https://xmrchain.net/</a>.

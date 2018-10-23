@@ -158,10 +158,6 @@
         <h1>Detalles de la transacción</h1>
         <h2>Destinatario</h2>
         Esta es la dirección pública del monedero al que has enviado moneroj
-        <h2>ID de Pago</h2>
-        Al ser Wownero ofuscado por naturaleza, puedes usar un ID de Pago para identificar un envío de Wownero entre
-        dos partes. Esto es completamente opcional y privado. Por ejemplo, esto permitiría que un
-        negocio pueda asociar inequívocamente tu transacción con un producto que has comprado.
         <h2>ID de Transacción</h2>
         Este es un identificador de tu transacción que puede ser utilizado para ubicar tu transacción
         ofuscada en la cadena de bloques de Wownero usando un explorador como <a href="https://xmrchain.net/">https://xmrchain.net/</a>

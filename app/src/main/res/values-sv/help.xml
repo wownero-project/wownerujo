@@ -127,10 +127,6 @@
         <h1>Transaktionsdetaljer</h1>
         <h2>Destination</h2>
         Det här är offentliga adressen av plånboken du skickat Wownero till.
-        <h2>Betalnings-ID</h2>
-        Du kan använda ett Betalnings-ID för att identifiera anledningen du skickat Wownero till någon,
-        det är valfritt och privat. Till exempel tillåter det en affär att förknippa din transaktion
-        med något du köpt.
         <h2>TX ID</h2>
         Det här är ditt Transaktions-ID, det kan du använda för att identifiera förvirrande
         transaktioner på Blockkedjeutforskare som <a href="https://xmrchain.net/">https://xmrchain.net/</a>

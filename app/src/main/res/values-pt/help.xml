@@ -139,10 +139,6 @@
         <h1>Detalhes da Transacção</h1>
         <h2>Destino</h2>
         O endereço público para o qual enviaste Wowneroj
-        <h2>ID do Pagamento</h2>
-        Utiliza-se o ID do Pagamento para identificar a razão porque foram transaccionados Wowneroj.
-        Isto é opcional e privado. Por exemplo, isto permite que um negócio identifique que item
-        é que uma determinada transacção está a pagar.
         <h2>ID TX</h2>
         Este é o ID da tua Transacção que podes utilizar para identificar a tua transacção ofuscada
         num explorador da Wownero Blockchain como o <a href="https://xmrchain.net/">https://xmrchain.net/</a>

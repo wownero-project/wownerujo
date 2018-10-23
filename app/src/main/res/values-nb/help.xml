@@ -140,10 +140,6 @@
         <h1>Transaksjonsdetaljer</h1>
         <h2>Destinasjon</h2>
         Dette er den offentlige adressen til lommeboka du sendte Wownero til.
-        <h2>Betalings-ID</h2>
-        Du kan bruke betalings-ID til å identifisere hvorfor du sendte Wownero mellom to parter. Dette er
-        helt frivillig og privat. For eksempel lar det en bedrift tilknytte transaksjonen din med
-		en vare du har kjøpt.
         <h2>TX-ID</h2>
         Dette er transaksjons-IDen din, som du kan bruke til å identifisere transaksjonen din på den obfuskerte Wownero blokkjeden, ved å bruke en
         blokkjedeutforsker som <a href="https://xmrchain.net/">https://xmrchain.net/</a>

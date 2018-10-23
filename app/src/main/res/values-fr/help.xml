@@ -151,11 +151,6 @@
         <h1>Détails de la Transaction</h1>
         <h2>Destination</h2>
         C’est l’adresse publique du portefeuille auquel vous avez envoyé des Wowneroj
-        <h2>ID de Paiement</h2>
-        Vous pouvez utiliser un ID de paiement pour identifier la raison pour laquelle vous avez
-        envoyé des Wowneroj entre deux parties. C’est totallement privé et optionnel. Il permet par
-        exemple à une société de faire concorder votre transaction avec un article que vous avez
-        acheté.
         <h2>ID TX</h2>
         C’est votre ID de transaction, vous pouvez l’utiliser pour identifier vos transaction masquées
         sur un explorateur de la chaîne de blocs Wownero comme <a href="https://xmrchain.net/">https://xmrchain.net/</a>

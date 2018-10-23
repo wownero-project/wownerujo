@@ -141,9 +141,6 @@
         <h1>Transaktionsdetails</h1>
         <h2>Ziel</h2>
         Dies ist die öffentliche Adresse des Wallets, zu dem du Wowneroj gesendet hast.
-        <h2>Zahlungs-ID</h2>
-        Du kannst eine Zahlungs-ID benutzen um Zahlungen zu identifizieren. Dies ist optional und ist nicht öffentlich einsehbar. 
-		Zum Beispiel kann ein Unternehmen damit Zahlungen und Verkäufe miteinander verbinden.
         <h2>TX ID</h2>
         Dies ist deine Transaktions-ID die du benutzen kannst um verschleierte Transaktionen mit einem Wownero
         Blockchain-Explorer wie <a href="https://xmrchain.net/">https://xmrchain.net/</a> zu identifizieren.
