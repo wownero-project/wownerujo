@@ -20,9 +20,6 @@ You may lose all your Wowneroj if you use this App. Be cautious when spending on
 - use your own daemon - it's easy
 - screen stays on until first sync is complete
 
-## Issues / Pitfalls
-- You should backup your wallet files in the "wownerujo" folder periodically.
-
 ## HOW TO BUILD
 
 If you want to build the external libs yourself (recommended) check out [the instructions](doc/BUILDING-external-libs.md)
