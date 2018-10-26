@@ -173,31 +173,7 @@ public class ReceiveFragment extends Fragment {
         bSubaddress.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                enableSubaddressButton(false);
-                enableCopyAddress(false);
-
-                final Runnable resetSize = new Runnable() {
-                    public void run() {
-                        tvAddress.animate().setDuration(125).scaleX(1).scaleY(1).start();
-                    }
-                };
-
-                final Runnable newAddress = new Runnable() {
-                    public void run() {
-                        tvAddress.setText(wallet.getNewSubaddress());
-                        tvAddressLabel.setText(getString(R.string.generate_address_label_sub,
-                                wallet.getNumSubaddresses() - 1));
-                        storeWallet();
-                        generateQr();
-                        enableCopyAddress(true);
-                        tvAddress.animate().alpha(1).setDuration(125)
-                                .scaleX(1.2f).scaleY(1.2f)
-                                .withEndAction(resetSize).start();
-                    }
-                };
-
-                tvAddress.animate().alpha(0).setDuration(250)
-                        .withEndAction(newAddress).start();
+                generateNewSubaddress();
             }
         });
 
@@ -276,6 +252,34 @@ public class ReceiveFragment extends Fragment {
         etDummy.requestFocus();
     }
 
+    void generateNewSubaddress() {
+        enableSubaddressButton(false);
+        enableCopyAddress(false);
+
+        final Runnable resetSize = new Runnable() {
+            public void run() {
+                tvAddress.animate().setDuration(125).scaleX(1).scaleY(1).start();
+            }
+        };
+
+        final Runnable newAddress = new Runnable() {
+            public void run() {
+                tvAddress.setText(wallet.getNewSubaddress());
+                tvAddressLabel.setText(getString(R.string.generate_address_label_sub,
+                        wallet.getNumSubaddresses() - 1));
+                storeWallet();
+                generateQr();
+                enableCopyAddress(true);
+                tvAddress.animate().alpha(1).setDuration(125)
+                        .scaleX(1.2f).scaleY(1.2f)
+                        .withEndAction(resetSize).start();
+            }
+        };
+
+        tvAddress.animate().alpha(0).setDuration(250)
+                .withEndAction(newAddress).start();
+    }
+
     @Override
     public void onResume() {
         super.onResume();
@@ -292,6 +296,7 @@ public class ReceiveFragment extends Fragment {
 
     private boolean isLoaded = false;
 
+
     private void show() {
         Timber.d("name=%s", wallet.getName());
         isLoaded = true;
@@ -300,10 +305,9 @@ public class ReceiveFragment extends Fragment {
         tvAddress.setText(wallet.getAddress());
         etPaymentId.setEnabled(true);
         bPaymentId.setEnabled(true);
-        enableCopyAddress(true);
         hideProgress();
-        generateQr();
-    }
+        generateNewSubaddress();
+8    }
 
     private void enableCopyAddress(boolean enable) {
         bCopyAddress.setClickable(enable);
