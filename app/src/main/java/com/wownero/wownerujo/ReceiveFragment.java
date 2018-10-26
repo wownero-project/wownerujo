@@ -197,6 +197,7 @@ public class ReceiveFragment extends Fragment {
             }
         });
 
+        tvAddressLabel.setText("");
         showProgress();
         clearQR();
 
@@ -252,10 +253,12 @@ public class ReceiveFragment extends Fragment {
         etDummy.requestFocus();
     }
 
-    void generateNewSubaddress(boolean scale) {
-        enableSubaddressButton(false);
-        enableCopyAddress(false);
-
+    void generateNewSubaddress(boolean animate) {
+        if (animate) {
+            enableSubaddressButton(false);
+            enableCopyAddress(false);
+        }
+       
         final Runnable resetSize = new Runnable() {
             public void run() {
                 tvAddress.animate().setDuration(125).scaleX(1).scaleY(1).start();
@@ -270,19 +273,20 @@ public class ReceiveFragment extends Fragment {
                 storeWallet();
                 generateQr();
                 enableCopyAddress(true);
-                if (scale) {
+                if (animate) {
                     tvAddress.animate().alpha(1).setDuration(125)
                             .scaleX(1.2f).scaleY(1.2f)
                             .withEndAction(resetSize).start();
                 }
-                else {
-                    tvAddress.animate().alpha(1).setDuration(125).start();
-                }
             }
         };
 
-        tvAddress.animate().alpha(0).setDuration(250)
-                .withEndAction(newAddress).start();
+        if (animate) {
+            tvAddress.animate().alpha(0).setDuration(250)
+                    .withEndAction(newAddress).start();
+        } else {
+            new Thread(newAddress).run();
+        }
     }
 
     @Override
@@ -305,11 +309,14 @@ public class ReceiveFragment extends Fragment {
     private void show() {
         Timber.d("name=%s", wallet.getName());
         isLoaded = true;
+
         listenerCallback.setTitle(wallet.getName());
         listenerCallback.setSubtitle(wallet.getAccountLabel());
-        tvAddress.setText(wallet.getAddress());
-        etPaymentId.setEnabled(true);
-        bPaymentId.setEnabled(true);
+
+//        tvAddress.setText(wallet.getAddress());
+//        etPaymentId.setEnabled(true);
+//        bPaymentId.setEnabled(true);
+
         hideProgress();
         generateNewSubaddress(false);
     }
