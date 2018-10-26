@@ -51,6 +51,8 @@ wownero-unsafe:
 	script/build-external-libs/patch-wownero.sh
 	script/build-external-libs/build-wownero.sh
 
+collect-unsafe:
+	script/build-external-libs/collect.sh
 
 
 
