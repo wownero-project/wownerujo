@@ -173,7 +173,7 @@ public class ReceiveFragment extends Fragment {
         bSubaddress.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                generateNewSubaddress();
+                generateNewSubaddress(true);
             }
         });
 
@@ -252,7 +252,7 @@ public class ReceiveFragment extends Fragment {
         etDummy.requestFocus();
     }
 
-    void generateNewSubaddress() {
+    void generateNewSubaddress(boolean scale) {
         enableSubaddressButton(false);
         enableCopyAddress(false);
 
@@ -270,9 +270,14 @@ public class ReceiveFragment extends Fragment {
                 storeWallet();
                 generateQr();
                 enableCopyAddress(true);
-                tvAddress.animate().alpha(1).setDuration(125)
-                        .scaleX(1.2f).scaleY(1.2f)
-                        .withEndAction(resetSize).start();
+                if (scale) {
+                    tvAddress.animate().alpha(1).setDuration(125)
+                            .scaleX(1.2f).scaleY(1.2f)
+                            .withEndAction(resetSize).start();
+                }
+                else {
+                    tvAddress.animate().alpha(1).setDuration(125).start();
+                }
             }
         };
 
@@ -306,8 +311,8 @@ public class ReceiveFragment extends Fragment {
         etPaymentId.setEnabled(true);
         bPaymentId.setEnabled(true);
         hideProgress();
-        generateNewSubaddress();
-8    }
+        generateNewSubaddress(false);
+    }
 
     private void enableCopyAddress(boolean enable) {
         bCopyAddress.setClickable(enable);
