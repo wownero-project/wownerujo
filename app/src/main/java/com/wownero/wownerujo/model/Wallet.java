@@ -117,8 +117,6 @@ public class Wallet {
 //TODO virtual void hardForkInfo(uint8_t &version, uint64_t &earliest_height) const = 0;
 //TODO virtual bool useForkRules(uint8_t version, int64_t early_blocks) const = 0;
 
-    public native String getIntegratedAddress(String payment_id);
-
     public native String getSecretViewKey();
 
     public native String getSecretSpendKey();

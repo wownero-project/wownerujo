@@ -576,16 +576,6 @@ Java_com_wownero_wownerujo_model_Wallet_nettype(JNIEnv *env, jobject instance) {
 //TODO virtual bool useForkRules(uint8_t version, int64_t early_blocks) const = 0;
 
 JNIEXPORT jstring JNICALL
-Java_com_wownero_wownerujo_model_Wallet_getIntegratedAddress(JNIEnv *env, jobject instance,
-                                                            jstring payment_id) {
-    const char *_payment_id = env->GetStringUTFChars(payment_id, NULL);
-    Bitmonero::Wallet *wallet = getHandle<Bitmonero::Wallet>(env, instance);
-    std::string address = wallet->integratedAddress(_payment_id);
-    env->ReleaseStringUTFChars(payment_id, _payment_id);
-    return env->NewStringUTF(address.c_str());
-}
-
-JNIEXPORT jstring JNICALL
 Java_com_wownero_wownerujo_model_Wallet_getSecretViewKey(JNIEnv *env, jobject instance) {
     Bitmonero::Wallet *wallet = getHandle<Bitmonero::Wallet>(env, instance);
     return env->NewStringUTF(wallet->secretViewKey().c_str());
