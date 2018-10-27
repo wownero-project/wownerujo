@@ -211,6 +211,7 @@
                         android:layout_toStartOf="@+id/bTxNotes"
                         android:backgroundTint="@color/moneroGray"
                         android:hint="@string/tx_notes_hint"
+                        android:enabled="false"
                         android:inputType="textMultiLine" />
 
                     <Button
@@ -223,7 +224,8 @@
                         android:enabled="true"
                         android:paddingEnd="8dp"
                         android:paddingStart="8dp"
-                        android:text="@string/tx_button_notes" />
+                        android:text="@string/tx_button_notes"
+                        android:visibility="invisible" />
                 </RelativeLayout>
 
             </TableRow>

@@ -130,8 +130,8 @@ public class TxFragment extends Fragment {
     }
 
     public void onNotesSet(boolean reload) {
-        bTxNotes.setEnabled(true);
-        etTxNotes.setEnabled(true);
+        bTxNotes.setEnabled(false);
+        etTxNotes.setEnabled(false);
         if (reload) {
             loadNotes(this.info);
         }
