@@ -17,6 +17,7 @@ sudo apt-get install build-essential cmake tofrodos libtool-bin
 ## Install Android NDK
 
 * Install NDK: <https://developer.android.com/ndk/guides/>
+* The latest working NDK version is r17c
 * set `$ANDROID_NDK_ROOT`, for example:
 
 ```Shell
