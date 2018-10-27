@@ -405,14 +405,14 @@ public class ReceiveFragment extends Fragment {
             return;
         }
         StringBuffer sb = new StringBuffer();
-        sb.append(BarcodeData.XMR_SCHEME).append(address);
+        sb.append(BarcodeData.WOW_SCHEME).append(address);
         boolean first = true;
         if (!paymentId.isEmpty()) {
             if (first) {
                 sb.append("?");
                 first = false;
             }
-            sb.append(BarcodeData.XMR_PAYMENTID).append('=').append(paymentId);
+            sb.append(BarcodeData.WOW_PAYMENTID).append('=').append(paymentId);
         }
         if (!xmrAmount.isEmpty()) {
             if (first) {
@@ -420,7 +420,7 @@ public class ReceiveFragment extends Fragment {
             } else {
                 sb.append("&");
             }
-            sb.append(BarcodeData.XMR_AMOUNT).append('=').append(xmrAmount);
+            sb.append(BarcodeData.WOW_AMOUNT).append('=').append(xmrAmount);
         }
         String text = sb.toString();
         int size = Math.min(qrCode.getHeight(), qrCode.getWidth());

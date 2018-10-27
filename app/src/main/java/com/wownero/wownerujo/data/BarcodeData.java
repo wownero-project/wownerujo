@@ -30,8 +30,10 @@ import timber.log.Timber;
 
 public class BarcodeData {
     public static final String XMR_SCHEME = "monero:";
-    public static final String XMR_PAYMENTID = "tx_payment_id";
-    public static final String XMR_AMOUNT = "tx_amount";
+    public static final String WOW_SCHEME = "wownero:";
+    public static final String WOW_PAYMENTID = "tx_payment_id";
+    public static final String WOW_AMOUNT = "tx_amount";
+
 
     static final String BTC_SCHEME = "bitcoin:";
     static final String BTC_AMOUNT = "amount";
@@ -93,9 +95,9 @@ public class BarcodeData {
 
         if (uri == null) return null;
 
-        if (!uri.startsWith(XMR_SCHEME)) return null;
+        if (!(uri.startsWith(XMR_SCHEME) || uri.startsWith(WOW_SCHEME))) return null;
 
-        String noScheme = uri.substring(XMR_SCHEME.length());
+        String noScheme = uri.substring(uri.indexOf(":") + 1);
         Uri monero = Uri.parse(noScheme);
         Map<String, String> parms = new HashMap<>();
         String query = monero.getQuery();
@@ -111,8 +113,8 @@ public class BarcodeData {
             }
         }
         String address = monero.getPath();
-        String paymentId = parms.get(XMR_PAYMENTID);
-        String amount = parms.get(XMR_AMOUNT);
+        String paymentId = parms.get(WOW_PAYMENTID);
+        String amount = parms.get(WOW_AMOUNT);
         if (amount != null) {
             try {
                 Double.parseDouble(amount);
