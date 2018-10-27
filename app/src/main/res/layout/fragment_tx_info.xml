@@ -195,70 +195,11 @@
                     style="@style/WowneroLabel.Small"
                     android:layout_gravity="center_vertical"
                     android:gravity="end"
-                    android:padding="8sp"
-                    android:text="@string/tx_notes" />
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <EditText
-                        android:id="@+id/etTxNotes"
-                        style="@style/WowneroEdit"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentStart="true"
-                        android:layout_toStartOf="@+id/bTxNotes"
-                        android:backgroundTint="@color/moneroGray"
-                        android:hint="@string/tx_notes_hint"
-                        android:enabled="false"
-                        android:inputType="textMultiLine" />
-
-                    <Button
-                        android:id="@+id/bTxNotes"
-                        style="@style/WowneroButton.Small"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerInParent="true"
-                        android:enabled="true"
-                        android:paddingEnd="8dp"
-                        android:paddingStart="8dp"
-                        android:text="@string/tx_button_notes"
-                        android:visibility="invisible" />
-                </RelativeLayout>
-
-            </TableRow>
-
-            <TableRow>
-
-                <TextView
-                    style="@style/WowneroLabel.Small"
-                    android:layout_gravity="center_vertical"
-                    android:gravity="end"
                     android:padding="8dp"
                     android:text="@string/tx_destination" />
 
                 <TextView
                     android:id="@+id/tvDestination"
-                    style="@style/WowneroText"
-                    android:gravity="start"
-                    android:padding="8dp"
-                    android:selectAllOnFocus="true"
-                    android:textIsSelectable="true" />
-            </TableRow>
-
-            <TableRow>
-
-                <TextView
-                    style="@style/WowneroLabel.Small"
-                    android:layout_gravity="center_vertical"
-                    android:gravity="end"
-                    android:padding="8dp"
-                    android:text="@string/tx_paymentId" />
-
-                <TextView
-                    android:id="@+id/tvTxPaymentId"
                     style="@style/WowneroText"
                     android:gravity="start"
                     android:padding="8dp"
@@ -336,6 +277,65 @@
                     android:padding="8dp"
                     android:selectAllOnFocus="true"
                     android:textIsSelectable="true" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/WowneroLabel.Small"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="end"
+                    android:padding="8dp"
+                    android:text="@string/tx_paymentId" />
+
+                <TextView
+                    android:id="@+id/tvTxPaymentId"
+                    style="@style/WowneroText"
+                    android:gravity="start"
+                    android:padding="8dp"
+                    android:selectAllOnFocus="true"
+                    android:textIsSelectable="true" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/WowneroLabel.Small"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="end"
+                    android:padding="8sp"
+                    android:text="@string/tx_notes" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/etTxNotes"
+                        style="@style/WowneroEdit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_toStartOf="@+id/bTxNotes"
+                        android:backgroundTint="@color/moneroGray"
+                        android:hint="@string/tx_notes_hint"
+                        android:enabled="false"
+                        android:inputType="textMultiLine" />
+
+                    <Button
+                        android:id="@+id/bTxNotes"
+                        style="@style/WowneroButton.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:enabled="true"
+                        android:paddingEnd="8dp"
+                        android:paddingStart="8dp"
+                        android:text="@string/tx_button_notes"
+                        android:visibility="invisible" />
+                </RelativeLayout>
 
             </TableRow>
 
