@@ -38,53 +38,53 @@
 
     <string name="info_xmrto"><![CDATA[
         <b>Sa sisestasid Bitcoini aadressi.</b><br/>
-        <i>See tähendab, et sa saadad Wownerosid ning kohale jõuavad Bitcoinid kasutades XMR.TO teenust.</i>
+        <i>See tähendab, et sa saadad Wownerosid ning kohale jõuavad Bitcoinid kasutades WOW.TO teenust.</i>
     ]]></string>
 
-    <string name="info_send_xmrto_success_order_label">XMR.TO tellimus</string>
+    <string name="info_send_xmrto_success_order_label">WOW.TO tellimus</string>
 
     <string name="info_send_xmrto_success_btc">%1$s BTC</string>
 
     <string name="info_send_xmrto_paid">Ootan kinnitust</string>
     <string name="info_send_xmrto_unpaid">Ootan makset</string>
-    <string name="info_send_xmrto_error">XMR.TO viga (%1$s)</string>
+    <string name="info_send_xmrto_error">WOW.TO viga (%1$s)</string>
     <string name="info_send_xmrto_sent">BTC saadetud!</string>
     <string name="info_send_xmrto_query">Küsin &#8230;</string>
 
     <string name="info_send_xmrto_parms"><![CDATA[
         <b>Sa saad saata %1$s &#8212; %2$s BTC</b>.<br/>
-        <i><b>XMR.TO</b> annab <u>hetkel</u> vahetuskursiks <b>%3$s BTC</b></i>.
+        <i><b>WOW.TO</b> annab <u>hetkel</u> vahetuskursiks <b>%3$s BTC</b></i>.
     ]]></string>
     <string name="info_send_xmrto_zeroconf"><![CDATA[
         <i>Kuni <b>%1$s BTC</b> saadetakse <u>viivitamatult</u>!</i>
     ]]></string>
 
-    <string name="send_available_btc">Kontojääk: %2$s BTC (%1$s XMR)</string>
+    <string name="send_available_btc">Kontojääk: %2$s BTC (%1$s WOW)</string>
 
     <string name="info_paymentid_intergrated">Makse ID integreeritud</string>
     <string name="info_prepare_tx">Valmistan ülekannet ette</string>
 
-    <string name="label_send_progress_xmrto_create">Loon XMR.TO tellimust</string>
-    <string name="label_send_progress_xmrto_query">Küsin XMR.TO tellimust</string>
+    <string name="label_send_progress_xmrto_create">Loon WOW.TO tellimust</string>
+    <string name="label_send_progress_xmrto_query">Küsin WOW.TO tellimust</string>
     <string name="label_send_progress_create_tx">Valmistan ette Wownero ülekannet</string>
 
-    <string name="label_send_progress_queryparms">Küsin XMR.TO parameetreid</string>
+    <string name="label_send_progress_queryparms">Küsin WOW.TO parameetreid</string>
 
-    <string name="label_generic_xmrto_error">XMR.TO viga</string>
+    <string name="label_generic_xmrto_error">WOW.TO viga</string>
     <string name="text_generic_xmrto_error">Kood: %1$d</string>
 
     <string name="text_retry">Puuduta uuesti proovimiseks</string>
     <string name="text_noretry_monero">Nüüd jõudsime küll tupikusse!</string>
-    <string name="text_noretry">Oh ei, XMR.TO ei ole hetkel saadaval!</string>
+    <string name="text_noretry">Oh ei, WOW.TO ei ole hetkel saadaval!</string>
 
-    <string name="text_send_btc_amount">%1$s BTC = %2$s XMR</string>
-    <string name="text_send_btc_rate">(Kurss: %1$s BTC/XMR)</string>
+    <string name="text_send_btc_amount">%1$s BTC = %2$s WOW</string>
+    <string name="text_send_btc_rate">(Kurss: %1$s BTC/WOW)</string>
 
     <string name="label_send_settings_advanced">Edasijõudnutele:</string>
 
     <string name="label_send_btc_xmrto_info">Külasta xmr.to lisainfo saamiseks &amp; jälgin</string>
-    <string name="label_send_btc_xmrto_key_lb">Privaatvõti\nXMR.TO</string>
-    <string name="label_send_btc_xmrto_key">XMR.TO privaatvõti</string>
+    <string name="label_send_btc_xmrto_key_lb">Privaatvõti\nWOW.TO</string>
+    <string name="label_send_btc_xmrto_key">WOW.TO privaatvõti</string>
     <string name="label_send_btc_address">Sihtkoha Bitcoini aadress</string>
     <string name="label_send_btc_amount">Kogus</string>
 
@@ -146,7 +146,7 @@
     <string name="label_wallet_receive">Küsi raha</string>
     <string name="label_wallet_send">Saada</string>
 
-    <string name="xmr_unconfirmed_amount">+ %1$s XMR kinnitamata</string>
+    <string name="xmr_unconfirmed_amount">+ %1$s WOW kinnitamata</string>
 
     <string name="service_description">monerujo teenus</string>
 
@@ -160,14 +160,14 @@
 
     <string name="label_copy_viewkey">Vaatamise võti</string>
     <string name="label_copy_address">Avalik aadress</string>
-    <string name="label_copy_xmrtokey">XMR.TO võti</string>
+    <string name="label_copy_xmrtokey">WOW.TO võti</string>
     <string name="message_copy_viewkey">Vaatamise võti on kopeeritud lõikepuhvrisse!</string>
-    <string name="message_copy_xmrtokey">XMR.TO võti on kopeeritud lõikepuhvrisse!</string>
+    <string name="message_copy_xmrtokey">WOW.TO võti on kopeeritud lõikepuhvrisse!</string>
     <string name="message_copy_address">Rahakoti aadress on kopeeritud lõikepuhvrisse!</string>
     <string name="message_copy_txid">Ülekande ID on kopeeritud lõikepuhvrisse!</string>
     <string name="message_nocopy">Lõikepuhvrisse kopeerimine on turvakaalutlustel keelatud!</string>
 
-    <string name="message_exchange_failed">Vahetuskursi küsimine ebaõnnestus!\nKasuta XMR/XMR või proovi uuesti</string>
+    <string name="message_exchange_failed">Vahetuskursi küsimine ebaõnnestus!\nKasuta WOW/WOW või proovi uuesti</string>
 
     <string name="generate_title">Loo rahakott</string>
     <string name="generate_name_hint">Rahakoti nimi</string>
@@ -222,8 +222,8 @@
 
     <string name="send_amount_btc_xmr">%1$s (umbkaudne)</string>
 
-    <string name="send_address_hint">Saaja XMR/BTC aadress või OpenAlias</string>
-    <string name="send_address_hint_wow">Saaja XMR aadress või OpenAlias</string>
+    <string name="send_address_hint">Saaja WOW/BTC aadress või OpenAlias</string>
+    <string name="send_address_hint_wow">Saaja WOW aadress või OpenAlias</string>
     <string name="send_paymentid_hint">Makse ID (valikuline)</string>
     <string name="send_amount_hint">0.00</string>
     <string name="send_notes_hint">Privaatsed kommentaarid (valikuline)</string>
@@ -238,7 +238,7 @@
     <string name="send_address_resolve_openalias">Lahendan OpenAlias&#8230;</string>
     <string name="send_address_no_dnssec">OpenAlias ilma DNSSEC\'ita - aadress võib olla võltsitud</string>
     <string name="send_title">Saada</string>
-    <string name="send_available">Kontojääk: %1$s XMR</string>
+    <string name="send_available">Kontojääk: %1$s WOW</string>
     <string name="send_address_title">Aadress</string>
     <string name="send_amount_title">Kogus</string>
     <string name="send_settings_title">Seaded</string>
@@ -246,12 +246,12 @@
     <string name="send_success_title">Tehtud</string>
 
     <string name="send_amount_label">Kogus</string>
-    <string name="send_fee_btc_label">Teenustasu (XMR)</string>
+    <string name="send_fee_btc_label">Teenustasu (WOW)</string>
     <string name="send_fee_label">Teenustasu</string>
-    <string name="send_total_btc_label">Kokku (XMR)</string>
+    <string name="send_total_btc_label">Kokku (WOW)</string>
     <string name="send_total_label">Kokku</string>
 
-    <string name="send_amount">%1$s XMR</string>
+    <string name="send_amount">%1$s WOW</string>
     <string name="send_fee">+%1$s teenustasu</string>
 
     <string name="send_create_tx_error_title">Viga ülekande genereerimisel</string>
@@ -291,7 +291,7 @@
 
     <string name="receive_amount_too_big">Kuni %1$s</string>
     <string name="receive_amount_negative">Vähemalt 0</string>
-    <string name="receive_amount_nan">XMR pole arv</string>
+    <string name="receive_amount_nan">WOW pole arv</string>
 
     <string name="receive_title">Küsi raha</string>
 

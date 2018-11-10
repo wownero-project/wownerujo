@@ -38,53 +38,53 @@
 
     <string name="info_xmrto"><![CDATA[
         <b>Você colocou um endereço Bitcoin.</b><br/>
-        <i>Você enviará XMR e o destinatário receberá BTC via o serviço <b>XMR.TO</b></i>
+        <i>Você enviará WOW e o destinatário receberá BTC via o serviço <b>WOW.TO</b></i>
     ]]></string>
 
-    <string name="info_send_xmrto_success_order_label">Ordem no XMR.TO</string>
+    <string name="info_send_xmrto_success_order_label">Ordem no WOW.TO</string>
 
     <string name="info_send_xmrto_success_btc">%1$s BTC</string>
 
     <string name="info_send_xmrto_paid">Confirmação Pendente</string>
     <string name="info_send_xmrto_unpaid">Pagamento Pendente</string>
-    <string name="info_send_xmrto_error">Erro XMR.TO (%1$s)</string>
+    <string name="info_send_xmrto_error">Erro WOW.TO (%1$s)</string>
     <string name="info_send_xmrto_sent">BTC Enviado!</string>
     <string name="info_send_xmrto_query">Consultando &#8230;</string>
 
     <string name="info_send_xmrto_parms"><![CDATA[
         <b>Você pode enviar %1$s &#8212; %2$s BTC</b>.<br/>
-        <i><b>XMR.TO</b> enviou a cotação de <b>%3$s BTC</b> <u>neste momento</u></i>.
+        <i><b>WOW.TO</b> enviou a cotação de <b>%3$s BTC</b> <u>neste momento</u></i>.
     ]]></string>
     <string name="info_send_xmrto_zeroconf"><![CDATA[
         <i>Quantias até <b>%1$s BTC</b> serão enviadas <u>instantaneamente</u>!</i>
     ]]></string>
 
-    <string name="send_available_btc">Saldo: %2$s BTC (%1$s XMR)</string>
+    <string name="send_available_btc">Saldo: %2$s BTC (%1$s WOW)</string>
 
     <string name="info_paymentid_intergrated">ID do pagamento integrado</string>
     <string name="info_prepare_tx">Preparando sua transação</string>
 
-    <string name="label_send_progress_xmrto_create">Criando a ordem no XMR.TO</string>
-    <string name="label_send_progress_xmrto_query">Atualizando a ordem no XMR.TO</string>
+    <string name="label_send_progress_xmrto_create">Criando a ordem no WOW.TO</string>
+    <string name="label_send_progress_xmrto_query">Atualizando a ordem no WOW.TO</string>
     <string name="label_send_progress_create_tx">Preparando a transação em Wownero</string>
 
-    <string name="label_send_progress_queryparms">Consultando os parâmetros no XMR.TO</string>
+    <string name="label_send_progress_queryparms">Consultando os parâmetros no WOW.TO</string>
 
-    <string name="label_generic_xmrto_error">ERRO XMR.TO</string>
+    <string name="label_generic_xmrto_error">ERRO WOW.TO</string>
     <string name="text_generic_xmrto_error">Código: %1$d</string>
 
     <string name="text_retry">Toque aqui para tentar novamente</string>
     <string name="text_noretry_monero">Opa, estamos travados aqui!</string>
-    <string name="text_noretry">Hm, parece que o XMR.TO não está disponível no momento</string>
+    <string name="text_noretry">Hm, parece que o WOW.TO não está disponível no momento</string>
 
-    <string name="text_send_btc_amount">%1$s BTC = %2$s XMR</string>
-    <string name="text_send_btc_rate">(Cotação: %1$s BTC/XMR)</string>
+    <string name="text_send_btc_amount">%1$s BTC = %2$s WOW</string>
+    <string name="text_send_btc_rate">(Cotação: %1$s BTC/WOW)</string>
 
     <string name="label_send_settings_advanced">Avançado:</string>
 
-    <string name="label_send_btc_xmrto_info">Visite o XMR.TO para suporte &amp; rastreio da ordem</string>
-    <string name="label_send_btc_xmrto_key_lb">Chave secreta\nXMR.TO</string>
-    <string name="label_send_btc_xmrto_key">Chave secreta XMR.TO</string>
+    <string name="label_send_btc_xmrto_info">Visite o WOW.TO para suporte &amp; rastreio da ordem</string>
+    <string name="label_send_btc_xmrto_key_lb">Chave secreta\nWOW.TO</string>
+    <string name="label_send_btc_xmrto_key">Chave secreta WOW.TO</string>
     <string name="label_send_btc_address">Endereço BTC de destino</string>
     <string name="label_send_btc_amount">Valor</string>
 
@@ -147,7 +147,7 @@
     <string name="label_wallet_receive">Receber</string>
     <string name="label_wallet_send">Enviar</string>
 
-    <string name="xmr_unconfirmed_amount">+ %1$s XMR não confirmado</string>
+    <string name="xmr_unconfirmed_amount">+ %1$s WOW não confirmado</string>
 
     <string name="service_description">Serviço monerujo</string>
 
@@ -161,14 +161,14 @@
 
     <string name="label_copy_viewkey">Chave de visualização</string>
     <string name="label_copy_address">Endereço público</string>
-    <string name="label_copy_xmrtokey">Chave XMR.TO</string>
+    <string name="label_copy_xmrtokey">Chave WOW.TO</string>
     <string name="message_copy_viewkey">Chave de visualização copiada para a área de transferência!</string>
-    <string name="message_copy_xmrtokey">Chave XMR.TO copiada para a área de transferência!</string>
+    <string name="message_copy_xmrtokey">Chave WOW.TO copiada para a área de transferência!</string>
     <string name="message_copy_address">Endereço da carteira copiado para a área de transferência!</string>
     <string name="message_copy_txid">ID da transacção copiado para a área de transferência!</string>
     <string name="message_nocopy">Copiar está desativado por razões de segurança!</string>
 
-    <string name="message_exchange_failed">Não foi possível obter a cotação!\nUse XMR/XMR ou tente novamente</string>
+    <string name="message_exchange_failed">Não foi possível obter a cotação!\nUse WOW/WOW ou tente novamente</string>
 
     <string name="generate_title">Criar Carteira</string>
     <string name="generate_name_hint">Nome da Carteira</string>
@@ -221,8 +221,8 @@
 
     <string name="send_amount_btc_xmr">%1$s (indicativo)</string>
 
-    <string name="send_address_hint">Endereço de destino XMR ou BTC</string>
-    <string name="send_address_hint_wow">Endereço de destino XMR</string>
+    <string name="send_address_hint">Endereço de destino WOW ou BTC</string>
+    <string name="send_address_hint_wow">Endereço de destino WOW</string>
     <string name="send_paymentid_hint">ID do pagamento (opcional)</string>
     <string name="send_amount_hint">0.00</string>
     <string name="send_notes_hint">Notas (opcional)</string>
@@ -233,19 +233,19 @@
     <string name="send_qr_address_invalid">Código QR inválido</string>
     <string name="send_address_invalid">Endereço inválido</string>
     <string name="send_title">Enviar</string>
-    <string name="send_available">Saldo: %1$s XMR</string>
+    <string name="send_available">Saldo: %1$s WOW</string>
     <string name="send_address_title">Endereço</string>
     <string name="send_amount_title">Valor</string>
     <string name="send_confirm_title">Confirmar</string>
     <string name="send_success_title">Concluído</string>
 
     <string name="send_amount_label">Valor</string>
-    <string name="send_fee_btc_label">Taxa (XMR)</string>
+    <string name="send_fee_btc_label">Taxa (WOW)</string>
     <string name="send_fee_label">Taxa</string>
-    <string name="send_total_btc_label">Total (XMR)</string>
+    <string name="send_total_btc_label">Total (WOW)</string>
     <string name="send_total_label">Total</string>
 
-    <string name="send_amount">%1$s XMR</string>
+    <string name="send_amount">%1$s WOW</string>
     <string name="send_fee">+%1$s de taxa</string>
 
     <string name="send_create_tx_error_title">Erro ao criar a transação</string>
