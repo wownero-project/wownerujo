@@ -38,7 +38,7 @@
 
     <string name="info_xmrto"><![CDATA[
         <b>Sa sisestasid Bitcoini aadressi.</b><br/>
-        <i>See tähendab, et sa saadad Monerosid ning kohale jõuavad Bitcoinid kasutades XMR.TO teenust.</i>
+        <i>See tähendab, et sa saadad Wownerosid ning kohale jõuavad Bitcoinid kasutades XMR.TO teenust.</i>
     ]]></string>
 
     <string name="info_send_xmrto_success_order_label">XMR.TO tellimus</string>
@@ -66,7 +66,7 @@
 
     <string name="label_send_progress_xmrto_create">Loon XMR.TO tellimust</string>
     <string name="label_send_progress_xmrto_query">Küsin XMR.TO tellimust</string>
-    <string name="label_send_progress_create_tx">Valmistan ette Monero ülekannet</string>
+    <string name="label_send_progress_create_tx">Valmistan ette Wownero ülekannet</string>
 
     <string name="label_send_progress_queryparms">Küsin XMR.TO parameetreid</string>
 
@@ -223,12 +223,13 @@
     <string name="send_amount_btc_xmr">%1$s (umbkaudne)</string>
 
     <string name="send_address_hint">Saaja XMR/BTC aadress või OpenAlias</string>
+    <string name="send_address_hint_wow">Saaja XMR aadress või OpenAlias</string>
     <string name="send_paymentid_hint">Makse ID (valikuline)</string>
     <string name="send_amount_hint">0.00</string>
     <string name="send_notes_hint">Privaatsed kommentaarid (valikuline)</string>
     <string name="send_generate_paymentid_hint">Genereeri</string>
-    <string name="send_send_label">Saada mu kallid Monerod teele</string>
-    <string name="send_send_timed_label">Saada mu kallid Monerod (%1$s)</string>
+    <string name="send_send_label">Saada mu kallid Wownerod teele</string>
+    <string name="send_send_timed_label">Saada mu kallid Wownerod (%1$s)</string>
     <string name="send_qr_invalid">See pole QR kood</string>
     <string name="send_qr_address_invalid">See pole sobiv QR kood</string>
     <string name="send_address_invalid">See pole sobiv aadress</string>
