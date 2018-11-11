@@ -1,5 +1,5 @@
 # Wownerujo
-The Android Wallet for Wownero
+An Android Wallet for Wownero
 
 [<img src="https://f-droid.org/badge/get-it-on.png"
       alt="Get it on F-Droid"
@@ -16,7 +16,7 @@ The Android Wallet for Wownero
 You may lose all your Wowneroj if you use this App. Be cautious when spending on the mainnet.
 
 ## Random Notes
-- Based off wownero v0.3.1.0
+- Based off wownero v0.4.0.0
 - use your own daemon - it's easy
 - screen stays on until first sync is complete
 
