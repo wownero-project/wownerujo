@@ -27,7 +27,7 @@
         Use a strong password - even better use a passphrase.</p>
         <p>Enter your Seed in the field \"Mnemonic Seed\".<p>
         <p>Enter the block number of the first transaction used for this address in the
-        field \"Restore Height\". You can also use a date in the format YYYY-MM-DD. If you are not sure,
+        field \"Restore Height\". You can also use a date in the format YYYY-MM. If you are not sure,
         enter an approximate date/blockheight <em>before</em> you first used this wallet address.</p>
     ]]></string>
 
@@ -39,7 +39,7 @@
         <p>Enter a unique wallet name and password. The password is used for securing your wallet data on the Android
         device. Use a strong password - even better use a passphrase.</p>
         <p>Enter the block number of the first transaction used for this address in the
-        field \"Restore Height\". You can also use a date in the format YYYY-MM-DD. If you are not sure,
+        field \"Restore Height\". You can also use a date in the format YYYY-MM. If you are not sure,
         enter an approximate date/blockheight <em>before</em> you first used this wallet address.</p>
     ]]></string>
 
@@ -50,7 +50,7 @@
         Use a strong password - even better use a passphrase.<p>
         <p>Enter your Wownero Address in the field \"Public Address\" and fill out \"View Key\" and  \"Spend Key\".</p>
         <p>Enter the block number of the first transaction used for this address in the
-        field \"Restore Height\". You can also use a date in the format YYYY-MM-DD. If you are not sure,
+        field \"Restore Height\". You can also use a date in the format YYYY-MM. If you are not sure,
         enter an approximate date/blockheight <em>before</em> you first used this wallet address.</p>
     ]]></string>
 
@@ -61,7 +61,7 @@
         Use a strong password - even better use a passphrase.<p>
         <p>Enter your Wownero Address in the field \"Public Address\" and fill out the \"View Key\".</p>
         <p>Enter the block number of the first transaction used for this address in the
-        field \"Restore Height\". You can also use a date in the format YYYY-MM-DD. If you are not sure,
+        field \"Restore Height\". You can also use a date in the format YYYY-MM. If you are not sure,
         enter an approximate date/blockheight <em>before</em> you first used this wallet address.</p>
     ]]></string>
 
