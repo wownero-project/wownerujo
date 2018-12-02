@@ -144,7 +144,6 @@
     <string name="label_wallet_receive">Motta</string>
     <string name="label_wallet_send">Gi</string>
 
-    <string name="xmr_unconfirmed_amount">+ %1$s WOW ubekrefta</string>
     <string name="wow_unconfirmed_amount">+ %1$s WOW ubekrefta</string>
 
     <string name="service_description">wownerujo tjeneste</string>

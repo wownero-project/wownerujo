@@ -95,7 +95,7 @@ public class WalletFragment extends Fragment
         tvBalance = (TextView) view.findViewById(R.id.tvBalance);
         tvBalance.setText(Helper.getDisplayAmount(0));
         tvUnconfirmedAmount = (TextView) view.findViewById(R.id.tvUnconfirmedAmount);
-        tvUnconfirmedAmount.setText(getResources().getString(R.string.xmr_unconfirmed_amount, Helper.getDisplayAmount(0)));
+        tvUnconfirmedAmount.setText(getResources().getString(R.string.wow_unconfirmed_amount, Helper.getDisplayAmount(0)));
         ivSynced = (ImageView) view.findViewById(R.id.ivSynced);
 
         sCurrency = (Spinner) view.findViewById(R.id.sCurrency);

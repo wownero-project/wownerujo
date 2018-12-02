@@ -153,7 +153,6 @@
     <string name="label_wallet_receive">Receive</string>
     <string name="label_wallet_send">Give</string>
 
-    <string name="xmr_unconfirmed_amount">+ %1$s WOW unconfirmed</string>
     <string name="wow_unconfirmed_amount">+ %1$s WOW unconfirmed</string>
 
 

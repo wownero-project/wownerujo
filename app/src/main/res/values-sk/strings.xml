@@ -147,7 +147,7 @@
     <string name="label_wallet_receive">Prijať</string>
     <string name="label_wallet_send">Poslať</string>
 
-    <string name="xmr_unconfirmed_amount">+ %1$s XMR nepotvrdených</string>
+    <string name="wow_unconfirmed_amount">+ %1$s XMR nepotvrdených</string>
 
     <string name="service_description">monerujo Service</string>
 

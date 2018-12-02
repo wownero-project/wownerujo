@@ -147,7 +147,6 @@
     <string name="label_wallet_receive">Recevoir</string>
     <string name="label_wallet_send">Envoyer</string>
 
-    <string name="xmr_unconfirmed_amount">+ %1$s WOW non confirmés</string>
     <string name="wow_unconfirmed_amount">+ %1$s WOW non confirmés</string>
 
     <string name="service_description">Service wownerujo</string>

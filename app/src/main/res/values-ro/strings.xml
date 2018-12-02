@@ -134,7 +134,6 @@
     <string name="label_wallet_receive">Primește</string>
     <string name="label_wallet_send">Oferă</string>
 
-    <string name="xmr_unconfirmed_amount">+ %1$s WOW neconfirmat</string>
     <string name="wow_unconfirmed_amount">+ %1$s WOW neconfirmat</string>
 
     <string name="service_description">Serviciul monerujo</string>

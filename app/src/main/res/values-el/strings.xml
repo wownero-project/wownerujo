@@ -134,7 +134,6 @@
     <string name="label_wallet_receive">Λήψη</string>
     <string name="label_wallet_send">Αποστολή</string>
 
-    <string name="xmr_unconfirmed_amount">+ %1$s WOW μη επιβεβαιωμένα</string>
     <string name="wow_unconfirmed_amount">+ %1$s WOW μη επιβεβαιωμένα</string>
 
     <string name="service_description">Υπηρεσία monerujo</string>

@@ -142,7 +142,7 @@
     <string name="label_wallet_receive">受取り</string>
     <string name="label_wallet_send">送金</string>
 
-    <string name="xmr_unconfirmed_amount">+ %1$s WOW が未承認</string>
+    <string name="wow_unconfirmed_amount">+ %1$s WOW が未承認</string>
 
     <string name="service_description">wownerujo のサービス</string>
 

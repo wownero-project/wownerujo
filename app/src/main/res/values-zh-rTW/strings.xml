@@ -146,7 +146,6 @@
     <string name="label_wallet_receive">接收</string>
     <string name="label_wallet_send">發送</string>
 
-    <string name="xmr_unconfirmed_amount">+ %1$s 未確認的 WOW </string>
     <string name="wow_unconfirmed_amount">+ %1$s 未確認的 WOW </string>
 
 

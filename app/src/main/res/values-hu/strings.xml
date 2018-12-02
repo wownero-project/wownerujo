@@ -146,7 +146,6 @@
     <string name="label_wallet_receive">Fogadás</string>
     <string name="label_wallet_send">Küldés</string>
 
-    <string name="xmr_unconfirmed_amount">+ %1$s WOW függőben</string>
     <string name="wow_unconfirmed_amount">+ %1$s WOW függőben</string>
 
     <string name="service_description">monerujo szolgáltatás</string>

@@ -147,7 +147,6 @@
     <string name="label_wallet_receive">Получить</string>
     <string name="label_wallet_send">Передать</string>
 
-    <string name="xmr_unconfirmed_amount">+ %1$s WOW неподтвержденно</string>
     <string name="wow_unconfirmed_amount">+ %1$s WOW неподтвержденно</string>
 
     <string name="service_description">Служба monerujo</string>
