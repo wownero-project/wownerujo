@@ -61,7 +61,7 @@ for arch in ${archs[@]}; do
     perl -pi -e 's/SHLIB_MAJOR=1/SHLIB_MAJOR=`/g' Makefile
     perl -pi -e 's/SHLIB_MINOR=0.0/SHLIB_MINOR=`/g' Makefile
     make clean
-    echo "silent building openssl..."
+    echo "building openssl for ${arch}..."
     make depend -j $NPROC > /dev/null 2>&1
     make all -j $NPROC > /dev/null 2>&1
 
