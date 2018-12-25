@@ -84,8 +84,7 @@ public class KeyStoreHelper {
     }
 
     public static String getCrazyPass(Context context, String password) {
-        // return getCrazyPass(context, password, 0);
-        return password;
+        return getCrazyPass(context, password, 0);
     }
 
     public static boolean saveWalletUserPass(@NonNull Context context, String wallet, String password) {
