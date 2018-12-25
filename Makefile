@@ -31,7 +31,7 @@ libsodium: toolchain
 	script/build-external-libs/fetch-libsodium.sh
 	script/build-external-libs/build-libsodium.sh
 
-wownero: toolchain libsodium openssl boost
+wownero: toolchain openssl libsodium boost
 	script/build-external-libs/fetch-wownero.sh
 	script/build-external-libs/patch-wownero.sh
 	script/build-external-libs/build-wownero.sh
