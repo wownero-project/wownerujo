@@ -42,7 +42,6 @@ collect: wownero
 
 
 # dev shortcut
-
 # faster build for testing f-droid release
 use-prebuilt-external-libs:
 	script/build-external-libs/use-archive.sh
@@ -56,13 +55,11 @@ collect-unsafe:
 	script/build-external-libs/collect.sh
 
 
-
 fdroid_apk_path := vendor/fdroiddata/unsigned
 app_id := com.wownero.wownerujo
 
 gradle_apk_path := app/build/outputs/apk/release
 gradle_app_name := wownerujo-${gradle_app_version}
-
 
 
 f-droid-sign:
@@ -78,20 +75,31 @@ f-droid-clean:
 	@rm -f $(fdroid_apk_path)/$(app_id)_${app_version}-aligned.apk
 	@rm -f $(fdroid_apk_path)/$(app_id)_${app_version}-release.apk
 
+
+# release-build
 install: gradle-build apk-install
 
 gradle-build:
 	./gradlew assembleRelease
 
+apk-install:
+	adb install -r ./app/build/outputs/apk/release/wownerujo-$(gradle_app_version)_universal.apk
+
+# debug-build
+install-debug: gradle-build-debug apk-install-debug
+
+gradle-build-debug:
+	./gradlew assembleDebug
+
+apk-install-debug:
+	adb install -r ./app/build/outputs/apk/debug/wownerujo-$(gradle_app_version)_universal.apk
+
+# clean
 gradle-clean:
 	@rm -f $(gradle_apk_path)/$(gradle_app_name)_universal.apk
 	@rm -f $(gradle_apk_path)/$(gradle_app_name)_arm64-v8a.apk
 	@rm -f $(gradle_apk_path)/$(gradle_app_name)_armebi-v7a.apk
 	@rm -f $(gradle_apk_path)/$(gradle_app_name)_x86_64.apk
-
-apk-install:
-	adb install -r ./app/build/outputs/apk/release/wownerujo-$(gradle_app_version)_universal.apk
-
 
 remove-exif:
 	exiftool -all= `find app/ -name '*.jp*g' -o -name '*.png'`
