@@ -8,7 +8,7 @@ An Android Wallet for Wownero
 
 ## Preparing for upcoming Wownero v0.5
 
-Some of the included remote nodes have been upgraded to Wownero v0.5, which are incompatible to the current released version of Wownerujo. Consider upgrading to the [beta channnel], if you have your seed backed up and are using the Google Play store. Or you might consider running your own node, since you will need one eventually.
+Some of the included remote nodes have been upgraded to Wownero v0.5, which are incompatible to the current released version of Wownerujo. Consider upgrading to the [beta channel], if you have your seed backed up and are using the Google Play store. Or you might consider running your own node, since you will need one eventually.
 
 ## QUICKSTART
 - Download the APK for the most current release [here](https://f-droid.org/packages/com.wownero.wownerujo/) and install it
