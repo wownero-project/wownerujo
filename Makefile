@@ -7,52 +7,56 @@ install \
 gradle-build gradle-sign gradle-clean \
 apk-install remove-exif
 
+
+script := script/build-external-libs
+
+
 all: build-external-libs
 
 build-external-libs: clean-external-libs collect
 
 clean-external-libs:
-	script/build-external-libs/clean.sh
+	$(script)/clean.sh
 
 toolchain:
-	script/build-external-libs/prep-toolchain.sh
+	$(script)/prep-toolchain.sh
 
 openssl: toolchain
-	script/build-external-libs/fetch-openssl.sh
-	script/build-external-libs/patch-openssl.sh
-	script/build-external-libs/build-openssl.sh
-	script/build-external-libs/post-build-openssl.sh
+	$(script)/fetch-openssl.sh
+	$(script)/patch-openssl.sh
+	$(script)/build-openssl.sh
+	$(script)/post-build-openssl.sh
 
 boost: toolchain
-	script/build-external-libs/fetch-boost.sh
-	script/build-external-libs/build-boost.sh
+	$(script)/fetch-boost.sh
+	$(script)/build-boost.sh
 
 libsodium: toolchain
-	script/build-external-libs/fetch-libsodium.sh
-	script/build-external-libs/build-libsodium.sh
+	$(script)/fetch-libsodium.sh
+	$(script)/build-libsodium.sh
 
 wownero: toolchain openssl libsodium boost
-	script/build-external-libs/fetch-wownero.sh
-	script/build-external-libs/patch-wownero.sh
-	script/build-external-libs/build-wownero.sh
+	$(script)/fetch-wownero.sh
+	$(script)/patch-wownero.sh
+	$(script)/build-wownero.sh
 
 collect: wownero
-	script/build-external-libs/collect.sh
+	$(script)/collect.sh
 
 
 
 # dev shortcut
 # faster build for testing f-droid release
 use-prebuilt-external-libs:
-	script/build-external-libs/use-archive.sh
+	$(script)/use-archive.sh
 
 unsafe-wownero:
-	script/build-external-libs/fetch-wownero.sh
-	script/build-external-libs/patch-wownero.sh
-	script/build-external-libs/build-wownero.sh
+	$(script)/fetch-wownero.sh
+	$(script)/patch-wownero.sh
+	$(script)/build-wownero.sh
 
 unsafe-collect:
-	script/build-external-libs/collect.sh
+	$(script)/collect.sh
 
 
 fdroid_apk_path := vendor/fdroiddata/unsigned
