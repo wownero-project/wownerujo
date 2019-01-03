@@ -65,7 +65,7 @@ with nixpkgs;
     graphviz
     pkgconfig
 
-    androidsdk
+    androidsdk_9_0
 
     vim
     exiftool

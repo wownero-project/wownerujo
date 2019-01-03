@@ -6,6 +6,10 @@ An Android Wallet for Wownero
       height="80">](https://f-droid.org/packages/com.wownero.wownerujo/)
 <a href='https://play.google.com/store/apps/details?id=com.wownero.wownerujo&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' height='80'/></a>
 
+## Preparing for upcoming Wownero v0.5
+
+Some of the included remote nodes have been upgraded to Wownero v0.5, which are incompatible to the current released version of Wownerujo. Consider upgrading to the [beta channel], if you have your seed backed up and are using the Google Play store. Or you might consider running your own node, since you will need one eventually.
+
 ## QUICKSTART
 - Download the APK for the most current release [here](https://f-droid.org/packages/com.wownero.wownerujo/) and install it
 - Run the App and select "Generate Wallet" to create a new wallet or recover a wallet
@@ -35,3 +39,6 @@ Then, fire up Android Studio and build the APK.
 ### F-Droid
 
 - <https://f-droid.org/en/contribute/>
+
+
+[beta channel]:https://play.google.com/apps/testing/com.wownero.wownerujo/join
