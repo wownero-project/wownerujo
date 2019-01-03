@@ -14,7 +14,7 @@ cd $EXTERNAL_LIBS_BUILD_ROOT
 url="https://github.com/fuwa0529/wownero"
 # url="https://github.com/wowario/wownero"
 # version="v0.4.0.0"
-version="c786fb5"
+version="0d2ded5"
 
 
 rm -rf wownero

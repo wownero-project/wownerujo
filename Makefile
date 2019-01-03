@@ -46,12 +46,12 @@ collect: wownero
 use-prebuilt-external-libs:
 	script/build-external-libs/use-archive.sh
 
-wownero-unsafe:
+unsafe-wownero:
 	script/build-external-libs/fetch-wownero.sh
 	script/build-external-libs/patch-wownero.sh
 	script/build-external-libs/build-wownero.sh
 
-collect-unsafe:
+unsafe-collect:
 	script/build-external-libs/collect.sh
 
 
