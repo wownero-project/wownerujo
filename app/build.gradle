@@ -10,8 +10,8 @@ android {
         // https://source.android.com/security/bulletin/2018-03-01
         minSdkVersion 23
         targetSdkVersion 28
-        versionCode 1150
-        versionName '2.5.0.1'
+        versionCode 1160
+        versionName '2.5.0.2'
         // testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         externalNativeBuild {
             cmake {
