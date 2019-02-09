@@ -65,7 +65,7 @@ with nixpkgs;
     graphviz
     pkgconfig
 
-    androidsdk_9_0
+    # androidsdk_9_0
 
     vim
     exiftool
@@ -74,6 +74,7 @@ with nixpkgs;
     autoconf
     automake
     gnum4
+    androidenv.androidPkgs_9_0.platform-tools
   ]
   ++ android-studio-deps
   )

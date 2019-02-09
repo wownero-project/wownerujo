@@ -14,7 +14,7 @@ url="https://github.com/wownero/wownero"
 # url="https://github.com/fuwa0529/wownero"
 # url="https://github.com/wowario/wownero"
 # version="v0.4.0.0"
-version="d85d908"
+version="3f79280"
 
 
 rm -rf wownero
