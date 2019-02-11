@@ -65,7 +65,7 @@ with nixpkgs;
     graphviz
     pkgconfig
 
-    androidsdk
+    # androidsdk_9_0
 
     vim
     exiftool
@@ -74,6 +74,7 @@ with nixpkgs;
     autoconf
     automake
     gnum4
+    androidenv.androidPkgs_9_0.platform-tools
   ]
   ++ android-studio-deps
   )
@@ -95,8 +96,8 @@ with nixpkgs;
 
     export _JAVA_AWT_WM_NONREPARENTING=1
 
-    export app_version=1140
-    export gradle_app_version=2x4x0x1
+    export app_version=1170
+    export gradle_app_version=2x5x0x3
     export release_key=~/.android/fuwa-release-key.jks
 
     export USE_CCACHE=1

@@ -51,9 +51,11 @@ public class RestoreHeight {
         blockheight.put("2018-10", 52000L);
         blockheight.put("2018-11", 60000L);
         blockheight.put("2018-12", 66000L);
+        blockheight.put("2019-01", 72000L);
+        blockheight.put("2019-02", 77000L);
     }
 
-    long latestHeight = 66000L;
+    long latestHeight = 77000L;
 
     public long getHeight(final Date date) {
         Timber.d("Restore Height date %s", date);
@@ -85,3 +87,4 @@ public class RestoreHeight {
         return height;
     }
 }
+
