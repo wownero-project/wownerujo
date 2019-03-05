@@ -96,8 +96,8 @@ with nixpkgs;
 
     export _JAVA_AWT_WM_NONREPARENTING=1
 
-    export app_version=1170
-    export gradle_app_version=2x5x0x3
+    export app_version=1180
+    export gradle_app_version=2x5x0x4
     export release_key=~/.android/fuwa-release-key.jks
 
     export USE_CCACHE=1
