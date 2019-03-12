@@ -12,7 +12,7 @@ cd $EXTERNAL_LIBS_BUILD_ROOT
 # url="$base_dir/vendor/wownero"
 url="https://github.com/wownero/wownero"
 # url="https://github.com/wowario/wownero"
-version="v0.5.0.2"
+version="v0.5.1.0"
 # version="1b5cefa"
 
 
