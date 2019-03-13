@@ -50,23 +50,23 @@ for arch in ${archs[@]}; do
         CC=clang CXX=clang++ \
         CMAKE_LIBRARY_PATH=$build_root/build/libsodium/$arch/lib \
         cmake \
-        -D ANDROID=true \
-        -D ARCH="$xarch" \
-        -D BOOST_LIBRARYDIR=$build_root/build/boost/$arch/lib \
-        -D BOOST_ROOT=$build_root/build/boost/$arch \
-        -D BUILD_64=$sixtyfour \
-        -D BUILD_GUI_DEPS=1 \
-        -D BUILD_TAG="android" \
-        -D BUILD_TESTS=OFF \
-        -D CMAKE_BUILD_TYPE=$build_type \
-        -D CMAKE_POSITION_INDEPENDENT_CODE:BOOL=true \
-        -D FORCE_USE_HEAP=1 \
-        -D OPENSSL_CRYPTO_LIBRARY=$build_root/build/openssl/$arch/lib/libcrypto.so \
-        -D OPENSSL_INCLUDE_DIR=$build_root/build/openssl/$arch/include \
-        -D OPENSSL_ROOT_DIR=$build_root/build/openssl/$arch \
-        -D OPENSSL_SSL_LIBRARY=$build_root/build/openssl/$arch/lib/libssl.so \
-        -D LIBSODIUM_INCLUDE_DIR=$build_root/build/libsodium/$arch/include \
-        -D STATIC=ON \
+        -DANDROID=true \
+        -DARCH="$xarch" \
+        -DBOOST_LIBRARYDIR=$build_root/build/boost/$arch/lib \
+        -DBOOST_ROOT=$build_root/build/boost/$arch \
+        -DBUILD_64=$sixtyfour \
+        -DBUILD_GUI_DEPS=1 \
+        -DBUILD_TAG="android" \
+        -DBUILD_TESTS=OFF \
+        -DCMAKE_BUILD_TYPE=$build_type \
+        -DCMAKE_POSITION_INDEPENDENT_CODE:BOOL=true \
+        -DFORCE_USE_HEAP=1 \
+        -DOPENSSL_CRYPTO_LIBRARY=$build_root/build/openssl/$arch/lib/libcrypto.so \
+        -DOPENSSL_INCLUDE_DIR=$build_root/build/openssl/$arch/include \
+        -DOPENSSL_ROOT_DIR=$build_root/build/openssl/$arch \
+        -DOPENSSL_SSL_LIBRARY=$build_root/build/openssl/$arch/lib/libssl.so \
+        -DLIBSODIUM_INCLUDE_DIR=$build_root/build/libsodium/$arch/include \
+        -DSTATIC=ON \
         $extra_cmake_flags \
         ../..
 
