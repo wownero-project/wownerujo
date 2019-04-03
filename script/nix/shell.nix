@@ -84,13 +84,11 @@ with nixpkgs;
   ])
 
 ; profile = ''
-    export ANDROID_HOME=~/Android/Sdk
+    export ANDROID_HOME=~/SDK/Android/Sdk
 
-    # export ANDROID_NDK_ROOT=$ANDROID_HOME/ndk-bundle
+    export ANDROID_NDK_ROOT=~/SDK/Android/ndk-archive/android-ndk-r17c
 
-    export ANDROID_NDK_ROOT=~/Android/ndk-archive/android-ndk-r17c
-
-    PATH=~/sdk/android/android-studio/bin/:$PATH
+    PATH=~/SDK/Android/android-studio/bin/:$PATH
     PATH=$ANDROID_NDK_ROOT/build/tools/:$PATH
     export PATH
 
