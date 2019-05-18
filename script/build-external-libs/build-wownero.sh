@@ -59,6 +59,7 @@ for arch in ${archs[@]}; do
         -DBUILD_TAG="android" \
         -DBUILD_TESTS=OFF \
         -DCMAKE_BUILD_TYPE=$build_type \
+        -DCMAKE_CXX_STANDARD=11 \
         -DCMAKE_POSITION_INDEPENDENT_CODE:BOOL=true \
         -DFORCE_USE_HEAP=1 \
         -DOPENSSL_CRYPTO_LIBRARY=$build_root/build/openssl/$arch/lib/libcrypto.so \
