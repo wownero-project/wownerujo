@@ -127,6 +127,10 @@ add_library(epee STATIC IMPORTED)
 set_target_properties(epee PROPERTIES IMPORTED_LOCATION
     ${EXTERNAL_LIBS_DIR}/monero/lib/${ANDROID_ABI}/libepee.a)
 
+add_library(device_trezor STATIC IMPORTED)
+set_target_properties(device_trezor PROPERTIES IMPORTED_LOCATION
+    ${EXTERNAL_LIBS_DIR}/monero/lib/${ANDROID_ABI}/libdevice_trezor.a)
+
 add_library(checkpoints STATIC IMPORTED)
 set_target_properties(checkpoints PROPERTIES IMPORTED_LOCATION
     ${EXTERNAL_LIBS_DIR}/monero/lib/${ANDROID_ABI}/libcheckpoints.a)
@@ -173,6 +177,7 @@ target_link_libraries(  monerujo
                         easylogging
                         unbound
                         epee
+                        device_trezor
                         checkpoints
                         device
                         multisig
