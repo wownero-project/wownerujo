@@ -165,6 +165,7 @@ include_directories( ${EXTERNAL_LIBS_DIR}/monero/include )
 
 message(STATUS EXTERNAL_LIBS_DIR :  ${EXTERNAL_LIBS_DIR})
 
+# here order matters
 target_link_libraries(  monerujo
 
                         wallet_api
