@@ -8,18 +8,18 @@ set -e
 rm -rf prebuilt
 mkdir prebuilt
 
-archs=(armeabi arm64-v8a x86_64)
+archs=(arm arm64 x86_64)
 
 for arch in ${archs[@]}; do
     xLIB="/lib"
     case ${arch} in
-        "armeabi")
+        "arm")
             _ANDROID_TARGET_SELECT=arch-arm
             _ANDROID_ARCH=arch-arm
             _ANDROID_EABI=arm-linux-androideabi-4.9
             _ANDROID_EABI_INC=arm-linux-androideabi
             configure_platform="android-armv7" ;;
-        "arm64-v8a")
+        "arm64")
             _ANDROID_TARGET_SELECT=arch-arm64-v8a
             _ANDROID_ARCH=arch-arm64
             _ANDROID_EABI=aarch64-linux-android-4.9
