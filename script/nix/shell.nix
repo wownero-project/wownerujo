@@ -84,20 +84,18 @@ with nixpkgs;
   ])
 
 ; profile = ''
-    export ANDROID_HOME=~/Android/Sdk
+    export ANDROID_HOME=~/SDK/Android/Sdk
 
-    # export ANDROID_NDK_ROOT=$ANDROID_HOME/ndk-bundle
+    export ANDROID_NDK_ROOT=~/SDK/Android/ndk-archive/android-ndk-r17c
 
-    export ANDROID_NDK_ROOT=~/Android/ndk-archive/android-ndk-r17c
-
-    PATH=~/sdk/android/android-studio/bin/:$PATH
+    PATH=~/SDK/Android/android-studio/bin/:$PATH
     PATH=$ANDROID_NDK_ROOT/build/tools/:$PATH
     export PATH
 
     export _JAVA_AWT_WM_NONREPARENTING=1
 
-    export app_version=1180
-    export gradle_app_version=2x5x0x4
+    export app_version=1200
+    export gradle_app_version=2x6x0x0
     export release_key=~/.android/fuwa-release-key.jks
 
     export USE_CCACHE=1
