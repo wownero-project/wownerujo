@@ -374,18 +374,11 @@ public class LoginFragment extends Fragment implements WalletInfoAdapter.OnInter
     private static final String PREF_DAEMON_TESTNET = "daemon_testnet";
 
 
-    private static final String PREF_DAEMONLIST_MAINNET
-        = "node.wowne.ro"
-        + ";node.pwned.systems"
-        + ";node.wowkira.com"
-        + ";localhost"
-        ;
+    private static final String PREF_DAEMONLIST_MAINNET = "localhost";
 
-    private static final String PREF_DAEMONLIST_STAGENET =
-            "node.wowne.ro";
+    private static final String PREF_DAEMONLIST_STAGENET = "";
 
-    private static final String PREF_DAEMONLIST_TESTNET =
-            "node.wowne.ro";
+    private static final String PREF_DAEMONLIST_TESTNET = "";
 
     private NodeList daemonMainNet;
     private NodeList daemonStageNet;
