@@ -6,6 +6,11 @@ An Android Wallet for Wownero
       height="80">](https://f-droid.org/packages/com.wownero.wownerujo/)
 <a href='https://play.google.com/store/apps/details?id=com.wownero.wownerujo'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' height='80'/></a>
 
+## Run your own mobile full node for improved speed and privacy
+
+- [CyberWOW]
+- [Wownero daemon]
+
 ## QUICKSTART
 - Download it with the F-Droid app or the Google Play app.
 - Run it and click `⊕` to create a new wallet or recover a wallet.
@@ -13,11 +18,6 @@ An Android Wallet for Wownero
 
 ## Disclaimer
 You may lose all your Wowneroj if you use this app.
-
-## Random Notes
-- Based off Wownero v0.5.
-- Use your own daemon.
-- Screen stays on until first sync is complete.
 
 ## HOW TO BUILD
 
@@ -37,3 +37,5 @@ Then, fire up Android Studio and build the APK.
 
 
 [beta channel]:https://play.google.com/apps/testing/com.wownero.wownerujo/join
+[CyberWOW]: https://play.google.com/store/apps/details?id=org.wownero.cyberwow
+[Wownero daemon]: https://github.com/enerc/wownero-daemon/releases
