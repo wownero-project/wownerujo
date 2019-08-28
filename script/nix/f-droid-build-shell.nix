@@ -5,13 +5,21 @@ with pkgs;
 let
 
   fdroid-python-packages = python-packages: with python-packages; [
-    requests
-    paramiko
-    pyasn1-modules
+    androguard
     clint
+    defusedxml
+    GitPython
+    libcloud
+    mwclient
+    paramiko
+    pillow
+    pyasn1
+    pyasn1-modules
+    python-vagrant
     pyyaml
-
-    virtualenvwrapper
+    qrcode
+    requests
+    ruamel_yaml
   ]
 
 ; python-with-fdroid-packages = pkgs.python3.withPackages fdroid-python-packages
