@@ -10,10 +10,8 @@ cd $EXTERNAL_LIBS_BUILD_ROOT
 
 
 # url="$base_dir/vendor/wownero"
-# url="https://github.com/wownero/wownero"
 url="https://github.com/wownero/wownero"
-version="v0.6.1.1"
-# version="dev-v0.6"
+version="dev-v0.7.0"
 
 
 rm -rf wownero

@@ -8,7 +8,7 @@ set -e
 rm -rf prebuilt
 mkdir prebuilt
 
-archs=(arm arm64 x86_64)
+archs=(arm64 x86_64)
 
 for arch in ${archs[@]}; do
     xLIB="/lib"

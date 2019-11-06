@@ -8,7 +8,7 @@ build_root=$EXTERNAL_LIBS_BUILD_ROOT
 PATH=$ANDROID_NDK_ROOT/build/tools/:$PATH
 
 args="--api 23 --stl=libc++"
-archs=(arm arm64 x86_64)
+archs=(arm64 x86_64)
 
 for arch in ${archs[@]}; do
 

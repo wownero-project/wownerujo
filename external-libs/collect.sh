@@ -8,7 +8,7 @@ orig_path=$PATH
 build_root=$EXTERNAL_LIBS_BUILD_ROOT
 
 packages=(boost openssl monero libsodium)
-archs=(arm arm64 x86_64)
+archs=(arm64 x86_64)
 
 for arch in ${archs[@]}; do
     case ${arch} in

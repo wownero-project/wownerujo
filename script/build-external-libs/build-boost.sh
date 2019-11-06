@@ -20,7 +20,7 @@ args="--build-type=minimal link=static runtime-link=static --with-chrono \
 --toolset=clang-android threading=multi threadapi=pthread target-os=android \
 "
 
-archs=(arm arm64 x86_64)
+archs=(arm64 x86_64)
 for arch in ${archs[@]}; do
     extra_build_flags=""
     case ${arch} in
