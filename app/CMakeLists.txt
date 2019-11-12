@@ -155,6 +155,18 @@ add_library(net STATIC IMPORTED)
 set_target_properties(net PROPERTIES IMPORTED_LOCATION
     ${EXTERNAL_LIBS_DIR}/monero/lib/${ANDROID_ABI}/libnet.a)
 
+add_library(hardforks STATIC IMPORTED)
+set_target_properties(hardforks PROPERTIES IMPORTED_LOCATION
+    ${EXTERNAL_LIBS_DIR}/monero/lib/${ANDROID_ABI}/libhardforks.a)
+
+add_library(rpc_base STATIC IMPORTED)
+set_target_properties(rpc_base PROPERTIES IMPORTED_LOCATION
+    ${EXTERNAL_LIBS_DIR}/monero/lib/${ANDROID_ABI}/librpc_base.a)
+
+add_library(blocks STATIC IMPORTED)
+set_target_properties(blocks PROPERTIES IMPORTED_LOCATION
+    ${EXTERNAL_LIBS_DIR}/monero/lib/${ANDROID_ABI}/libblocks.a)
+
 #############
 # System
 #############
@@ -189,6 +201,10 @@ target_link_libraries(  monerujo
                         multisig
                         version
                         randomx
+                        hardforks
+                        rpc_base
+                        blocks
+
 
                         boost_chrono
                         boost_date_time

@@ -57,6 +57,10 @@ public class RestoreHeight {
         blockheight.put("2019-04", 93000L);
         blockheight.put("2019-05", 101000L);
         blockheight.put("2019-06", 110000L);
+        blockheight.put("2019-07", 119000L);
+        blockheight.put("2019-08", 128000L);
+        blockheight.put("2019-09", 137000L);
+        blockheight.put("2019-10", 146000L);
     }
 
     long latestHeight = 77000L;

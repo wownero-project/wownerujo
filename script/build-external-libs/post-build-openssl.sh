@@ -9,7 +9,7 @@ build_root=$EXTERNAL_LIBS_BUILD_ROOT
 mkdir -p $build_root/build/openssl/
 cp -aL $build_root/android-openssl/openssl-OpenSSL_1_0_2l/include/openssl/ $build_root/build/openssl/include
 
-archs=(arm arm64 x86_64)
+archs=(arm64 x86_64)
 
 for arch in ${archs[@]}; do
     mkdir -p $build_root/build/openssl/$arch
