@@ -10,6 +10,7 @@ An Android Wallet for Wownero
 
 - [CyberWOW]
 - [Wownero daemon]
+- [Wownero RPC daemon]
 
 ## QUICKSTART
 - Download it with the F-Droid app or the Google Play app.
@@ -39,3 +40,4 @@ Then, fire up Android Studio and build the APK.
 [beta channel]:https://play.google.com/apps/testing/com.wownero.wownerujo/join
 [CyberWOW]: https://play.google.com/store/apps/details?id=org.wownero.cyberwow
 [Wownero daemon]: https://github.com/enerc/wownero-daemon/releases
+[Wownero RPC daemon]: https://git.wownero.com/wownero/wownero/releases
